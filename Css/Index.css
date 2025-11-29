@@ -669,15 +669,68 @@ header a:hover{
     font-size: 23px;
     padding: 10px 0;
  letter-spacing:0.5px;
-    color: #312f31;
+    color: #222222;
 }
 .Collection_span{
    font-size: 23px;
     letter-spacing:0.5px;
-    color: #484648;
+   color: #222222;
 }
 
 /*  */
+
+
 .prents_6_video{
     margin: 60px 0px;
 }
+
+/*  */
+
+.parents_main_7{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.for_her_img ,.for_him_img{
+    width: 720px;
+    object-fit: cover;
+}
+
+.for_her_text{
+    position: absolute;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    top: 28px;
+    font-size: 25px;
+    word-spacing: 1px;
+    font-weight: bold;
+    color:#7c7979;
+}
+.for_him_text{
+    position: absolute;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    top: 28px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color:#7c7979;
+}
+.DISCOVER{
+    position: absolute;
+    top: 70px;
+    padding: 0px 20px;
+    text-decoration: underline;
+    font-size: 18px;
+    color: #676565;
+    letter-spacing: 1px !important;
+    font-weight:500;
+}
+/* parents_8 */
+.neesh_img{
+    margin: 10px 0px;
+}
+/* end */
