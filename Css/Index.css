@@ -621,12 +621,12 @@ header a:hover{
      font-size: 17px;
      font-weight: bold;
      /* letter-spacing: 1px; */
-     color: #fff;
+     color:#fdefe4;
 }
 .Applicabl_span{
      text-transform:none;
      font-weight: normal;
-     word-spacing: 1px ;    padding: 6px 0px;
-     color: #fff;
+     word-spacing: 1px ;    padding: 7px 0px;
+     color: #fdefe4;
      font-size: 13px;
 }
