@@ -630,3 +630,41 @@ header a:hover{
      color: #fdefe4;
      font-size: 13px;
 }
+
+/* 5th_parents_div_end */
+
+.product_list{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 75px;
+    text-align: center;
+}
+.product_bg_1{
+  border-radius: 50%;
+
+  padding: 3px 3px;
+  border: 4px solid #dfc26b;
+}
+.product_bg_1{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+}
+.luxury_collectio_text{
+    font-size: 23px;
+    padding: 6px 0;
+ letter-spacing:0.5px;
+    color: #312f31;
+}
+.Collection_span{
+   font-size: 23px;
+    letter-spacing:0.5px;
+    color: #484648;
+}
+
+/*  */
+.prents_6_video{
+    margin: 50px 0px;
+}
