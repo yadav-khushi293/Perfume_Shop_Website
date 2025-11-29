@@ -593,3 +593,40 @@ header a:hover{
 .title, .price, .offer {
   margin: 2px 0;
 }
+
+/* 5th_parents_div */
+.questions_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding: 50px 210px;
+    margin: 60px 0px;
+    background-color: #a98d65;
+    border: 1px solid  #a98d65;
+    height: 160px;
+}
+.questions_child{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.questions_img{
+    width: 100px;
+    height: 100px;
+}
+.questions_tex{
+     text-transform: uppercase;
+     font-size: 17px;
+     font-weight: bold;
+     /* letter-spacing: 1px; */
+     color: #fff;
+}
+.Applicabl_span{
+     text-transform:none;
+     font-weight: normal;
+     word-spacing: 1px ;    padding: 6px 0px;
+     color: #fff;
+     font-size: 13px;
+}
