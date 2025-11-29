@@ -734,3 +734,59 @@ header a:hover{
     margin: 10px 0px;
 }
 /* end */
+
+.parents_main_9{
+    display: flex;
+    justify-content:space-around;
+     padding: 70px 0px;
+    
+}
+.parentschilde_2{
+    padding: 85px 0px;
+}
+.parentschilde_img{
+    width: 700px;
+    height: 500px;
+}
+.parentschilde_text{
+    font-size: 24px;
+    text-align: center;
+    color: #3c3c3c;
+    letter-spacing:1px;
+}
+.parentschilde_text_1{
+    font-size: 18px;
+    font-size: 500;
+    color: #8b8989;
+    text-align: center;
+    padding: 12px 0px;
+    word-spacing: 1px;
+}
+.parentschilde_text_2{
+    font-size: 18px;
+    font-size: 500;
+    color: #8b8989;
+    word-spacing: 2px;
+    text-align: center;
+    /* padding: 10px 0px; */
+    word-spacing: 1px;
+}
+.parentschilde_text_3{
+    text-align: center;
+    font-size: 23px;
+    padding: 17px 0px;
+    font-weight: bold;
+      color: #393838;
+}
+.parentschilde_text_4{
+    margin: 10px 0px;
+    width: 380px;
+    font-size: 16px;
+    background-color:#dfaa40;
+    letter-spacing: 1px;
+    height:49px;
+    text-align: center;
+    padding: 13px 0px;
+    border:1px solid #dfaa40;
+    color: #fff
+}
