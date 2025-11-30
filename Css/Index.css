@@ -919,3 +919,27 @@ header a:hover{
 
 /*prents_div_10_End*/
 
+.our_story_heading{
+    font-size: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color:#2c201d;
+    font-weight:540;
+    letter-spacing: 1px;
+
+}
+.our_story_paragraph{
+  text-align: center;
+  width: 70%;
+  font-size: 17px;
+  padding: 16px 0px;
+  line-height: 24px;
+  color: #807f7f;
+  word-spacing: 4px;
+  font-weight:bold;
+  margin: auto;
+}
+.our_story{
+    margin: 90px 0px;
+}
