@@ -742,11 +742,12 @@ header a:hover{
     
 }
 .parentschilde_2{
-    padding: 85px 0px;
+    padding: 150px 0px;
 }
 .parentschilde_img{
     width: 700px;
     height: 500px;
+    /* border: 1px solid black; */
 }
 .parentschilde_text{
     font-size: 24px;
@@ -773,20 +774,27 @@ header a:hover{
 }
 .parentschilde_text_3{
     text-align: center;
-    font-size: 23px;
-    padding: 17px 0px;
+    font-size: 24px;
+    padding: 18px 0px;
     font-weight: bold;
       color: #393838;
 }
 .parentschilde_text_4{
     margin: 10px 0px;
     width: 380px;
-    font-size: 16px;
+    font-size: 17px;
     background-color:#dfaa40;
     letter-spacing: 1px;
     height:49px;
     text-align: center;
-    padding: 13px 0px;
+    padding: 14px 0px;
     border:1px solid #dfaa40;
     color: #fff
 }
+.parentschilde_text_4:hover{
+    background-color: #000;
+    border: transparent;
+    padding: 9px 0px;
+    transition: all ease-in-out 0.2s;
+}
+
