@@ -95,7 +95,7 @@
 .prents_main_div_1{
     margin: 40px 0px;
 }
-.F_Chand_img{
+.F_Chand_img , .Heritage_img{
     width: 480px;
     height: 380;
 }
@@ -109,9 +109,16 @@
     width: 60%;
 }
 .F_Chand_head{
-    font-size: 36px;
+      font-size: 36px;
+     text-align: start;
      font-family:"Minion Pro";
 }
+ .Heritage_head{
+     font-size: 36px;
+     text-align: start;
+     font-family:"Minion Pro";
+     margin-bottom: 15px;
+ }
 .F_Chand_text{
     font-size: 16px;
     width: 480px;
@@ -142,4 +149,21 @@
 span{
     padding: 15px 0px !important;
     /* border: 1px solid black; */
+}
+.prents_main_div_4{
+     display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 120px;
+    margin: auto;
+    width: 60%;
+}
+.Heritage_text{
+     font-size: 16px;
+    width: 500px;
+    padding: 12px 0px;
+    margin: auto;
+    color: #616666;
+    word-spacing: 5px;
+    line-height: 22px;
 }
