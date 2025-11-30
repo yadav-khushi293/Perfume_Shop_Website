@@ -86,8 +86,60 @@
 .Ouerstroy_text_1{
     text-align: center;
     margin: auto;
+    font-size: 16px;
+    color: #616666;
+    word-spacing: 5px;
+    line-height: 22px;
     width: 70%;
 }
 .prents_main_div_1{
     margin: 40px 0px;
+}
+.F_Chand_img{
+    width: 480px;
+    height: 380;
+}
+.prents_main_div_2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0px;
+    gap: 90px;
+    width: 60%;
+}
+.F_Chand_head{
+    font-size: 36px;
+     font-family:"Minion Pro";
+}
+.F_Chand_text{
+    font-size: 16px;
+    width: 480px;
+    padding: 23px 0px;
+    margin: auto;
+    color: #616666;
+    word-spacing: 5px;
+    line-height: 22px;
+}
+.F_Chand_text_1{
+    font-size: 16px;
+    width: 520px;
+    padding: 20px 0px;
+    margin: auto;
+    color: #616666;
+    word-spacing: 5px;
+    line-height: 26px;
+}
+.prents_main_div_3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 40px 0px;
+    gap: 90px;
+    width: 60%;
+}
+span{
+    padding: 15px 0px !important;
+    /* border: 1px solid black; */
 }
