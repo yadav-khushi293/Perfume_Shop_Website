@@ -394,11 +394,11 @@ header a:hover{
 }
 .Bestsellers{
     text-align: center;
-    font-weight: 550;
+    font-weight: 500;
     word-spacing: 3px;
-    /* letter-spacing: 2px; */
-    font-size: 40px;
-    color: #262626;
+    font-size: 38px;
+     font-family:"Minion Pro";
+    color: #3d3d3d;
 }
 .products_div{
     display: flex;
@@ -527,6 +527,7 @@ header a:hover{
     text-align: center;
     color: #575656;
     margin: 35px 0px;
+     font-family:"Minion Pro";
     font-size: 35px;
     font-weight:500;
     letter-spacing: 2px;
@@ -805,6 +806,7 @@ header a:hover{
 .Our_text{
     font-size: 33px;
     color: #271d1a;
+     font-family:"Minion Pro";
     font-weight: bold;
 
 }
@@ -927,6 +929,7 @@ header a:hover{
     color:#2c201d;
     margin-bottom: 25px;
     font-weight:540;
+     font-family:"Minion Pro";
     letter-spacing: 1px;
 
 }
@@ -1077,5 +1080,6 @@ header a:hover{
    color: #c5c0c0;
    white-space: 2px;
     margin: 30px 0px;
+     font-family:"Minion Pro";
 }
 /* FOOTER END */
