@@ -798,3 +798,126 @@ header a:hover{
     transition: all ease-in-out 0.2s;
 }
 
+/* prents_div_10 */
+.prents_main_div10{
+    text-align: center;
+}
+.Our_text{
+    font-size: 33px;
+    color: #271d1a;
+    font-weight: bold;
+
+}
+.Our_text_1{
+    font-size: 16px;
+    font-weight:bold;
+    color: #403f3f;
+    padding: 6px 0px;
+}
+
+
+
+.child_1 {
+    border: 1px solid #edebeb;
+    background-color: #edebeb;
+    width: 490px;
+    min-height: 75px;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 100px;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+.img_1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.info_div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info_1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #5f5f5f;
+}
+
+.text_div {
+    font-size: 19px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+
+.parents_slider_div{
+    margin: 30px 0px;
+}
+/* Containers */
+.parents_main_slider_4, .parents_main_slider_5{
+    width: 80%;
+    height: 120px;
+    overflow: hidden;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+ .parents_main_slider_5 {
+    width: 80%;
+    height: 120px;
+    overflow: hidden;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Flex container for items */
+.parents_main_child4, .parents_main_child6 {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+}
+
+/* Prevent shrinking */
+.Hire-6, .Hire-7 {
+    flex-shrink: 0;
+}
+
+/* LEFT → RIGHT Slider */
+@keyframes slideLeftToRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+.parents_main_child4 {
+    animation: slideLeftToRight 18s linear infinite;
+}
+.parents_main_slider_4:hover .parents_main_child4 {
+    animation-play-state: paused;
+}
+
+/* RIGHT → LEFT Slider */
+@keyframes slideRightToLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.parents_main_child6 {
+    animation: slideRightToLeft 18s linear infinite;
+}
+.parents_main_slider_5:hover .parents_main_child6 {
+    animation-play-state: paused;
+}
+
+
+
+/*prents_div_10_End*/
+
