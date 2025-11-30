@@ -925,6 +925,7 @@ header a:hover{
     text-transform: uppercase;
     text-decoration: underline;
     color:#2c201d;
+    margin-bottom: 25px;
     font-weight:540;
     letter-spacing: 1px;
 
@@ -947,11 +948,11 @@ header a:hover{
 /*  */
 /* ===== Slider Container ===== */
 .Ouer_stroy_slider{
-    width: 60%;
+    width: 65%;
     height: 670px;
     position: relative;
     overflow: hidden;
-    margin: 30px auto !important;
+    margin: 20px auto !important;
 }
 
 /* ===== Slide Styles ===== */
@@ -984,5 +985,12 @@ header a:hover{
 /* ===== Hover: Pause Animation ===== */
 .Ouer_stroy_slider:hover .ouer_slide_child{
     animation-play-state: paused;
+}
+.our_story_bottumtext{
+    text-align: center;
+    font-size: 38px;
+    margin: 50px 0px;
+    letter-spacing: 2px;
+    color: #393939;
 }
 
