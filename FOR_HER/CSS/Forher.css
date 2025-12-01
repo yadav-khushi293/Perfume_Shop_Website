@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.maindiv{
+    display: flex;
+    /* justify-content: sp; */
+    padding: 0px 0px;
+    gap: 60px;
+
+}
+
+ .main {
+  position: relative;
+  width: 560px; /* change as needed */
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid  #eac004; 
+  border-radius:5px;
+  height: 600px;
+  transition: opacity 0.5s ease-in-out;
+
+}
+.thumb-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between arrows & thumbnails */
+  margin-top: 10px;
+}
+
+.thumb-wrapper .arrow {
+  font-size: 1.3rem;
+  color: #eac004;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: static; /* remove absolute */
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.slider-image {
+  width: 560px;
+  height: 600px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumb-image {
+  width: 80px;
+  
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+   border: 2px solid #eac004; 
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.thumb-image:hover {
+  opacity: 1;
+}
