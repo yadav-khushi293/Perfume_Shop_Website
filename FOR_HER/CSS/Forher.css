@@ -171,7 +171,7 @@ span{
   color: #7f8988;
 }
 .p1{
-  font-size: 17px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
    color: #7f8988;
@@ -179,7 +179,7 @@ span{
 }
 .p2{
    color: #7f8988;
-   margin:8px 0px;
+   margin:9px 0px;
    font-size: 16px;
 }
 .p3{
@@ -219,6 +219,44 @@ span{
   border:2px solid #e0ab41;
   font-weight: bold;
   height: 50px;
+}.offer{
+ width: 450px;
+height: 120px;
+border-radius: 7px;
+padding: 0px 30px;
+border: 1px solid #c6ffba;
+background-color: #c6ffba;
+margin: 30px 0px;
+}
+.off_img{
+  width: 20px;
+  height:20px;
+}
+.offf_1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 0px;
+  font-size: 14px;
+  border: 1px solid #e7fee1;
+  background-color: #e7fee1;
+  height: 36px;
+  color: #605f5f;
+  margin: 14px 0px;
+  width: 380px;
+
+}
+.offf_2{
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 0px;
+  font-size: 14px;
+  color: #605f5f;
+ border: 1px solid #e7fee1;
+  background-color: #e7fee1;
+  height: 36px;
+  width: 380px;
 }
 .p6{
   font-size: 22px;
@@ -228,7 +266,7 @@ span{
   word-spacing: 1px;
 }
 .Song_Serenity_child_3{
-  margin-top:70px;
+  margin-top:50px;
 }
 .Song_Serenity_child_4{
   display: flex;
