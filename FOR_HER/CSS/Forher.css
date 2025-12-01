@@ -304,3 +304,54 @@ margin: 30px 0px;
    color: #393b3a;
   line-height: 22px;
 }
+/* code _end */
+
+.Elegance_div{
+  height: 150px;
+  width: 310px;
+}
+.Elegance_text{
+  margin: 15px 0px;
+  word-spacing: 2px;
+    font-family: "Minion Pro";
+  text-align: center;
+  letter-spacing: 1px;
+ color: #111212;
+ line-height: 23px;
+  font-size: 19px;
+
+}
+
+.Elegance_text_1{
+  height: 90px;
+  width: 300px;
+   margin: 10px 0px;
+     font-family: "Minion Pro";
+   word-spacing: 2px;
+   line-height: 23px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 19px;
+   color: #111212;
+}
+.Elegance_div_1{
+  margin: 100px 0px;
+}
+.parents_div_2{
+  display:flex;
+  margin: 30px 0px;
+  justify-content:center;
+  gap: 120px;
+}
+.black_star{
+  margin: 0px 90px;
+}
+.Elegance_title{
+  text-align: center;
+    font-family: "Minion Pro";
+  font-size:19px;
+  word-spacing: 2px;
+  color: #515151;
+  letter-spacing: 1px;
+  
+}
