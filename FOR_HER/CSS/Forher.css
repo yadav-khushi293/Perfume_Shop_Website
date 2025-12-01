@@ -1,12 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  cursor: pointer;
 }
+.headre{
+    text-align: center;
+    font-size: 14px;
+    background-color: #bf1522;
+    color:#fff;
+    padding: 10px 0px;
+    word-spacing: 4px;
+    height: 35px;
+
+}
+.memu_img{
+  width: 35px;
+  height: 35px;
+}
+.user_login{
+    width:30px;
+    height: 32px;
+}
+.Add_card{
+    width: 40px;
+    height:40px;
+}
+.serch_img{
+    width: 29px;
+    height: 29px;
+}
+.header_child_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header_1{
+    display: flex;
+    font-weight:bold;
+    font-size: 17px;
+    color: #454545;
+    gap: 50px;
+}
+.parenst{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 40px;
+    /* margin-bottom:20px; */
+    height: 80px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.neesh_logo{
+   
+    padding: 20px 0px;
+    padding-right: 180px;
+}
+/* Navbar_End_code */
+
+
+/* <!--prents_main_div --> */
 
 .maindiv{
     display: flex;
@@ -78,4 +140,130 @@
 
 .thumb-image:hover {
   opacity: 1;
+}
+
+/* code_end */
+
+/* 2nd_div */
+.cp_img{
+  width: 80px;
+  height: 80px;
+}
+.prents_main_div{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  gap: 80px;
+  margin: auto;
+  width: 80%;
+}
+.Song_Serenity_child_1{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap: 90px;
+  margin-bottom:40px;
+
+}
+span{
+  font-size: 22px;
+  /* font-weight: bold; */
+  color: #7f8988;
+}
+.p1{
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+   color: #7f8988;
+
+}
+.p2{
+   color: #7f8988;
+   margin:8px 0px;
+   font-size: 16px;
+}
+.p3{
+  font-size: 22px;
+   color: #7f8988;
+   letter-spacing: 1px;
+}
+.p4{
+  border: 1px solid red;
+  color: red;
+  width:60px;
+  text-align: center;
+  padding: 5px 0px;
+  margin: 15px 35px;
+  height: 30px;
+}
+.p5{
+   color: #7f8988;
+   font-size: 14px;
+   word-spacing: 2px;
+}
+.Song_Serenity_head{
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 20px 0px;
+  font-family: "Minion Pro";
+  letter-spacing: 2px;
+}
+.btn_1{
+  width: 450px;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  font-size: 15px;
+  background-color: #e0ab41;
+  color: #fff;
+  border:2px solid #e0ab41;
+  font-weight: bold;
+  height: 50px;
+}
+.p6{
+  font-size: 22px;
+  color: #393b3a;
+  text-transform: uppercase;
+  font-family:"Minion Pro";
+  word-spacing: 1px;
+}
+.Song_Serenity_child_3{
+  margin-top:70px;
+}
+.Song_Serenity_child_4{
+  display: flex;
+  margin: 30px 0px;
+  justify-content:start;
+  gap: 30px;
+  font-size: 15px;
+  line-height:26px;
+    color: #393b3a;
+
+}
+.Song_Serenity_child_5{
+  border: 1px solid black;
+  height: 186px;
+  width: 450px;
+
+}
+.p7{
+  width: 360px;
+}
+.p8{
+  border: 1px solid black;
+  height: 46px;
+  font-weight: bold;
+  font-size:25px;
+  padding: 6px 0px;
+  letter-spacing: 2px ;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.p9{
+  text-align: center;
+  margin: 20px 10px;
+  font-size: 16px;
+   color: #393b3a;
+  line-height: 22px;
 }
