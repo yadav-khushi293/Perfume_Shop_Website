@@ -70,23 +70,16 @@
 
 /* <!--prents_main_div --> */
 
-.maindiv{
-    display: flex;
-    /* justify-content: sp; */
-    padding: 0px 0px;
-    gap: 60px;
-
-}
 
  .main {
   position: relative;
-  width: 560px; /* change as needed */
+  width: 580px; /* change as needed */
   overflow: hidden;
   margin: 20px auto;
-  border: 1px solid  #eac004; 
+  border: 1px solid  #ecd25f; 
   border-radius:5px;
-  height: 600px;
-  transition: opacity 0.5s ease-in-out;
+  height: 610px;
+  transition: opacity 0.1s ease-in-out;
 
 }
 .thumb-wrapper {
@@ -98,7 +91,7 @@
 }
 
 .thumb-wrapper .arrow {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #eac004;
   cursor: pointer;
   user-select: none;
@@ -115,8 +108,8 @@
 }
 
 .slider-image {
-  width: 560px;
-  height: 600px;
+  width: 580px;
+  height: 610px;
   flex-shrink: 0;
   user-select: none;
 }
@@ -128,18 +121,17 @@
 }
 
 .thumb-image {
-  width: 80px;
-  
-  height: 80px;
+  width: 85px;
+  height: 85px;
   object-fit: cover;
   cursor: pointer;
-   border: 2px solid #eac004; 
+   border: 3px solid #eac004; 
   transition: 0.3s;
   border-radius: 5px;
 }
 
 .thumb-image:hover {
-  opacity: 1;
+  opacity:0.5;
 }
 
 /* code_end */
@@ -153,7 +145,7 @@
   display: flex;
   justify-content: center;
   padding: 60px 0px;
-  gap: 80px;
+  gap: 70px;
   margin: auto;
   width: 80%;
 }
@@ -218,8 +210,15 @@ span{
   color: #fff;
   border:2px solid #e0ab41;
   font-weight: bold;
-  height: 50px;
-}.offer{
+  height: 55px;
+}
+
+.btn_1:hover{
+  background-color: black;
+  transition: all ease-in-out 0.5s;
+}
+
+.offer{
  width: 450px;
 height: 120px;
 border-radius: 7px;
