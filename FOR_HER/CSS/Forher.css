@@ -335,12 +335,13 @@ margin: 30px 0px;
    color: #111212;
 }
 .Elegance_div_1{
-  margin: 100px 0px;
+  margin-top: 100px;
 }
 .parents_div_2{
   display:flex;
-  margin: 30px 0px;
+  margin:30px 0px;
   justify-content:center;
+ 
   gap: 120px;
 }
 .black_star{
@@ -354,4 +355,31 @@ margin: 30px 0px;
   color: #515151;
   letter-spacing: 1px;
   
+}
+/* .prents_6_video{
+  border: 1px solid black;
+} */
+.parrnts_div3rd{
+  display: grid;
+  justify-content: center;
+}
+.parents_3rdchild{
+  text-align: center;
+    font-family: "Minion Pro";
+  font-size: 25px;
+  word-spacing: 6px;
+ 
+}
+.essence_1{
+  margin-bottom: 7px;
+}
+.Song_Serenity{
+  width: 75%;
+  margin: auto;
+  padding-top: 30px;
+}
+.Song_Serenity_div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
