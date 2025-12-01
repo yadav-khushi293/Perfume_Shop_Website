@@ -967,14 +967,14 @@ header a:hover{
     background-position: center;
     /* opacity: 0; */
     transform: translateZ(0); /* GPU acceleration */
-    animation: fade 16s infinite ease-in-out;
+   animation: fade 9s infinite ease-in-out;
 }
 
 /* ===== Staggered Delay for Each Slide ===== */
-.ouer_slide_child:nth-child(1){ animation-delay: 0s; z-index: 4; }
-.ouer_slide_child:nth-child(2){ animation-delay: 4s; z-index: 3; }
-.ouer_slide_child:nth-child(3){ animation-delay: 8s; z-index: 2; }
-.ouer_slide_child:nth-child(4){ animation-delay: 12s; z-index: 1; }
+.ouer_slide_child:nth-child(1){ animation-delay: 0s; }
+.ouer_slide_child:nth-child(2){ animation-delay: 2.25s; }
+.ouer_slide_child:nth-child(3){ animation-delay: 4.5s; }
+.ouer_slide_child:nth-child(4){ animation-delay: 6.75s; }
 
 /* ===== Keyframes for Smooth Fade ===== */
 @keyframes fade{
@@ -997,6 +997,8 @@ header a:hover{
     color: #393939;
 }
 
+/* FOOTer */
+
 .footer_img_logo{
     width: 220px;
     height: 200px;
@@ -1006,6 +1008,7 @@ header a:hover{
     justify-content:center;
     gap: 180px;
 }
+
 .footer{
     height: 350px;
     background-color: #393939;
