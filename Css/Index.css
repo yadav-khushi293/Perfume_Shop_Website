@@ -997,28 +997,27 @@ header a:hover{
     color: #393939;
 }
 
-/* FOOTER */
-
 .footer_img_logo{
     width: 220px;
     height: 200px;
 }
 .footer_main1{
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
+    gap: 180px;
 }
 .footer{
     height: 350px;
     background-color: #393939;
     color: #fff;
-      padding: 50px 30px;
+      padding: 50px 60px;
    
 }
 .Touch_text{
     font-weight:550;
     font-size: 16px;
-    padding: 5px 0px;
-    letter-spacing: 0.1px;
+    padding: 6px 0px;
+    letter-spacing: 0.2px;
     white-space: 2px;
       color: #9c9b9b;
 }

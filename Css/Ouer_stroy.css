@@ -76,7 +76,7 @@
 }
 .Ouerstroy_text{
     text-align: center;
-    padding: 15px 0px;
+    padding: 16px 0px;
     font-weight: bold;
     word-spacing: 2px;
     color: #4e4f50;
@@ -84,16 +84,16 @@
    
 }
 .Ouerstroy_text_1{
-    text-align: center;
+    text-align:center;
     margin: auto;
     font-size: 16px;
     color: #616666;
     word-spacing: 5px;
-    line-height: 22px;
+    line-height: 24px;
     width: 70%;
 }
 .prents_main_div_1{
-    margin: 40px 0px;
+    margin: 70px 0px;
 }
 .F_Chand_img , .Heritage_img{
     width: 480px;
@@ -113,7 +113,7 @@
      text-align: start;
      font-family:"Minion Pro";
 }
- .Heritage_head{
+ .Heritage_head,.famed_head{
      font-size: 36px;
      text-align: start;
      font-family:"Minion Pro";
@@ -123,18 +123,30 @@
     font-size: 16px;
     width: 480px;
     padding: 23px 0px;
+     text-align: start;
     margin: auto;
     color: #616666;
     word-spacing: 5px;
-    line-height: 22px;
+    line-height: 25px;
 }
 .F_Chand_text_1{
     font-size: 16px;
     width: 520px;
     padding: 20px 0px;
+     text-align: start;
     margin: auto;
     color: #616666;
     word-spacing: 5px;
+    line-height: 26px;
+}
+.famed_text_1{
+    font-size: 16px;
+    width: 520px;
+    padding: 10px 0px;
+    margin: auto;
+    color: #616666;
+    word-spacing: 5px;
+    text-align: start;
     line-height: 26px;
 }
 .prents_main_div_3{
@@ -161,9 +173,121 @@ span{
 .Heritage_text{
      font-size: 16px;
     width: 500px;
+     text-align: start;
     padding: 12px 0px;
     margin: auto;
     color: #616666;
     word-spacing: 5px;
     line-height: 22px;
 }
+.prents_main_div_5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+    /* border: 1px solid black; */
+    gap: 90px;
+    width: 80%;
+}
+.prents_6_video{
+    border: 5px solid #616666;;
+    border-top:none;
+    border-left:none ;
+}
+.Prents_childdiv_6{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 80px;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+/* FOOTER */
+
+.footer_img_logo{
+    width: 220px;
+    height: 200px;
+}
+.footer_main1{
+    display: flex;
+    justify-content:center;
+    gap: 180px;
+}
+.footer{
+    height: 350px;
+    background-color: #393939;
+    color: #fff;
+      padding: 50px 60px;
+   
+}
+.Touch_text{
+    font-weight:550;
+    font-size: 16px;
+    padding: 6px 0px;
+    letter-spacing: 0.2px;
+    white-space: 2px;
+      color: #9c9b9b;
+}
+.Touch_text_1 ,.Policies_text_1,.Subscribe_text{
+    color:#fff;
+     font-weight:550;
+    font-size: 16px;
+    padding: 5px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    
+}
+.Policies_text{
+     font-weight:550;
+    font-size: 16px;
+    padding: 9px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.Subscribe_text_2{
+     font-weight:550;
+    font-size: 16px;
+    padding: 12px 0px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.footerlogo_img{
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.information_input{
+ width:310px;
+ border: 1px solid #fff ;
+ padding: 14px 10px;
+ color: #fff !important;
+ background-color:#4e4c3f;
+ font-size: 18px;
+ height: 48px;
+ margin: 10px 0px;
+}
+.Subscribe_button{
+    margin: 10px 0px;
+    width: 150px;
+    border: transparent;
+    background-color: #d8a84e;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 50px;
+}
+.COPYRIGHT_text{
+    text-align: center;
+   color: #c5c0c0;
+   white-space: 2px;
+    margin: 30px 0px;
+     font-family:"Minion Pro";
+}
+/* FOOTER END */
