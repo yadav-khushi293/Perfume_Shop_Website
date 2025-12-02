@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  cursor: pointer;
+}
+.headre{
+    text-align: center;
+    font-size: 14px;
+    background-color: #bf1522;
+    color:#fff;
+    padding: 10px 0px;
+    word-spacing: 4px;
+    height: 35px;
+
+}
+.memu_img{
+  width: 35px;
+  height: 35px;
+}
+.user_login{
+    width:30px;
+    height: 32px;
+}
+.Add_card{
+    width: 40px;
+    height:40px;
+}
+.serch_img{
+    width: 29px;
+    height: 29px;
+}
+.header_child_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header_1{
+    display: flex;
+    font-weight:bold;
+    font-size: 17px;
+    color: #454545;
+    gap: 50px;
+}
+.parenst{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 40px;
+    /* margin-bottom:20px; */
+    height: 80px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.neesh_logo{
+   
+    padding: 20px 0px;
+    padding-right: 180px;
+}
+
+/* nav_end */
+
+
+.slider{
+  overflow: hidden;
+
+}
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+.slider figure img{
+  float: left;
+
+  width: 20%;
+}
+
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+ 95%{
+  left: -300%;
+ }
+ 100%{
+  left: -400%;
+ }
+}
+
+/* SLIDER_END_CODE */
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  font-family:"Minion Pro";
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0px;
+
+}
+.Femme_text_div{
+  text-align: center;
+  margin: auto;
+  font-size: 17px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "sans-serif";
+  color: #858484;
+  width: 80%;
+}
+.Femme_text{
+  line-height:30px;
+  padding-bottom:20px;
+}
+.Femme_text_1{
+    line-height:30px;
+}
