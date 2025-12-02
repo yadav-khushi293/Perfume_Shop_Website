@@ -133,7 +133,9 @@
 .thumb-image:hover {
   opacity:0.5;
 }
-
+a{
+  text-decoration: none;
+}
 /* code_end */
 
 /* 2nd_div */

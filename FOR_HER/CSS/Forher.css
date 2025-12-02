@@ -800,6 +800,9 @@ h2{
   transition-delay: 0s;
 }
 
+a{
+  text-decoration: none;
+}
 .content{
   color: #fff;
   text-align: center;
