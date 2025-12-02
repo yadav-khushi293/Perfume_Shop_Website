@@ -9,7 +9,7 @@
 const appenddata = (data) => {
     const datashow = document.getElementById('simple_product');
 
-    let el = data[3]; 
+    let el = data[5]; 
 
     let maindiv = document.createElement('div');
     let imgdiv = document.createElement('div');
@@ -18,7 +18,7 @@ const appenddata = (data) => {
     imgmain_div.classList = "imgmain_div";
 
     // Thumbnail slider
-    const API_URL = `https://khushi-uedn.onrender.com/Her2`;
+    const API_URL = `https://khushi-uedn.onrender.com/Her4`;
 
     const pagi = document.createElement("div");
     const mainDiv = document.createElement("div");

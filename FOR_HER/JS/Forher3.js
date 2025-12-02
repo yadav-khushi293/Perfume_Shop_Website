@@ -9,7 +9,7 @@
 const appenddata = (data) => {
     const datashow = document.getElementById('simple_product');
 
-    // let el = data[3]; 
+    let el = data[4]; 
 
     let maindiv = document.createElement('div');
     let imgdiv = document.createElement('div');
