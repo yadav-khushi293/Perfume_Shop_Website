@@ -157,11 +157,35 @@ h1{
   gap: 0px;
 
 }
-.img_div{
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers all child elements horizontally */
+    padding: 15px;
+    margin: 10px;
+}
+
+.img_card {
   width: 400px;
   height: 400px;
-  border: 2px solid #f2b448;
-  border-radius:5px;
+  border-radius:4px;
+  overflow: hidden;
+   border: 1px solid rgb(221, 160, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_card .img_div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.img_card:hover .img_div {
+  transform: scale(1.2);
 }
 
 #pagination {
@@ -173,7 +197,10 @@ h1{
 }
 
 #pagination button {
-    padding: 8px 20px;
+    padding: 10px 23px;
+    border-radius: 5px;
+    background-color:black;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
@@ -209,3 +236,25 @@ h1{
   color:#1e1d1d;
   text-align: center;  /* add this */
 }
+.card-btn {
+     
+    width:360px;
+    height: 52px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #dfaa40;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+     border: 1px solid rgb(218, 150, 15);
+    border-radius:2px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color:black;
+    border: transparent;
+    transition: all ease-in-out 0.5s;
+} 
