@@ -400,3 +400,209 @@ h1{
   margin: 19px 0px;
   height: 48px;
 }
+
+/*2nd code */
+
+.cardhover_1{
+ width: 550px;
+ height: 350px;
+ background-color: #000;
+ position: relative;
+ overflow: hidden;
+
+}
+.cardhover_1 span{
+  height: 100%;
+  left: 0;
+  background: url(../Utiles/BCollection_D_1_1700x.webp);
+  position: absolute;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  transition: 1s;
+}
+
+.cardhover_1 span:nth-child(1){
+  z-index: 10;
+  width: 25%;
+  transition-delay:0;
+
+}
+.cardhover_1 span:nth-child(2){
+  z-index: 9;
+  width: 50%;
+  transition-delay:0.3s;
+  
+}
+.cardhover_1 span:nth-child(3){
+  z-index: 8;
+  width: 75%;
+  transition-delay:0.6s;
+  
+}
+.cardhover_1 span:nth-child(4){
+  z-index: 7;
+  width: 100%;
+  transition-delay:0.8s;
+
+  
+}
+.cardhover_1:hover span{
+  transform:translateY(-100%);
+  transition: 1s;
+}
+
+.cardhover_1:hover span:nth-child(1){
+  transition-delay: 0.8s;
+}
+.cardhover_1:hover span:nth-child(2){
+  transition-delay: 0.6s;
+}
+.cardhover_1:hover span:nth-child(3){
+  transition-delay: 0.3s;
+}
+.cardhover_1:hover span:nth-child(4){
+  transition-delay: 0s;
+}
+
+.content_1{
+  color: #fff;
+  text-align: center;
+  padding:0px 20px;
+  margin:40px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: 2s;
+}
+.content_1 .paragraph{
+  color: #999;
+  margin: 20px 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+}
+.content_1 .btn2{
+  width: 140px;
+  height: 40px;
+  text-decoration:none ;
+  border: 1px solid #fff;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+  color:black;
+}
+
+.cardhover_1:hover .content_1{
+  transform: translateY(0%);
+}
+
+.head{
+  letter-spacing: 1px;
+  margin: 18px 0px;
+}
+
+/* 3rd code */
+
+.cardhover_2{
+ width: 550px;
+ height: 350px;
+ background-color: #000;
+ position: relative;
+ overflow: hidden;
+
+}
+.cardhover_2 span{
+  height: 100%;
+  left: 0;
+  background: url(../Utiles/bg_3.webp);
+  position: absolute;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  transition: 1s;
+}
+
+.cardhover_2 span:nth-child(1){
+  z-index: 10;
+  width: 25%;
+  transition-delay:0;
+
+}
+.cardhover_2 span:nth-child(2){
+  z-index: 9;
+  width: 50%;
+  transition-delay:0.3s;
+  
+}
+.cardhover_2 span:nth-child(3){
+  z-index: 8;
+  width: 75%;
+  transition-delay:0.6s;
+  
+}
+.cardhover_2 span:nth-child(4){
+  z-index: 7;
+  width: 100%;
+  transition-delay:0.8s;
+
+  
+}
+.cardhover_2:hover span{
+  transform:translateY(-100%);
+  transition: 1s;
+}
+
+.cardhover_2:hover span:nth-child(1){
+  transition-delay: 0.8s;
+}
+.cardhover_2:hover span:nth-child(2){
+  transition-delay: 0.6s;
+}
+.cardhover_2:hover span:nth-child(3){
+  transition-delay: 0.3s;
+}
+.cardhover_2:hover span:nth-child(4){
+  transition-delay: 0s;
+}
+
+.content_2{
+  color: #fff;
+  text-align: center;
+  padding:0px 20px;
+  margin:40px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: 2s;
+}
+.content_2 .paragraph{
+  color: #999;
+  margin: 20px 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+}
+.content_2 .btn2{
+  width: 140px;
+  height: 40px;
+  text-decoration:none ;
+  border: 1px solid #fff;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+  color:black;
+}
+
+.cardhover_2:hover .content_2{
+  transform: translateY(0%);
+}
+
+.head{
+  letter-spacing: 1px;
+  margin: 18px 0px;
+}
