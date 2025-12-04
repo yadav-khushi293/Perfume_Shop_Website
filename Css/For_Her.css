@@ -258,3 +258,145 @@ h1{
     border: transparent;
     transition: all ease-in-out 0.5s;
 } 
+/* Code end */
+
+
+.cardhover{
+ width: 550px;
+ height: 350px;
+ background-color: #000;
+ position: relative;
+ overflow: hidden;
+
+}
+.cardhover span{
+  height: 100%;
+  left: 0;
+  background: url(../Utiles/bg_2.webp);
+  position: absolute;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  transition: 1s;
+}
+
+.cardhover span:nth-child(1){
+  z-index: 10;
+  width: 25%;
+  transition-delay:0;
+
+}
+.cardhover span:nth-child(2){
+  z-index: 9;
+  width: 50%;
+  transition-delay:0.3s;
+  
+}
+.cardhover span:nth-child(3){
+  z-index: 8;
+  width: 75%;
+  transition-delay:0.6s;
+  
+}
+.cardhover span:nth-child(4){
+  z-index: 7;
+  width: 100%;
+  transition-delay:0.8s;
+
+  
+}
+.cardhover:hover span{
+  transform:translateY(-100%);
+  transition: 1s;
+}
+
+.cardhover:hover span:nth-child(1){
+  transition-delay: 0.8s;
+}
+.cardhover:hover span:nth-child(2){
+  transition-delay: 0.6s;
+}
+.cardhover:hover span:nth-child(3){
+  transition-delay: 0.3s;
+}
+.cardhover:hover span:nth-child(4){
+  transition-delay: 0s;
+}
+
+.content{
+  color: #fff;
+  text-align: center;
+  padding:0px 20px;
+  margin:40px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: 2s;
+}
+.content .paragraph{
+  color: #999;
+  margin: 20px 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+}
+.content .btn2{
+  width: 140px;
+  height: 40px;
+  text-decoration:none ;
+  border: 1px solid #fff;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+  color:black;
+}
+
+.cardhover:hover .content{
+  transform: translateY(0%);
+}
+
+.head{
+  letter-spacing: 1px;
+  margin: 18px 0px;
+}
+.Luxe_Collection{
+  display: flex;
+  justify-content:center;
+  margin: 90px 0px;
+  /* align-items: center; */
+  gap:100px;
+}
+.Luxe_Collection_text{
+  width: 600px;
+  margin: auto;
+}
+.Luxe_Collection_head{
+  font-weight: bold;
+  color: #b19880;
+  padding: 14px 0px;
+  font-size: 35px;
+  text-transform:uppercase;
+  font-family:"Minion Pro";
+
+}
+.Luxe_Collection_text{
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+   font-family:"Minion Pro";
+  word-spacing: 2px;
+  color:#61605f;
+}
+.btn_4{
+  width: 140px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  font-size: 16px;
+  padding: 5px 0px;
+  margin: 19px 0px;
+  height: 48px;
+}

@@ -42,18 +42,27 @@ const appendsFunc = (data) => {
         let title=document.createElement('p');
         let discription= document.createElement('p');
         let price=document.createElement('p');
+        let Button = document.createElement('button');
+        let img_card = document.createElement('div');
 
+
+        img_card.classList = "img_card"; 
         Parent_div.classList = "card";
         img.classList = "img_div";
         title.classList="title";
         discription.classList="discription";
         price.classList="price";
+        Button.classList = "card-btn";
+
+
         img.src = el.img;
         title.innerHTML = el.title;
         discription.innerHTML = el.discription;
         price.innerHTML = el.price;
-
-        Parent_div.append(img,title,discription,price);
+         Button.innerText = "Shop now with free gift";
+         
+        img_card.append(img)
+        Parent_div.append(img_card,title,discription,price,Button);
         dataShow.append(Parent_div);
     });
 };
