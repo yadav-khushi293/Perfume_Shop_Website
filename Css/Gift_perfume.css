@@ -169,6 +169,7 @@
   margin: 0 10px;
   border: none;
   background:black;
+   border: 3px solid rgb(221, 160, 39);
   color: white;
   font-size: 18px;
   border-radius: 5px;
@@ -183,7 +184,7 @@
 
 .paginationBox span {
   padding: 11px 12px;
-  border: 1px solid black;
+ border: 3px solid rgb(221, 160, 39);
   border-radius: 5px;
   background: white;
   color: black;
