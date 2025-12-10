@@ -636,3 +636,55 @@ h2{
     font-size: 18px;
 }
 /* END */
+/* button_code */
+/* From Uiverse.io by vinodjangid07 */ 
+/* From Uiverse.io by vikiWayne */ 
+.button {
+  padding:22px 35px;
+  border: none;
+  border-radius: 5px;
+  /* font-weight: bold; */
+  letter-spacing:2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color:#fff;
+  background-color: #000;
+  transition: all 1000ms;
+  font-size: 19px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid black;
+}
+
+button:hover {
+  color:black;
+  transform: scale(1.1);
+  outline: 2px solid black;
+  box-shadow: 4px 5px 17px -4px black;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  color:black !important;
+  background-color:#fff;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+
+.Btn_1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 30px 0px;
+}
