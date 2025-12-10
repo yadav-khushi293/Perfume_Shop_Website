@@ -8,7 +8,8 @@
 }
 
 .All_parents_bg{
-    background-color: #efefef;
+    background-color: #dfdbdb;
+    height:auto;
 }
 
 .headre{
@@ -640,10 +641,8 @@ h2{
 /* From Uiverse.io by vinodjangid07 */ 
 /* From Uiverse.io by vikiWayne */ 
 .button {
-  padding:22px 35px;
+  padding:19px 31px;
   border: none;
-  border-radius: 5px;
-  /* font-weight: bold; */
   letter-spacing:2px;
   text-transform: uppercase;
   cursor: pointer;
@@ -660,7 +659,6 @@ button:hover {
   color:black;
   transform: scale(1.1);
   outline: 2px solid black;
-  box-shadow: 4px 5px 17px -4px black;
 }
 
 button::before {
@@ -686,5 +684,52 @@ button:hover::before {
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 30px 0px;
+    margin: 40px 0px;
+}
+
+.Introducing_img{
+    margin: 80px 0px;
+    width: 100%;
+    height: 80vh;   /* YA jitni chahiye utni */
+    background: url(../../Utiles/Beige_Grey_Aesthetic_Minimalist_Promotional_Photo_Collage_Banner_2500_x_900_px.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    color: #fff;
+    text-align: center;
+    padding: 120px 0px;
+    font-family: Poppins sans-serif;
+}
+.Introducing_head{
+    font-size: 29px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+.Introducing_text{
+    padding:20px 0px;
+    word-spacing:2px;
+    font-size: 21px;
+    line-height:35px;
+}
+.btn4 {
+  width: 190px;
+  height: 59px;
+  font-size: 17px;
+  text-transform: uppercase;
+  background: transparent;     /* Background transparent */
+  border: 3px solid #fff;      /* (Optional) Border dikhe isliye */
+  color: #fff;   
+  overflow: hidden; 
+  margin:15px 0px;
+  position: relative;            
+}
+.New_Launch_head{
+  text-align: center;
+  font-size:25px;
+  font-weight: bold;
+  font-family: Poppins sans-serif;
+  word-spacing: 2px;
+  color: #252525;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
