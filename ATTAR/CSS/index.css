@@ -194,6 +194,8 @@
 .card{
  width: 300px;
  height: 300px;
+border-radius:3px;
+border: 1px solid #c2a5b6;
  background-color: #000;
  position: relative;
  overflow: hidden;
@@ -298,6 +300,8 @@ h2{
 .card_1{
  width: 300px;
  height: 300px;
+border-radius:3px;
+border: 1px solid #c2a5b6;
  background-color: #000;
  position: relative;
  overflow: hidden;
@@ -402,6 +406,8 @@ h2{
 .card_2{
  width: 300px;
  height: 300px;
+  border-radius:3px;
+    border: 1px solid #c2a5b6;
  background-color: #000;
  position: relative;
  overflow: hidden;
@@ -523,6 +529,8 @@ h4{
  width: 300px;
  height: 300px;
  background-color: #000;
+  border-radius:3px;
+  border: 1px solid #c2a5b6;
  position: relative;
  overflow: hidden;
 
@@ -728,8 +736,86 @@ button:hover::before {
   font-size:25px;
   font-weight: bold;
   font-family: Poppins sans-serif;
-  word-spacing: 2px;
+  word-spacing:3px;
   color: #252525;
-  letter-spacing: 1px;
+  letter-spacing:2px;
   text-transform: uppercase;
+}
+
+/*  */
+
+.slider{
+    width:310px;
+    height: 300px;
+    position: relative;
+    border-radius:3px;
+    border: 1px solid #c2a5b6;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 8s infinite;
+}
+
+.slide{
+    animation: fade 16s infinite; /* 4 images * 4s each */
+}
+.slide:nth-child(1){ animation-delay: 0s; }
+.slide:nth-child(2){ animation-delay: 4s; }
+.slide:nth-child(3){ animation-delay: 8s; }
+.slide:nth-child(4){ animation-delay: 12s; }
+
+@keyframes fade{
+    0% { opacity: 0; }
+    6.25% { opacity: 1; }
+    25% { opacity: 1; }
+    31.25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.parents_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    gap: 40px;
+    height: auto; 
+}
+.P{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-size: 15px;
+}
+.Sweet_Wood{
+    padding: 15px 0px;
+    color: #363636;
+}
+.Sweet_Wood_1{
+    color: #4a4a4a;
+    font-size: 18px;
+}
+/*  */
+
+.Explore_div{
+   margin: 50px 0px;
+    width: 100%;
+    height: 80vh;
+    background: url(../../Utiles/Untitled_design-44.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    
+    color: #fff;
+    text-align: center;
+    padding: 140px 0px; 
+    font-family: Poppins sans-serif;
 }
