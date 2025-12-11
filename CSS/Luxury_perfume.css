@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  cursor: pointer;
+}
+.headre{
+    text-align: center;
+    font-size: 14px;
+    background-color: #bf1522;
+    color:#fff;
+    padding: 10px 0px;
+    word-spacing: 4px;
+    height: 35px;
+
+}
+.memu_img{
+  width: 35px;
+  height: 35px;
+}
+.user_login{
+    width:30px;
+    height: 32px;
+}
+.Add_card{
+    width: 40px;
+    height:40px;
+}
+.serch_img{
+    width: 29px;
+    height: 29px;
+}
+.header_child_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header_1{
+    display: flex;
+    font-weight:bold;
+    font-size: 17px;
+    color: #454545;
+    gap: 50px;
+}
+.parenst{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 40px;
+    /* margin-bottom:20px; */
+    height: 80px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.neesh_logo{
+   
+    padding: 20px 0px;
+    padding-right: 180px;
+}
+/* nav_code_end */
+.Luxury_perfumes_img{
+    width: 100%;
+    height: 430px;
+}
+
+.heading{
+    text-align: center;
+     padding:40px 0px;
+     font-family:"Minion Pro";
+    text-transform: uppercase;
+    color: #242323;
+    word-spacing:6px;
+    font-size: 39px;
+    font-weight:normal;
+
+}
+/* CART_IMG CODE */
+
+ .imgContainer {
+      width:400px;
+      height:390px;
+      overflow: hidden;
+      border-radius:5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 1px solid rgb(221, 160, 39);
+      position: relative;
+    }
+    .slider {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .slider figure {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slider figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+    }
+    .dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.7);
+      cursor: pointer;
+    }
+    .dot.active {
+      background: rgba(255,255,255,1);
+    }
+    .card {
+      margin-bottom: 2em;
+    }
+
+   #info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 10px;
+  margin: auto;
+  width: 90%;
+  padding: 40px 0px;
+}
+.title_head{
+  text-align: center;
+  padding: 10px 0px;
+  margin: auto;
+  width: 80%;
+  font-size:23px;
+  font-family:"Minion Pro";
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+  color:#383737;
+}
+.price{
+  text-align: center;
+  
+}
+
+
+.paginationBox {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.paginationBox button {
+  padding: 13px 20px;
+  margin: 0 10px;
+  border: none;
+  background:black;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paginationBox button:disabled {
+  background: #aaaaaa;
+  cursor: not-allowed;
+}
+
+.paginationBox span {
+  padding: 11px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.btn_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.addBtn{
+    width:360px;
+    height: 52px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #dfaa40;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+     border: 1px solid rgb(218, 150, 15);
+    border-radius:2px;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color:black;
+    border: transparent;
+    transition: all ease-in-out 0.5s;
+}
+/* FOOTer */
+
+.footer_img_logo{
+    width: 220px;
+    height: 200px;
+}
+.footer_main1{
+    display: flex;
+    justify-content:center;
+    gap: 180px;
+}
+
+.footer{
+    height: 350px;
+    background-color: #393939;
+    color: #fff;
+      padding: 50px 60px;
+   
+}
+.Touch_text{
+    font-weight:550;
+    font-size: 16px;
+    padding: 6px 0px;
+    letter-spacing: 0.2px;
+    white-space: 2px;
+      color: #9c9b9b;
+}
+.Touch_text_1 ,.Policies_text_1,.Subscribe_text{
+    color:#fff;
+     font-weight:550;
+    font-size: 16px;
+    padding: 5px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    
+}
+.Policies_text{
+     font-weight:550;
+    font-size: 16px;
+    padding: 9px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.Subscribe_text_2{
+     font-weight:550;
+    font-size: 16px;
+    padding: 12px 0px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.footerlogo_img{
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.information_input{
+ width:310px;
+ border: 1px solid #fff ;
+ padding: 14px 10px;
+ color: #fff !important;
+ background-color:#4e4c3f;
+ font-size: 18px;
+ height: 48px;
+ margin: 10px 0px;
+}
+.Subscribe_button{
+    margin: 10px 0px;
+    width: 150px;
+    border: transparent;
+    background-color: #d3b57e;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 50px;
+}
+.COPYRIGHT_text{
+    text-align: center;
+   color: #c5c0c0;
+   white-space: 2px;
+    margin: 30px 0px;
+     font-family:"Minion Pro";
+} 
+/* FOOTER END */
