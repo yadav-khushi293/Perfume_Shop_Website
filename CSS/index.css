@@ -130,7 +130,7 @@ header a:hover{
 }
 .slider .list .item .content{
     position: absolute;
-    top: 13%;
+    top: 14%;
     width: 1140px;
     max-width: 80%;
     left: 42%;
@@ -164,12 +164,12 @@ header a:hover{
     font-weight: 500;
     cursor: pointer;
     transition: 0.4s;
-    letter-spacing: 2px;
+    letter-spacing:3px;
 }
 
 
 .slider .list .item .button button:hover{
-    letter-spacing: 3px;
+    letter-spacing:4px;
 }
 .slider .list .item .button button:nth-child(2){
     background-color: transparent;
@@ -527,11 +527,15 @@ width: 100%;
 
 .BLENDED_text{
 text-align: center;
-color: #575656;
-font-size: 28px;
+color: #2d2d2d;
+font-family: 
+"Minion Pro";
+font-weight: 500;
+font-size:35px;
+font-weight:500;
 letter-spacing: 2px;
 word-spacing: 3px;
-margin:30px 0px;
+margin:35px 0px;
 
 }
 .parents_div_4{
@@ -952,18 +956,82 @@ overflow: hidden;
     color: #3d3d3d;
 }
 
+
+/* prents_div_10 */
+.prents_main_div10{
+    text-align: center;
+}
+.Our_text{
+    font-size: 33px;
+    color: #271d1a;
+    font-weight: bold;
+
+}
+.Our_text_1{
+    font-size: 16px;
+    font-weight:bold;
+    color: #403f3f;
+    padding: 6px 0px;
+}
+
+
+
+.child_1 {
+    border: 1px solid #edebeb;
+    background-color: #edebeb;
+    width: 490px;
+    min-height: 75px;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 100px;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+.img_1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.info_div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info_1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #5f5f5f;
+}
+
+.text_div {
+    font-size: 19px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+
+.parents_slider_div{
+    margin: 30px 0px;
+}
 /* Containers */
-.parents_main_slider4, .parents_main_5 {
-    width: 90%;
+.parents_main_slider_4, .parents_main_slider_5{
+    width: 80%;
     height: 120px;
     overflow: hidden;
-    margin: 30px auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
 }
 
- .parents_main_5 {
-    width: 90%;
+ .parents_main_slider_5 {
+    width: 80%;
     height: 120px;
     overflow: hidden;
     margin: 0px auto;
@@ -992,7 +1060,7 @@ overflow: hidden;
 .parents_main_child4 {
     animation: slideLeftToRight 18s linear infinite;
 }
-.parents_main_4:hover .parents_main_child4 {
+.parents_main_slider_4:hover .parents_main_child4 {
     animation-play-state: paused;
 }
 
@@ -1004,10 +1072,13 @@ overflow: hidden;
 .parents_main_child6 {
     animation: slideRightToLeft 18s linear infinite;
 }
-.parents_main_5:hover .parents_main_child6 {
+.parents_main_slider_5:hover .parents_main_child6 {
     animation-play-state: paused;
 }
 
+
+
+/*prents_div_10_End*/
 
 
 /* FOOTer */
