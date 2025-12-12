@@ -122,10 +122,11 @@
       height: 15px;
       border-radius: 50%;
       background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(27, 26, 26, 0.7);
       cursor: pointer;
     }
     .dot.active {
-      background: rgba(255,255,255,1);
+      background:black;
     }
     .card {
       margin-bottom: 2em;
