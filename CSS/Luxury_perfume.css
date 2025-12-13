@@ -144,18 +144,19 @@
   text-align: center;
   padding: 10px 0px;
   margin: auto;
-  width: 80%;
-  font-size:23px;
+  width: 95%;
+  font-size:22px;
   font-family:"Minion Pro";
   text-transform: uppercase;
-  /* letter-spacing: 1px; */
-  color:#383737;
+  color:#262626;
 }
 .price{
   text-align: center;
-  
+   color:#0a0a0a;
+   font-weight: bold;
+   font-size:20px;
+   
 }
-
 
 .paginationBox {
   margin-bottom:50px;
