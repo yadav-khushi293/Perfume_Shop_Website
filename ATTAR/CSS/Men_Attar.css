@@ -309,3 +309,9 @@
      font-family:"Minion Pro";
 } 
 /* FOOTER END */
+.myVideo {
+      width:100%;
+    height: 650px;      /* jitni height chahiye utni do */
+    object-fit:cover; /* poora video dikhega, crop nahi hoga */
+    background:#aa90bf; /* video crop ho kar achha dikhayega */
+}
