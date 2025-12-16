@@ -127,52 +127,13 @@
 
 
   <!-- FOOTER -->
-    <div class="footer">
-
-      <div class="footer_main1">
-
-      <div class="footer_1">
-        <img src="https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000" class="footer_img_logo">
-      </div>
-
-      <div class="footer_2">
-        <p class="Touch_text_1">Get in Touch</p>
-        <p class="Touch_text">Our story</p>
-        <p class="Touch_text">Contact us</p>
-        <p class="Touch_text">Find Us Nearby</p>
-      </div>
-
-      <div class="footer_3">
-        <p class="Policies_text_1">Our Policies</p>
-        <p class="Policies_text">Shipping Policy</p>
-        <p class="Policies_text">Return Policy</p>
-        <p class="Policies_text">Privacy Policy</p>
-
-        <div class="footerlogo_img">
-          <img src="./Utiles/fecbook.webp" class="facebook">
-          <img src="./Utiles/insta.webp" class="insta">
-          <img src="./Utiles/Linkedin_Icon.webp" class="Linkedin_Icon">
-        </div>
-      </div>
-
-      <div class="footer_4">
-        <p class="Subscribe_text">Subscribe to our newsletter</p>
-        <p class="Subscribe_text_2">subscribe to get notified about product<br> launches, special offers and company news</p>
-
-        <div  class="information_input">Your Email</div>
-
-        <button class="Subscribe_button">Subscribe</button>
-      </div>
-
-      </div>
-        <p class="COPYRIGHT_text">COPYRIGHT © 2025, Neesh Perfumes Private Limited</p>
-    </div>
+    <footer></footer>
     <!-- FOOTER -->
 </body>
 <script src="./JS/For_Her.js"></script>
 
  <script type="module">
-    import { Navbar, Navbar_css } from "./JS/Impot_Export.js";
+    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
 
     // Navbar HTML
     document.querySelector("header").innerHTML = Navbar();
@@ -181,6 +142,12 @@
     let styleTag = document.createElement("style");
     styleTag.textContent = Navbar_css();
     document.head.append(styleTag);
+
+     document.querySelector("footer").innerHTML = Footer();
+     
+    let styleTagFooter = document.createElement("style");
+    styleTagFooter.textContent = Footer_css();
+    document.head.append(styleTagFooter);
 
 </script>
 </html>

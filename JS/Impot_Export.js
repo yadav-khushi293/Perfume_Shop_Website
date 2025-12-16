@@ -103,3 +103,138 @@ export const Navbar_css = () => {
 }
 `;
 };
+
+export const Footer=()=>{
+    return`
+    <div class="footer">
+
+      <div class="footer_main1">
+
+      <div class="footer_1">
+        <img src="https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000" class="footer_img_logo">
+      </div>
+
+      <div class="footer_2">
+        <p class="Touch_text_1">Get in Touch</p>
+        <p class="Touch_text">Our story</p>
+        <p class="Touch_text">Contact us</p>
+        <p class="Touch_text">Find Us Nearby</p>
+      </div>
+
+      <div class="footer_3">
+        <p class="Policies_text_1">Our Policies</p>
+        <p class="Policies_text">Shipping Policy</p>
+        <p class="Policies_text">Return Policy</p>
+        <p class="Policies_text">Privacy Policy</p>
+
+        <div class="footerlogo_img">
+          <img src="./Utiles/fecbook.webp" class="facebook">
+          <img src="./Utiles/insta.webp" class="insta">
+          <img src="./Utiles/Linkedin_Icon.webp" class="Linkedin_Icon">
+        </div>
+      </div>
+
+      <div class="footer_4">
+        <p class="Subscribe_text">Subscribe to our newsletter</p>
+        <p class="Subscribe_text_2">subscribe to get notified about product<br> launches, special offers and company news</p>
+
+        <div  class="information_input">Your Email</div>
+
+        <button class="Subscribe_button">Subscribe</button>
+      </div>
+
+      </div>
+        <p class="COPYRIGHT_text">COPYRIGHT © 2025, Neesh Perfumes Private Limited</p>
+    </div>`
+}
+export const Footer_css=()=>{
+
+    return`
+
+.footer_img_logo{
+    width: 220px;
+    height: 200px;
+}
+.footer_main1{
+    display: flex;
+    justify-content:center;
+    gap: 180px;
+}
+
+.footer{
+    height: 378px;
+    background-color: #393939;
+    color: #fff;
+      padding: 50px 60px;
+   
+}
+.Touch_text{
+    font-weight:550;
+    font-size: 16px;
+    padding: 6px 0px;
+    letter-spacing: 0.2px;
+    white-space: 2px;
+      color: #9c9b9b;
+}
+.Touch_text_1 ,.Policies_text_1,.Subscribe_text{
+    color:#fff;
+     font-weight:550;
+    font-size: 16px;
+    padding: 5px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    
+}
+.Policies_text{
+     font-weight:550;
+    font-size: 16px;
+    padding: 9px 0px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.Subscribe_text_2{
+     font-weight:550;
+    font-size: 16px;
+    padding: 12px 0px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    white-space: 2px;
+    color: #9c9b9b;
+}
+.footerlogo_img{
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.information_input{
+ width:310px;
+ border: 1px solid #fff ;
+ padding: 14px 10px;
+ color: #fff !important;
+ background-color:#4e4c3f;
+ font-size: 18px;
+ height: 48px;
+ margin: 10px 0px;
+}
+.Subscribe_button{
+    margin: 10px 0px;
+    width: 150px;
+    border: transparent;
+    background-color: #d8a84e;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 50px;
+}
+.COPYRIGHT_text{
+    text-align: center;
+   color: #c5c0c0;
+   white-space: 2px;
+    margin: 30px 0px;
+     font-family:"Minion Pro";
+}
+    `
+}
