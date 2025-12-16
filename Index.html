@@ -3,40 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PERFUME</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/index.css">
+ 
 </head>
 <body onload="ApiCall()">
-    <nav>
-        <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
-    </nav>
 
-    <div  class="parenst">
-         <div class="header_1">
-
-            <div class="header_child_1">
-                <img src="./Utiles/download (1).png" class="memu_img">
-                <p class="menu">Menu</p>
-            </div>
-
-            <div class="header_child_1">
-                <img src="./Utiles/download (2).png" class="serch_img">
-                <p class="se
-                
-                ch">Search</p>
-            </div>
-
-         </div>
-
-        <div class="header_2">
-            <img src="./Utiles/neesh_logo.webp" class="neesh_logo">
-        </div>
-
-        <div class="header_3">
-            <img src="./Utiles/download.jpeg" class="user_login">
-            <img src="./Utiles/shopping-bag.svg" class="Add_card">
-        </div>
-    </div>
+   <header></header>
 
     <!-- ANIMATION SLIDER -->
 
@@ -388,6 +362,7 @@ A scent that lifts your spirit and leaves a soft trail of elegance.”A cozy and
     </div>
  </a>
 
+ 
     <a href="./Kids_Perfumes.html">
     <div class="luxury_collectio">
 
@@ -428,11 +403,13 @@ A scent that lifts your spirit and leaves a soft trail of elegance.”A cozy and
     </a>
 
     <a href="./For_Her.html">
+      
     <div class="for_him">
         <img src="./Utiles/for_him.webp" class="for_him_img">
         <p class="for_him_text">For HER</p>
         <p class="DISCOVER">DISCOVER</p>
     </div>
+
     </a>
     
  </div>
@@ -852,5 +829,17 @@ Rich smelling fragrance making your winter very special. Sweet spicy smell makes
     <!-- FOOTER -->
 
 </body>
+<script type="module">
+    import { Navbar, Navbar_css } from "./JS/Impot_Export.js";
+
+  document.querySelector("header").innerHTML= Navbar();
+
+    // Inject Navbar CSS
+    const styleTag = document.createElement("style");
+    styleTag.textContent = Navbar_css();
+    document.head.append(styleTag);
+</script>
+
 <script src="./JS/index.js"></script>
+
 </html>

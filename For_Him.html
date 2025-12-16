@@ -7,34 +7,7 @@
     <link rel="stylesheet" href="./Css/For_Him.css">
 </head>
 <body onload="ApiCall()">
-    <nav>
-        <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
-    </nav>
-
-    <div  class="parenst">
-         <div class="header_1">
-
-            <div class="header_child_1">
-                <img src="./Utiles/download (1).png" class="memu_img">
-                <p class="menu">Menu</p>
-            </div>
-
-            <div class="header_child_1">
-                <img src="./Utiles/download (2).png" class="serch_img">
-                <p class="sech">Search</p>
-            </div>
-
-         </div>
-
-        <div class="header_2">
-            <img src="./Utiles/neesh_logo.webp" class="neesh_logo">
-        </div>
-
-        <div class="header_3">
-            <img src="./Utiles/download.jpeg" class="user_login">
-            <img src="./Utiles/shopping-bag.svg" class="Add_card">
-        </div>
-    </div>
+    <header></header>
     <!--NAV_BAR_END-->
 
 
@@ -198,4 +171,16 @@
     <!-- FOOTER -->
 </body>
 <script src="./JS/For_Him.js"></script>
+ <script type="module">
+    import { Navbar, Navbar_css } from "./JS/Impot_Export.js";
+
+    // Navbar HTML
+    document.querySelector("header").innerHTML = Navbar();
+
+    // Navbar CSS
+    let styleTag = document.createElement("style");
+    styleTag.textContent = Navbar_css();
+    document.head.append(styleTag);
+
+</script>
 </html>
