@@ -6,11 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Css/For_Her.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 </head>
 <body onload="ApiCall()">
     
      <header></header>
+
+      <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     <!--NAV_BAR_END-->
 
 
@@ -148,6 +154,26 @@
     let styleTagFooter = document.createElement("style");
     styleTagFooter.textContent = Footer_css();
     document.head.append(styleTagFooter);
+
+
+    //Scroll-Arrow-code
+const toTop = document.querySelector(".to-top");
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
+
+    setTimeout(() => {
+        setActiveNav();
+    }, 100);
+});
 
 </script>
 </html>

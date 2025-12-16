@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Css/Kids_Perfume.css">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body  onload="Apicall()">
    <header></header>
+    <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
 
 <!-- code_nav_end -->
  <!--background_img -->
@@ -59,6 +65,25 @@
     let styleTagFooter = document.createElement("style");
     styleTagFooter.textContent = Footer_css();
     document.head.append(styleTagFooter);
+
+     //Scroll-Arrow-code
+const toTop = document.querySelector(".to-top");
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
+
+    setTimeout(() => {
+        setActiveNav();
+    }, 100);
+});
 
 </script>
 </html>

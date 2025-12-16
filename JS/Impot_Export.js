@@ -236,5 +236,94 @@ export const Footer_css=()=>{
     margin: 30px 0px;
      font-family:"Minion Pro";
 }
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fas {
+  color: #fda901ff;
+}
+
+.to-top {
+  background: #000;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fda901ff !important;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.to-top::after {
+  content: "Back to Top";
+  position: absolute;
+  bottom: 57px;
+  right: -17px;
+  background: #fda901ff;
+  color: #000;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.to-top:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Custom scrollbar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fda901ff;
+  border-radius: 10px;
+}
+
+.cart_num{
+position: absolute;
+right: 248px;
+top: 57px;
+  border-radius: 50%;
+  background-color: #fda901ff;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1px;
+  width: 17px;
+  height: 17px;
+  color: #000;
+}
+
+.cart_num.not-charging{
+  right: 209px;
+  top: 55px;
+}
     `
 }
+
