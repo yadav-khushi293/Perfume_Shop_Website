@@ -21,10 +21,11 @@ export const Navbar = () => {
 
          </div>
 
+         <a href="../Index.html">
         <div class="header_2">
             <img src="./Utiles/neesh_logo.webp" class="neesh_logo">
         </div>
-
+       </a>
         <div class="header_3">
             <img src="./Utiles/download.jpeg" class="user_login">
             <img src="./Utiles/shopping-bag.svg" class="Add_card">
