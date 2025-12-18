@@ -1,5 +1,6 @@
 const api = `https://khushi-uedn.onrender.com/Gift_Perfume`; 
 let globalData = [];
+let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
 const itemsPerPage = 9;
 
@@ -7,13 +8,59 @@ function Apicall() {
   fetch(api)
     .then(res => res.json())
     .then(res => {
-      globalData = res;
+      globalData = [...res];
+      originalData = [...res]; // save original data for clearing filter
       renderPage();
       renderPagination();
     })
     .catch(err => console.log(err));
 }
 
+Apicall();
+
+// ================= DROPDOWN FILTER / SORT =================
+const dropdown = document.querySelector(".custom-dropdown");
+const selected = dropdown.querySelector(".dropdown-selected");
+const options = dropdown.querySelector(".dropdown-options");
+
+options.querySelectorAll("li").forEach(option => {
+  option.addEventListener("click", () => {
+    const value = option.dataset.value;
+
+    selected.textContent = option.textContent;
+    options.style.display = "none";
+
+    // Sorting / Filter Logic
+    if (value === "asc") {
+      globalData.sort((a, b) => Number(a.parice) - Number(b.parice));
+    } 
+    else if (value === "desc") {
+      globalData.sort((a, b) => Number(b.parice) - Number(a.parice));
+    } 
+    else {
+      // Clear Filter
+      globalData = [...originalData];
+    }
+
+    currentPage = 1;
+    renderPage(); 
+    renderPagination();
+  });
+});
+
+// Toggle dropdown
+selected.addEventListener("click", () => {
+  options.style.display = options.style.display === "block" ? "none" : "block";
+});
+
+// Close on outside click
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    options.style.display = "none";
+  }
+});
+
+// ================= PAGINATION =================
 function renderPage() {
   const maindiv = document.getElementById("info");
   maindiv.innerHTML = "";
@@ -54,6 +101,7 @@ function renderPagination() {
   pagination.append(prevBtn, pageInfo, nextBtn);
 }
 
+// ================= DATABASE / CARD GENERATION =================
 function database(data) {
   const maindiv = document.getElementById("info");
 
@@ -67,17 +115,14 @@ function database(data) {
 
     const price = document.createElement("p");
     price.className = "price";
-    price.innerHTML = el.parice;
+    price.innerHTML = `RS.${el.parice}`; // note: matches API field
 
+    const btn_div = document.createElement("div");
+    btn_div.className = "btn_div";
 
- const btn_div = document.createElement("div");
-  btn_div.className = "btn_div";
-
-    //ADD TO CART BUTTON 
     const btn = document.createElement("button");
     btn.className = "addBtn";
     btn.innerHTML = "Add to Cart";
-
 
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";
@@ -95,11 +140,11 @@ function database(data) {
 
     slider.appendChild(figure);
     imgContainer.appendChild(slider);
-     btn_div.append(btn)
-    card.append(imgContainer, title, price ,btn_div);
+    btn_div.append(btn);
+    card.append(imgContainer, title, price, btn_div);
     maindiv.append(card);
 
-    // dots container
+    // ================= SLIDER DOTS =================
     const dotsContainer = document.createElement("div");
     dotsContainer.className = "dots";
     imgContainer.appendChild(dotsContainer);
