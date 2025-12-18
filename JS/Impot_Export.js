@@ -1,3 +1,15 @@
+
+const user_login=new URL('../Utiles/download.jpeg',import.meta.url).href
+const neesh_logo = new URL('../Utiles/neesh_logo.webp',import.meta.url).href
+const Add_card = new URL('../Utiles/shopping-bag.svg',import.meta.url).href
+const footer_img_logo  = new URL('https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000',import.meta.url).href
+const facebook = new URL('../Utiles/fecbook.webp',import.meta.url).href
+const insta = new URL('../Utiles/insta.webp',import.meta.url).href
+const Linkedin_Icon=new URL('../Utiles/Linkedin_Icon.webp',import.meta.url).href
+const memu_img=new URL("../Utiles/download (1).png",import.meta.url).href
+const serch_img=new URL("../Utiles/download (2).png",import.meta.url).href
+
+
 export const Navbar = () => {
   return `
       <nav>
@@ -8,12 +20,12 @@ export const Navbar = () => {
          <div class="header_1">
 
             <div class="header_child_1">
-                <img src="./Utiles/download (1).png" class="memu_img">
+                <img src="${memu_img}" class="memu_img">
                 <p class="menu">Menu</p>
             </div>
 
             <div class="header_child_1">
-                <img src="./Utiles/download (2).png" class="serch_img">
+                <img src="${serch_img}" class="serch_img">
                 <p class="se
                 
                 ch">Search</p>
@@ -23,12 +35,12 @@ export const Navbar = () => {
 
          <a href="../Index.html">
         <div class="header_2">
-            <img src="./Utiles/neesh_logo.webp" class="neesh_logo">
+            <img src="${neesh_logo}" class="neesh_logo">
         </div>
        </a>
         <div class="header_3">
-            <img src="./Utiles/download.jpeg" class="user_login">
-            <img src="./Utiles/shopping-bag.svg" class="Add_card">
+            <img src="${user_login}" class="user_login">
+            <img src="${Add_card}" class="Add_card">
         </div>
     </div>
     `;
@@ -112,7 +124,7 @@ export const Footer=()=>{
       <div class="footer_main1">
 
       <div class="footer_1">
-        <img src="https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000" class="footer_img_logo">
+        <img src="${footer_img_logo}" class="footer_img_logo">
       </div>
 
       <div class="footer_2">
@@ -129,9 +141,9 @@ export const Footer=()=>{
         <p class="Policies_text">Privacy Policy</p>
 
         <div class="footerlogo_img">
-          <img src="./Utiles/fecbook.webp" class="facebook">
-          <img src="./Utiles/insta.webp" class="insta">
-          <img src="./Utiles/Linkedin_Icon.webp" class="Linkedin_Icon">
+          <img src="${facebook}" class="facebook">
+          <img src="${insta}" class="insta">
+          <img src="${Linkedin_Icon}" class="Linkedin_Icon">
         </div>
       </div>
 
