@@ -19,7 +19,6 @@
         </a>
     <!--NAV_BAR_END-->
 
-
     <div class="slider">
     <figure>
         <img src="./Utiles/bg_1.webp">
@@ -38,6 +37,25 @@
 
 <p class="Femme_text_1">Packed in the feminine iteration of the NEESH's famed emerald-cute shards, the Pour Femme collection features a range of fragrances from floral, vibrant, sultry to even aphrodisiac – all blended to capture the essence of bold luxury.</p>
 </div>
+
+ <!-- DROP -->
+     <!-- <select id="filterSelect" class="btn_container">
+    <option value="">Filter</option>
+    <option value="asc" class="A">Ascending Order</option>
+    <option value="desc">Descending Order</option>
+    <option value="clear">Clear All</option>
+</select> -->
+
+<div class="custom-dropdown">
+  <div class="dropdown-selected">Filter</div>
+  <ul class="dropdown-options">
+    <li data-value="asc">Low to High</li>
+    <li data-value="desc">High to Low</li>
+    <li data-value="clear">Clear All</li>
+  </ul>
+</div>
+
+     <!-- DROP_end -->
 
 <div id="info"></div>
 
@@ -172,9 +190,9 @@ const toTop = document.querySelector(".to-top");
         }
     });
 
-    setTimeout(() => {
-        setActiveNav();
-    }, 100);
+    // setTimeout(() => {
+    //     setActiveNav();
+    // }, 100);
 });
 
 </script>
