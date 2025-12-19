@@ -1,5 +1,5 @@
-// const api = `https://khushi-uedn.onrender.com/Luxury_perfumes`;
-const api = `https://khushi-uedn.onrender.com/Gift_Perfume`; 
+ const api = `https://khushi-uedn.onrender.com/Luxury_perfumes`;
+
 let globalData = [];
 let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
@@ -15,6 +15,8 @@ function Apicall() {
       renderPagination();
     })
     .catch(err => console.log(err));
+
+    
 }
 
 Apicall();
@@ -106,6 +108,7 @@ function renderPagination() {
 function database(data) {
   const maindiv = document.getElementById("info");
 
+  console.log(data)
   data.forEach(el => {
     const card = document.createElement("div");
     card.className = "card";
@@ -124,6 +127,7 @@ function database(data) {
     const btn = document.createElement("button");
     btn.className = "addBtn";
     btn.innerHTML = "Add to Cart";
+
 
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";
