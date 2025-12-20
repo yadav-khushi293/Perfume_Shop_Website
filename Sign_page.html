@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Sign_page.css">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+   <header></header>
+
+    <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+<!-- code_nav_end -->
+
+ <main class="main-content">
+
+            <div class="login-page">
+                <form action="#" onsubmit="myform(event)">
+                     
+                    <div class="Website_main_logo">
+                    <img src="./Utiles/neesh_logo.webp">
+                    </div>
+                    
+                    <h2 class="heding">Sign in</h2>
+
+                    <div class="input-box">
+                        <input type="text" id="user" placeholder=" " />
+                        <label for="name">Your Name</label>
+                        <span id="username_msg"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder=" " />
+                        <label for="email">Email</label>
+                        <span id="email_msg"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="pass" placeholder=" " />
+                        <label for="password">Password</label>
+                        <span id="pass_msg"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="confpass" placeholder=" " />
+                        <label for="confirm-password">Confirm Password</label>
+                        <span id="confpass_msg"></span>
+                    </div>
+
+                    <a href="./Login_page.html">
+                    <button type="submit">Login</button>
+                    </a>
+
+                </form>
+
+            </div>
+        </main>
+
+ 
+    <!-- FOOTER -->
+   <footer></footer>
+    <!-- FOOTER -->
+
+</body>
+<script src="./JS/Sign_page.js"></script>
+
+ <script type="module">
+    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
+
+    // Navbar HTML
+    document.querySelector("header").innerHTML = Navbar();
+
+    // Navbar CSS
+    let styleTag = document.createElement("style");
+    styleTag.textContent = Navbar_css();
+    document.head.append(styleTag);
+
+     document.querySelector("footer").innerHTML = Footer();
+     
+    let styleTagFooter = document.createElement("style");
+    styleTagFooter.textContent = Footer_css();
+    document.head.append(styleTagFooter);
+
+ //Scroll-Arrow-code
+const toTop = document.querySelector(".to-top");
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
+
+    // setTimeout(() => {
+    //     setActiveNav();
+    // }, 100);
+});
+</script>
+</html>

@@ -6,11 +6,15 @@
     <title>PERFUME</title>
     <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/index.css">
- 
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body onload="ApiCall()">
 
    <header></header>
+   
+    <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
 
     <!-- ANIMATION SLIDER -->
 
@@ -810,5 +814,19 @@ Rich smelling fragrance making your winter very special. Sweet spicy smell makes
     styleTagFooter.textContent = Footer_css();
     document.head.append(styleTagFooter);
 
+    //Scroll-Arrow-code
+const toTop = document.querySelector(".to-top");
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
+});
 </script>
 </html>
