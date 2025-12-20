@@ -1,5 +1,6 @@
 
 
+
 /* ANIMATIOC SLIDER - CODE */
 a{
     text-decoration: none;
@@ -23,14 +24,14 @@ a{
     z-index: 100;
 } */
 
-header a{
+/* header a{
     color: #eee;
     margin-right: 5px;
     padding: 5px 10px;
     transition: 0.2s;
-}
+} */
 
-a.active{
+/* a.active{
     background: #14ff72cb;
     border-radius: 2px;
 }
@@ -38,7 +39,7 @@ a.active{
 header a:hover{
     background: #14ff72cb;
     border-radius: 2px;
-}
+} */
 
 
 /* slider section  */
@@ -63,7 +64,7 @@ header a:hover{
 }
 .slider .list .item .content{
     position: absolute;
-    top: 14%;
+    top: 10%;
     width: 1140px;
     max-width: 80%;
     left: 42%;
