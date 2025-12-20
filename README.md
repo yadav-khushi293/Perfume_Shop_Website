@@ -27,3 +27,6 @@
 //     currentPage = 1;
 //     renderPage();
 // });
+
+##this normal filter code
+
