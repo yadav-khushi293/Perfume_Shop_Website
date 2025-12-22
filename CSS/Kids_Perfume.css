@@ -14,7 +14,31 @@
     word-spacing:6px;
     font-size: 39px;
     font-weight:normal;
+}
 
+
+/* Loding_code_css */
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  display: none;
+  height: 50px;
+  width: 50px;
+  border: 5px solid black;
+  border-radius: 50%;
+  border-top-color: blue;
+  transition: all 0.4s ease;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 /* CART_IMG CODE */
 
@@ -67,6 +91,7 @@
     }
 
    #info {
+   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;

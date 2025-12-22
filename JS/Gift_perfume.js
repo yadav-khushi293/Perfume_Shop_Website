@@ -7,20 +7,45 @@ let currentPage = 1;
 const itemsPerPage = 9;
 
 
-function Apicall() {
-  fetch(api)
-    .then(res => res.json())
-    .then(res => {
-      globalData = [...res];
-      originalData = [...res]; // save original data for clearing filter
-      renderPage();
+// function Apicall() {
+//   fetch(api)
+//     .then(res => res.json())
+//     .then(res => {
+//       globalData = [...res];
+//       originalData = [...res]; // save original data for clearing filter
+//       renderPage();
+//       renderPagination();
+//     })
+//     .catch(err => console.log(err));
+// }
+
+const apiCall1 = async() => {
+  let loading = document.querySelector(".loading");
+  let info = document.querySelector("#info")
+
+  try {
+    loading.style.display = "block";
+    info.style.height = "200px";
+
+    let res = await fetch(api);
+    let data = await res.json()
+    globalData = [...data];
+    originalData = [...data];
+    renderPage();
       renderPagination();
-    })
-    .catch(err => console.log(err));
+
+  } catch (error) {
+    console.log(error)
+  }
+  finally{
+    loading.style.display = "none"
+    info.style.height = "fit-content"
+  }
 }
 
-Apicall();
+// Apicall();
 
+apiCall1()
 // ================= DROPDOWN FILTER / SORT =================
 
 const dropdown = document.querySelector(".custom-dropdown");
@@ -129,6 +154,7 @@ function database(data) {
     btn.innerHTML = "Click";
 
 // Addign data to the localstorage
+
 btn.addEventListener("click", async () => {
   console.log("Btn clicked!");
 
@@ -153,7 +179,7 @@ btn.addEventListener("click", async () => {
       // Save selected product ID to localStorage for slider
       localStorage.setItem("selectedProductId", el.id);
       // Redirect to cart page
-      window.location.href = "./Cart.html";
+      window.location.href = "../Cart.html";
     } else {
       console.log("Failed to add to cart");
     }

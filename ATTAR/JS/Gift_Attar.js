@@ -5,19 +5,43 @@ let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
 const itemsPerPage = 9;
 
-function Apicall() {
-  fetch(api)
-    .then(res => res.json())
-    .then(res => {
-      globalData = [...res];
-      originalData = [...res]; // save original data for clearing filter
-      renderPage();
-      renderPagination();
-    })
-    .catch(err => console.log(err));
-}
+// function Apicall() {
+//   fetch(api)
+//     .then(res => res.json())
+//     .then(res => {
+//       globalData = [...res];
+//       originalData = [...res]; // save original data for clearing filter
+//       renderPage();
+//       renderPagination();
+//     })
+//     .catch(err => console.log(err));
+// }
 
-Apicall();
+// Apicall();
+const apiCall1 = async() => {
+  let loading = document.querySelector(".loading");
+  let info = document.querySelector("#info")
+
+  try {
+    loading.style.display = "block";
+    info.style.height = "200px";
+
+    let res = await fetch(api);
+    let data = await res.json()
+    globalData = [...data];
+    originalData = [...data];
+    renderPage();
+      renderPagination();
+
+  } catch (error) {
+    console.log(error)
+  }
+  finally{
+    loading.style.display = "none"
+    info.style.height = "fit-content"
+  }
+}
+apiCall1()
 
 // ================= DROPDOWN FILTER / SORT =================
 const dropdown = document.querySelector(".custom-dropdown");
