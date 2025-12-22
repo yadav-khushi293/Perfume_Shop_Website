@@ -2,7 +2,10 @@ const validateUserForm = async (e) => {
   e.preventDefault();
 
   let email = document.getElementById("user_email").value.trim();
+  
   let password = document.getElementById("user_pass").value.trim();
+
+
 
   // Email validation
   if (email === "") {
@@ -16,6 +19,7 @@ const validateUserForm = async (e) => {
   } else {
     document.getElementById("user_email_msg").innerText = "";
   }
+
 
   // Password validation
   if (password === "") {
@@ -41,7 +45,9 @@ const validateUserForm = async (e) => {
     );
 
     if (foundUser) {
+
       sessionStorage.setItem("token", foundUser.id);//data store in sessionstoreges
+
       alert("Login Successful");
       window.location.href = "../Index.html";
     } else {

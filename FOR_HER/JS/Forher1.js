@@ -7,6 +7,7 @@
     .catch((err) => console.log(err));
  }
 const appenddata = (data) => {
+
     const datashow = document.getElementById('simple_product');
 
     let el = data[2]; 

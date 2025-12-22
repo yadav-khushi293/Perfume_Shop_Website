@@ -1,8 +1,11 @@
 const api = `https://khushi-uedn.onrender.com/Gift_Perfume`; 
+const Cartapi='https://khushi-uedn.onrender.com/Cart';
+
 let globalData = [];
 let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
 const itemsPerPage = 9;
+
 
 function Apicall() {
   fetch(api)
@@ -19,6 +22,7 @@ function Apicall() {
 Apicall();
 
 // ================= DROPDOWN FILTER / SORT =================
+
 const dropdown = document.querySelector(".custom-dropdown");
 const selected = dropdown.querySelector(".dropdown-selected");
 const options = dropdown.querySelector(".dropdown-options");
@@ -122,7 +126,44 @@ function database(data) {
 
     const btn = document.createElement("button");
     btn.className = "addBtn";
-    btn.innerHTML = "Add to Cart";
+    btn.innerHTML = "Click";
+
+// Addign data to the localstorage
+btn.addEventListener("click", async () => {
+  console.log("Btn clicked!");
+
+  let cartObj = {
+    id: el.id,
+    img: el.img,
+    price: el.price, 
+    thumb_img: el.img
+  };
+
+  try {
+    let res = await fetch(Cartapi, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(cartObj)
+    });
+
+    // Optional: check if POST was successful
+    if (res.ok) {
+      // Save selected product ID to localStorage for slider
+      localStorage.setItem("selectedProductId", el.id);
+      // Redirect to cart page
+      window.location.href = "./Cart.html";
+    } else {
+      console.log("Failed to add to cart");
+    }
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+
+
 
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";

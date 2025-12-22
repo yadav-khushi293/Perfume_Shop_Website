@@ -34,6 +34,7 @@ function moveSlider(direction) {
         slider.classList.add('prev')
     }
 
+    
 
     slider.addEventListener('animationend', function() {
         if(direction === 'next'){
