@@ -28,8 +28,8 @@
     transform: rotate(360deg);
   }
 }
-/* Loding_code_end css */
 
+/* Loding_code_end css */
 
 .heading{
     text-align: center;
@@ -92,7 +92,7 @@
     }
 
    #info {
-    position: relative;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
