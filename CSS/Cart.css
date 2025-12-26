@@ -779,6 +779,28 @@ h4{
 }
 /* END */
 
+.price_container{
+  border: 1px solid black;
+  width:200px;
+  display: flex;
+  height:55px;
+  text-align: center;
+}
 
-
+.increment,.decrement{
+  border: 1px solid black;
+  width: 70px;
+   padding: 14px 0px;
+   text-align: center;
+   font-size:24px;
+   font-weight: bold;
+  
+}
+.num{
+   padding:0px 0px;
+   text-align: center;
+    font-size:21px;
+     border: 1px solid black;
+     width: 70px;
+}
 

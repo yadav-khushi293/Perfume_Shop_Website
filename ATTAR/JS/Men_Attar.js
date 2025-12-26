@@ -1,4 +1,5 @@
 const api = `https://khushi-uedn.onrender.com/Men_Attar`;
+let Cartapi = `https://khushi-uedn.onrender.com/Cart`;
  
 let globalData = [];
 let originalData = []; // store original data for "Clear All"
@@ -28,7 +29,9 @@ const apiCall1 = async() => {
     info.style.height = "fit-content"
   }
 }
-apiCall1()
+window.onload = () => {
+  apiCall1();
+};
 
 // ================= DROPDOWN FILTER / SORT =================
 const dropdown = document.querySelector(".custom-dropdown");
@@ -134,7 +137,43 @@ function database(data) {
 
     const btn = document.createElement("button");
     btn.className = "addBtn";
-    btn.innerHTML = "Add to Cart";
+    btn.innerHTML = "Click";
+
+///Add TO Cart Code
+     btn.addEventListener("click", async () => {
+      console.log("Btn clicked!");
+      console.log(el.parice)
+
+      let cartObj = {
+        id: el.id,
+        img: el.img,
+        price: el.parice,
+        thumb_img: el.img,
+      };
+
+      try {
+        let res = await fetch(Cartapi, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(cartObj),
+        });
+
+        // Optional: check if POST was successful
+        if (res.ok) {
+          // Save selected product ID to localStorage for slider
+          localStorage.setItem("selectedProductId", el.id);
+          // Redirect to cart page
+          window.location.href = "../../Cart.html";
+        } else {
+          console.log("Failed to add to cart");
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    });
+///Add TO Cart Code_End
 
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";

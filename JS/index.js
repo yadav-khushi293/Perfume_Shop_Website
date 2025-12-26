@@ -46,7 +46,6 @@ function moveSlider(direction) {
 }
 
 
-
 // SCROLL_IMG_OVSEFLOW_CODE
 
 const api = 'https://khushi-uedn.onrender.com/video';
@@ -82,7 +81,7 @@ const appendsFunc = (data) => {
     offer.className = "offer";
 
     // Video URL (important)
-    video.src = el.img;   // ✔ Correct key: "img"
+    video.src = el.img;
     video.autoplay = true;
     video.loop = true;
     video.muted = true;

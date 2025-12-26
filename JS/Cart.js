@@ -2,29 +2,51 @@ const Cartapi = `https://khushi-uedn.onrender.com/Cart`;
 
 const selectedProductId = localStorage.getItem("selectedProductId");
 
-const ApiCall = () => {
-  fetch(Cartapi)
-    .then(res => res.json())
-    .then(res => {
-      const product = res.find(p => p.id == selectedProductId);// Find the product the user selected
-      if (product) appenddata(product);
-      else console.log("Product not found");
-    })
-    .catch(err => console.log(err));
+// const ApiCall = () => {
+//   fetch(Cartapi)
+//     .then(res => res.json())
+//     .then(res => {
+//       const product = res.find(p => p.id == selectedProductId);// Find the product the user selected
+//       handleAmount(res)
+
+//       if (product) appenddata(product);
+//       else console.log("Product not found");
+//     })
+//     .catch(err => console.log(err));
+// };
+
+const ApiCall = async () => {
+  try {
+    let res = await fetch(Cartapi);
+
+    let data = await res.json();
+
+    const product = data.find(p => p.id == selectedProductId);
+
+    if (product) appenddata(product);
+
+    else console.log("Product not found");
+
+    appenddata(product);
+
+    handleAmount(data)
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 ApiCall();
 
 const appenddata = (product) => {
-  const datashow = document.getElementById('container');
+  const datashow = document.getElementById("container");
   datashow.innerHTML = "";
 
   let images = product.img;
 
   // Main structure
-  let maindiv = document.createElement('div');
-  let imgdiv = document.createElement('div');
-  let imgmain_div = document.createElement('div');
+  let maindiv = document.createElement("div");
+  let imgdiv = document.createElement("div");
+  let imgmain_div = document.createElement("div");
 
   maindiv.className = "maindiv";
   imgmain_div.className = "imgmain_div";
@@ -112,3 +134,43 @@ const appenddata = (product) => {
   maindiv.append(imgmain_div);
   datashow.append(maindiv);
 };
+
+const increment_btn = document.querySelector(".increment");
+const decrement_btn = document.querySelector(".decrement");
+const totalPrice = document.querySelector(".p3");
+const productQty = document.querySelector(".num");
+productQty.value = 0;
+let itemPrice;
+
+increment_btn.addEventListener("click", () => {
+  productQty.value = Number(productQty.value) + 1;
+
+  if (productQty.value > 0) {
+    decrement_btn.disabled = false;
+  }
+
+  totalPrice.innerText = Number(productQty.value) * Number(itemPrice);
+});
+
+
+decrement_btn.addEventListener("click", () => {
+  if (productQty.value > 0) {
+    productQty.value = Number(productQty.value) - 1;
+  }
+
+  if (productQty.value === 0) {
+    decrement_btn.disabled = true;
+  }
+
+  totalPrice.innerText = Number(productQty.value) * Number(itemPrice);
+});
+
+
+const handleAmount = (res) => {
+
+  res.forEach((el) => {
+   itemPrice = el.price;
+
+  });
+};
+// handleAmount()

@@ -25,10 +25,7 @@ export const Navbar = () => {
             </div>
 
             <div class="header_child_1">
-                <img src="${serch_img}" class="serch_img">
-                <p class="se
-                
-                ch">Search</p>
+               <input type="text" placeholder='Search' class="Serching" ></input>
             </div>
 
          </div>
@@ -57,6 +54,16 @@ export const Navbar_css = () => {
   list-style: none;
   cursor: pointer;
 }
+.Serching{
+width:150px;
+font-size:16px;
+padding:0px 8px;
+color:#787777;
+border:2px solid #cfcacaff;
+border-radius:3px;
+height:37px;
+}
+
 .headre{
     text-align: center;
     font-size: 14px;

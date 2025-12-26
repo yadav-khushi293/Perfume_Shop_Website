@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./CSS/Cart.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
-<body  onload="ApiCall()" >
+<body>
 
       <header></header>
      
@@ -17,8 +17,8 @@
     
 <!--prents_main_div -->
 <div class="prents_main_div">
-   <div id="container"></div>   
-
+   <div id="container"></div> 
+     
    <div class="Song_Serenity">
 
 
@@ -40,13 +40,22 @@
   </div>
 
     <div class="Song_Serenity_child_2">
-        <p class="p3">Rs.5480</p>
+        <p class="p3">Rs.</p>
         <p class="p4">20%off</p>
         <p class="p5">MRP (Inclusive of all taxes)</p>
 
     </div>
 
     </div>
+
+     <!--  -->
+   <div class="price_container">
+    <div class="decrement">-</div>
+    <input class="num" />
+    <div class="increment">+</div>
+   </div>
+   <!--  -->
+
 
     <button class="btn_1">shop now with free gifts</button>
     <!--  -->
@@ -364,10 +373,6 @@ const toTop = document.querySelector(".to-top");
             toTop.classList.remove("active");
         }
     });
-
-    setTimeout(() => {
-        setActiveNav();
-    }, 100);
 });
 
 </script>

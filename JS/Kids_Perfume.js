@@ -1,5 +1,6 @@
 const api = `https://khushi-uedn.onrender.com/kids_perfume`;
- 
+let Cartapi = `https://khushi-uedn.onrender.com/Cart`;
+
 let globalData = [];
 let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
@@ -19,37 +20,37 @@ const itemsPerPage = 9;
 
 // Apicall();
 
-const apiCall1 = async() => {
+const apiCall1 = async () => {
   let loading = document.querySelector(".loading");
-  let info = document.querySelector("#info")
+  let info = document.querySelector("#info");
 
   try {
     loading.style.display = "block";
     info.style.height = "200px";
 
     let res = await fetch(api);
-    let data = await res.json()
+    let data = await res.json();
     globalData = [...data];
     originalData = [...data];
     renderPage();
-      renderPagination();
-
+    renderPagination();
   } catch (error) {
-    console.log(error)
+    console.log(error);
+  } finally {
+    loading.style.display = "none";
+    info.style.height = "fit-content";
   }
-  finally{
-    loading.style.display = "none"
-    info.style.height = "fit-content"
-  }
-}
-apiCall1()
+};
+window.onload = () => {
+  apiCall1();
+};
 
 // ================= DROPDOWN FILTER / SORT =================
 const dropdown = document.querySelector(".custom-dropdown");
 const selected = dropdown.querySelector(".dropdown-selected");
 const options = dropdown.querySelector(".dropdown-options");
 
-options.querySelectorAll("li").forEach(option => {
+options.querySelectorAll("li").forEach((option) => {
   option.addEventListener("click", () => {
     const value = option.dataset.value;
 
@@ -59,17 +60,15 @@ options.querySelectorAll("li").forEach(option => {
     // Sorting / Filter Logic
     if (value === "asc") {
       globalData.sort((a, b) => Number(a.parice) - Number(b.parice));
-    } 
-    else if (value === "desc") {
+    } else if (value === "desc") {
       globalData.sort((a, b) => Number(b.parice) - Number(a.parice));
-    } 
-    else {
+    } else {
       // Clear Filter
       globalData = [...originalData];
     }
 
     currentPage = 1;
-    renderPage(); 
+    renderPage();
     renderPagination();
   });
 });
@@ -131,7 +130,7 @@ function renderPagination() {
 function database(data) {
   const maindiv = document.getElementById("info");
 
-  data.forEach(el => {
+  data.forEach((el) => {
     const card = document.createElement("div");
     card.className = "card";
 
@@ -150,6 +149,40 @@ function database(data) {
     btn.className = "addBtn";
     btn.innerHTML = "Add to Cart";
 
+    btn.addEventListener("click", async () => {
+      console.log("Btn clicked!");
+      console.log(el.parice)
+
+      let cartObj = {
+        id: el.id,
+        img: el.img,
+        price: el.parice,
+        thumb_img: el.img,
+      };
+
+      try {
+        let res = await fetch(Cartapi, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(cartObj),
+        });
+
+        // Optional: check if POST was successful
+        if (res.ok) {
+          // Save selected product ID to localStorage for slider
+          localStorage.setItem("selectedProductId", el.id);
+          // Redirect to cart page
+          window.location.href = "../Cart.html";
+        } else {
+          console.log("Failed to add to cart");
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";
 
@@ -158,7 +191,7 @@ function database(data) {
 
     const figure = document.createElement("figure");
 
-    el.img.forEach(url => {
+    el.img.forEach((url) => {
       const img = document.createElement("img");
       img.src = url;
       figure.appendChild(img);
@@ -180,7 +213,7 @@ function database(data) {
     let slideInterval = null;
 
     figure.style.width = `${100 * totalImages}%`;
-    Array.from(figure.children).forEach(img => {
+    Array.from(figure.children).forEach((img) => {
       img.style.width = `${100 / totalImages}%`;
     });
 
@@ -198,7 +231,9 @@ function database(data) {
     dots[0].classList.add("active");
 
     function updateSlide() {
-      figure.style.transform = `translateX(-${currentIndex * (100 / totalImages)}%)`;
+      figure.style.transform = `translateX(-${
+        currentIndex * (100 / totalImages)
+      }%)`;
       dots.forEach((d, idx) => {
         d.classList.toggle("active", idx === currentIndex);
       });

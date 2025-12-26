@@ -161,7 +161,7 @@ btn.addEventListener("click", async () => {
   let cartObj = {
     id: el.id,
     img: el.img,
-    price: el.price, 
+    price: el.parice, 
     thumb_img: el.img
   };
 
