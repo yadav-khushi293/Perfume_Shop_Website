@@ -149,7 +149,7 @@ increment_btn.addEventListener("click", () => {
     decrement_btn.disabled = false;
   }
 
-  totalPrice.innerText = Number(productQty.value) * Number(itemPrice);
+  totalPrice.innerText ="Rs. " + Number(productQty.value) * Number(itemPrice);
 });
 
 
@@ -162,14 +162,14 @@ decrement_btn.addEventListener("click", () => {
     decrement_btn.disabled = true;
   }
 
-  totalPrice.innerText = Number(productQty.value) * Number(itemPrice);
+  totalPrice.innerText ="Rs. " + Number(productQty.value) * Number(itemPrice);
 });
 
 
 const handleAmount = (res) => {
 
   res.forEach((el) => {
-   itemPrice = el.price;
+   itemPrice =el.price;
 
   });
 };
