@@ -174,7 +174,7 @@ function database(data) {
           // Save selected product ID to localStorage for slider
           localStorage.setItem("selectedProductId", el.id);
           // Redirect to cart page
-          window.location.href = "../Cart.html";
+          window.location.href = "../detailsPage.html";
         } else {
           console.log("Failed to add to cart");
         }

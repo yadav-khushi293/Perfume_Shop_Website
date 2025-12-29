@@ -1,176 +1,237 @@
-const Cartapi = `https://khushi-uedn.onrender.com/Cart`;
-
+const Cartapi = "https://khushi-uedn.onrender.com/Cart";
 const selectedProductId = localStorage.getItem("selectedProductId");
 
-// const ApiCall = () => {
-//   fetch(Cartapi)
-//     .then(res => res.json())
-//     .then(res => {
-//       const product = res.find(p => p.id == selectedProductId);// Find the product the user selected
-//       handleAmount(res)
-
-//       if (product) appenddata(product);
-//       else console.log("Product not found");
-//     })
-//     .catch(err => console.log(err));
-// };
-
-const ApiCall = async () => {
+const apicall = async () => {
   try {
     let res = await fetch(Cartapi);
-
     let data = await res.json();
-
-    const product = data.find(p => p.id == selectedProductId);
-
-    if (product) appenddata(product);
-
-    else console.log("Product not found");
-
-    appenddata(product);
-
-    handleAmount(data)
+    appendCartItem(data);
+    
   } catch (error) {
     console.log(error);
   }
 };
+apicall();
 
-ApiCall();
+// const appendCartItem = (data) => {
+//   const container = document.querySelector(".container");
 
-const appenddata = (product) => {
-  const datashow = document.getElementById("container");
-  datashow.innerHTML = "";
+//   data.forEach((el) => {
+//     const maindiv = document.createElement("div");
+//     maindiv.className = "content-div";
 
-  let images = product.img;
+//     maindiv.innerHTML = `
+//       <div class="child_1">
+//         <img src="${el.img}" class="bag">
+//         <div class="text">
+//           <p class="Milky_Way">${el.title}</p>
+//         </div>
+//       </div>
 
-  // Main structure
-  let maindiv = document.createElement("div");
-  let imgdiv = document.createElement("div");
-  let imgmain_div = document.createElement("div");
+//       <div class="price_container">
+//         <button class="decrement">-</button>
+//         <input type="text" class="qty-input" />
+//         <button class="increment">+</button>
+//         <div class="delete-btn">
+//           <i class="bi bi-trash"></i>
+//         </div>
+//       </div>
 
-  maindiv.className = "maindiv";
-  imgmain_div.className = "imgmain_div";
+//       <div class="child_1">
+//         <p class="price">${el.price}</p>
+//       </div>
+//     `;
 
-  // Slider containers
-  const pagi = document.createElement("div");
-  const mainDiv = document.createElement("div");
-  const thumbsDiv = document.createElement("div");
+//     container.append(maindiv);
 
-  pagi.className = "pagi";
-  mainDiv.className = "main";
-  thumbsDiv.className = "thumbs";
+//     const incrementBtn = maindiv.querySelector(".increment");
+//     const qtyInput = maindiv.querySelector(".qty-input");
+//     const decrementBtn = maindiv.querySelector(".decrement");
+//     let price = maindiv.querySelector(".price");
 
-  let currentIndex = 0;
+//     qtyInput.value = 1;
+//     let totalPrice = Number(qtyInput.value) * Number(el.price);
 
-  // Arrows
-  const leftArrow = document.createElement("div");
-  const rightArrow = document.createElement("div");
+//     incrementBtn.addEventListener("click", async () => {
+//       // 1️⃣ increase quantity
+//       let qty = Number(qtyInput.value) + 1;
+//       qtyInput.value = qty;
 
-  leftArrow.className = "arrow";
-  rightArrow.className = "arrow";
-  leftArrow.innerHTML = "&#10094;";
-  rightArrow.innerHTML = "&#10095;";
+//       // 2️⃣ disable increment at max
+//       if (qty >= 10) {
+//         incrementBtn.disabled = true;
+//       }
 
-  // Slider wrapper
-  const sliderWrapper = document.createElement("div");
-  sliderWrapper.className = "slider-wrapper";
+//       // 3️⃣ enable decrement
+//       decrementBtn.disabled = false;
 
-  // Images + thumbnails
-  images.forEach((src, index) => {
-    // Main image
-    const img = document.createElement("img");
-    img.src = src;
-    img.className = "slider-image";
-    sliderWrapper.appendChild(img);
+//       // 4️⃣ update price in UI
+//       price.innerText = Number(el.price) * qty;
 
-    // Thumbnail
-    const thumb = document.createElement("img");
-    thumb.src = src;
-    thumb.className = "thumb-image";
+//       // 5️⃣ PATCH to backend
+//       try {
+//         await fetch(`${Cartapi}/${el.id}`, {
+//           method: "PATCH",
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//           body: JSON.stringify({
+//             qty: qty, // updated quantity
+//             price: Number(el.price) * qty, // optional: update price
+//           }),
+//         });
+//         console.log(`Backend updated: id=${el.id}, qty=${qty}`);
+//       } catch (error) {
+//         console.log("🚀 Backend PATCH error:", error);
+//       }
+//     });
 
-    thumb.addEventListener("click", () => {
-      currentIndex = index;
-      updateSlider();
+//     decrementBtn.addEventListener("click", async () => {
+//       let qty = Number(qtyInput.value) - 1;
+//       if (qty <= 0) qty = 0;
+//       qtyInput.value = qty;
+
+//       incrementBtn.disabled = false;
+//       if (qty === 0) decrementBtn.disabled = true;
+
+//       price.innerText = Number(el.price) * qty;
+
+//       try {
+//         await fetch(`${Cartapi}/${el.id}`, {
+//           method: "PATCH",
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//           body: JSON.stringify({
+//             qty: qty,
+//             price: Number(el.price) * qty,
+//           }),
+//         });
+//         console.log(`Backend updated: id=${el.id}, qty=${qty}`);
+//       } catch (error) {
+//         console.log("🚀 Backend PATCH error:", error);
+//       }
+//     });
+
+//     // Delete button functionality
+//     let deleteBtn = maindiv.querySelector(".delete-btn");
+//     deleteBtn.addEventListener("click", async () => {
+//       console.log("Delete");
+//       try {
+//         await fetch(`${Cartapi}/${el.id}`, {
+//           method: "DELETE",
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//         });
+//         maindiv.remove();
+//       } catch (error) {
+//         console.log("🚀 ~ appendCartItem ~ error:", error);
+//       }
+//     });
+//   });
+// };
+
+
+
+
+
+const appendCartItem = (data) => {
+  const container = document.querySelector(".container");
+
+  data.forEach((el) => {
+    const maindiv = document.createElement("div");
+    maindiv.className = "content-div";
+
+    maindiv.innerHTML = `
+      <div class="child_1">
+        <img src="${el.img}" class="bag">
+        <div class="text">
+          <p class="Milky_Way">${el.title}</p>
+        </div>
+      </div>
+
+      <div class="price_container">
+        <button class="decrement">-</button>
+        <input type="text" class="qty-input" />
+        <button class="increment">+</button>
+        <div class="delete-btn">
+          <i class="bi bi-trash"></i>
+        </div>
+      </div>
+
+      <div class="child_1">
+        <p class="price">${el.price}</p>
+      </div>
+    `;
+
+    container.append(maindiv);
+
+    const incrementBtn = maindiv.querySelector(".increment");
+    const qtyInput = maindiv.querySelector(".qty-input");
+    const decrementBtn = maindiv.querySelector(".decrement");
+    let price = maindiv.querySelector(".price");
+
+    // Initialize quantity from backend
+    qtyInput.value = el.qty || 1;
+    price.innerText = Number(el.price) * Number(qtyInput.value);
+
+    incrementBtn.addEventListener("click", async () => {
+      let qty = Number(qtyInput.value) + 1;
+      if (qty > 10) qty = 10; // max limit
+      qtyInput.value = qty;
+
+      decrementBtn.disabled = false;
+      if (qty === 10) incrementBtn.disabled = true;
+
+      price.innerText = Number(el.price) * qty;
+
+      // PATCH updated quantity to backend
+      try {
+        await fetch(`${Cartapi}/${el.id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ qty: qty, price: Number(el.price) * qty }),
+        });
+      } catch (error) {
+        console.log("🚀 Backend PATCH error:", error);
+      }
     });
 
-    thumbsDiv.appendChild(thumb);
-  });
+    decrementBtn.addEventListener("click", async () => {
+      let qty = Number(qtyInput.value) - 1;
+      if (qty < 0) qty = 0;
+      qtyInput.value = qty;
 
-  mainDiv.appendChild(sliderWrapper);
+      incrementBtn.disabled = false;
+      decrementBtn.disabled = qty === 0;
 
-  // Thumbnail + arrows wrapper
-  const thumbWrapper = document.createElement("div");
-  thumbWrapper.className = "thumb-wrapper";
-  thumbWrapper.append(leftArrow, thumbsDiv, rightArrow);
+      price.innerText = Number(el.price) * qty;
 
-  // Update slider function
-  const updateSlider = () => {
-    const width = sliderWrapper.children[0].clientWidth;
-    sliderWrapper.style.transform = `translateX(${-currentIndex * width}px)`;
-
-    Array.from(thumbsDiv.children).forEach((thumb, idx) => {
-      thumb.style.opacity = idx === currentIndex ? "1" : "0.5";
+      // PATCH updated quantity to backend
+      try {
+        await fetch(`${Cartapi}/${el.id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ qty: qty, price: Number(el.price) * qty }),
+        });
+      } catch (error) {
+        console.log("🚀 Backend PATCH error:", error);
+      }
     });
-  };
 
-  // Arrow events
-  leftArrow.addEventListener("click", () => {
-    currentIndex--;
-    if (currentIndex < 0) currentIndex = images.length - 1;
-    updateSlider();
-  });
-
-  rightArrow.addEventListener("click", () => {
-    currentIndex++;
-    if (currentIndex >= images.length) currentIndex = 0;
-    updateSlider();
-  });
-
-  updateSlider();
-
-  pagi.append(mainDiv, thumbWrapper);
-  imgdiv.append(pagi);
-  imgmain_div.append(imgdiv);
-  maindiv.append(imgmain_div);
-  datashow.append(maindiv);
-};
-
-const increment_btn = document.querySelector(".increment");
-const decrement_btn = document.querySelector(".decrement");
-const totalPrice = document.querySelector(".p3");
-const productQty = document.querySelector(".num");
-productQty.value = 0;
-let itemPrice;
-
-increment_btn.addEventListener("click", () => {
-  productQty.value = Number(productQty.value) + 1;
-
-  if (productQty.value > 0) {
-    decrement_btn.disabled = false;
-  }
-
-  totalPrice.innerText ="Rs. " + Number(productQty.value) * Number(itemPrice);
-});
-
-
-decrement_btn.addEventListener("click", () => {
-  if (productQty.value > 0) {
-    productQty.value = Number(productQty.value) - 1;
-  }
-
-  if (productQty.value === 0) {
-    decrement_btn.disabled = true;
-  }
-
-  totalPrice.innerText ="Rs. " + Number(productQty.value) * Number(itemPrice);
-});
-
-
-const handleAmount = (res) => {
-
-  res.forEach((el) => {
-   itemPrice =el.price;
-
+    // Delete button functionality
+    let deleteBtn = maindiv.querySelector(".delete-btn");
+    deleteBtn.addEventListener("click", async () => {
+      try {
+        await fetch(`${Cartapi}/${el.id}`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+        });
+        maindiv.remove();
+      } catch (error) {
+        console.log("🚀 Delete error:", error);
+      }
+    });
   });
 };
-// handleAmount()
