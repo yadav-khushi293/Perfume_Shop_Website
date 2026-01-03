@@ -6,19 +6,6 @@ let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
 const itemsPerPage = 9;
 
-// function Apicall() {
-//   fetch(api)
-//     .then(res => res.json())
-//     .then(res => {
-//       globalData = [...res];
-//       originalData = [...res]; // save original data for clearing filter
-//       renderPage();
-//       renderPagination();
-//     })
-//     .catch(err => console.log(err));
-// }
-
-// Apicall();
 const apiCall1 = async() => {
   let loading = document.querySelector(".loading");
   let info = document.querySelector("#info")
@@ -180,7 +167,7 @@ function database(data) {
           // Save selected product ID to localStorage for slider
           localStorage.setItem("selectedProductId", el.id);
           // Redirect to cart page
-          window.location.href = "../../Cart.html";
+          window.location.href = "../../detailsPage.html";
         } else {
           console.log("Failed to add to cart");
         }
@@ -189,7 +176,6 @@ function database(data) {
       }
     });
 ///Add TO Cart Code_End
-
 
     const imgContainer = document.createElement("div");
     imgContainer.className = "imgContainer";

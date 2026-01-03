@@ -38,6 +38,7 @@ ApiCall();
 //     currentPage = 1;
 //     renderPage();
 // });
+
 const dropdown = document.querySelector(".custom-dropdown");
 const selected = dropdown.querySelector(".dropdown-selected");
 const options = dropdown.querySelector(".dropdown-options");
@@ -94,6 +95,7 @@ const renderPage = () => {
 };
 
 // ================= APPEND DATA =================
+
 const appendsFunc = (data) => {
     let dataShow = document.getElementById('info');
     dataShow.innerHTML = "";
@@ -105,6 +107,10 @@ const appendsFunc = (data) => {
         let title = document.createElement('p');
         let discription = document.createElement('p');
         let price = document.createElement('p');
+        
+        //  const btn = document.createElement("button");
+        //  btn.className = "addBtn";
+        //  btn.innerHTML = "Add to Cart";
 
         Parent_div.className = "card";
         img_bg.className = "img_bg";
@@ -119,7 +125,8 @@ const appendsFunc = (data) => {
         price.innerText = `RS.${el.price}`;
 
         img_bg.append(img);
-        Parent_div.append(img_bg, title, discription, price);
+        // btn_div.append(btn);
+        // Parent_div.append(img_bg, title, discription, price, btn_div);
         dataShow.append(Parent_div);
     });
 };

@@ -5,39 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart_page</title>
-    <link rel="shortcut icon"
-        href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80"  type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <link rel="stylesheet" href="./CSS/Cart.css">
 
 <body>
 
+     <header></header>
 
+    <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+    </a>
 
-    <div class="container">
+    <div class="container"></div>
 
-        <!-- <div class="child_1">
-        <img src="https://neeshperfumes.com/cdn/shop/files/MW-15ml_Front.jpg?v=1749558215&width=300" class="bag">
-        <div class="text">
-            <p class="Milky_Way">Milky Way</p>
-        </div>
-    </div>
+    <div class="totalItemPrice-div"></div>
 
     
-    <div class="child_1">
-        <p class="price">Rs.300</p>
-    </div> -->
+    <!-- FOOTER -->
+   <footer></footer>
+    <!-- FOOTER -->
 
-    </div>
-    <!-- <div class="price_container">
-        <div class="decrement">-</div>
-        <input type="text" class="qty-input" />
-        <div class="increment">+</div>
-    </div> -->
 </body>
 <script src="./JS/Cart.js"></script>
+
+<script type="module">
+    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
+
+    // Navbar HTML
+    document.querySelector("header").innerHTML = Navbar();
+
+    // Navbar CSS
+    let styleTag = document.createElement("style");
+    styleTag.textContent = Navbar_css();
+    document.head.append(styleTag);
+
+     document.querySelector("footer").innerHTML = Footer();
+     
+    let styleTagFooter = document.createElement("style");
+    styleTagFooter.textContent = Footer_css();
+    document.head.append(styleTagFooter);
+
+ //Scroll-Arrow-code
+const toTop = document.querySelector(".to-top");
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    });
+});
+</script>
 
 </html>

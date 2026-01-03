@@ -1,24 +1,10 @@
 const api = `https://khushi-uedn.onrender.com/kids_perfume`;
 let Cartapi = `https://khushi-uedn.onrender.com/Cart`;
-
 let globalData = [];
 let originalData = []; // store original data for "Clear All"
 let currentPage = 1;
 const itemsPerPage = 9;
 
-// function Apicall() {
-//   fetch(api)
-//     .then(res => res.json())
-//     .then(res => {
-//       globalData = [...res];
-//       originalData = [...res]; // save original data for clearing filter
-//       renderPage();
-//       renderPagination();
-//     })
-//     .catch(err => console.log(err));
-// }
-
-// Apicall();
 
 const apiCall1 = async () => {
   let loading = document.querySelector(".loading");
@@ -158,6 +144,7 @@ function database(data) {
         img: el.img,
         price: el.parice,
         thumb_img: el.img,
+        title: el.title
       };
 
       try {
