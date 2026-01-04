@@ -108,9 +108,9 @@ const appendsFunc = (data) => {
         let discription = document.createElement('p');
         let price = document.createElement('p');
         
-        //  const btn = document.createElement("button");
-        //  btn.className = "addBtn";
-        //  btn.innerHTML = "Add to Cart";
+         const btn = document.createElement("button");
+         btn.className = "addBtn";
+         btn.innerHTML = "click";
 
         Parent_div.className = "card";
         img_bg.className = "img_bg";
@@ -125,11 +125,13 @@ const appendsFunc = (data) => {
         price.innerText = `RS.${el.price}`;
 
         img_bg.append(img);
-        // btn_div.append(btn);
-        // Parent_div.append(img_bg, title, discription, price, btn_div);
+        Parent_div.append(img_bg, title, discription, price,btn);
         dataShow.append(Parent_div);
     });
 };
+
+
+
 
 // ================= BUTTON DISABLE LOGIC =================
 const updateButtons = () => {

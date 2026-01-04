@@ -90,6 +90,11 @@ const appendsFunc = (data) => {
         let discription = document.createElement('p');
         let price = document.createElement('p');
 
+          const btn = document.createElement("button");
+         btn.className = "addBtn";
+         btn.innerHTML = "click";
+
+
         Parent_div.className = "card";
         img_bg.className = "img_bg";
         img.className = "img_div";
@@ -103,7 +108,7 @@ const appendsFunc = (data) => {
         price.innerText = `RS.${el.price}`;
 
         img_bg.append(img);
-        Parent_div.append(img_bg, title, discription, price);
+        Parent_div.append(img_bg, title, discription, price,btn);
         dataShow.append(Parent_div);
     });
 };

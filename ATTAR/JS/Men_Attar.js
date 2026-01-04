@@ -148,6 +148,7 @@ function database(data) {
         id: el.id,
         img: el.img,
         price: el.parice,
+        title: el.title,
         thumb_img: el.img,
       };
 

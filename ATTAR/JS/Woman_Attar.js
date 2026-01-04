@@ -149,6 +149,7 @@ function database(data) {
       let cartObj = {
         id: el.id,
         img: el.img,
+        title: el.title,
         price: el.parice,
         thumb_img: el.img,
       };
