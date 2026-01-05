@@ -564,16 +564,16 @@ top: 57px;
     .information_input {
     width: 98px;
     border: 1px solid #fff;
-    padding: 11px 10px;
+    padding: 9px 10px;
     color: #fff !important;
     background-color: #4e4c3f;
-    font-size: 15px;
-    height: 35px;
+    font-size:10px;
+    height: 32px;
     margin: 10px 0px;
 }
     .footer_img_logo {
         width: 80px;
-        height: 86px;
+        height:79px;
     }
     .Touch_text_1, .Policies_text_1, .Subscribe_text {
     font-size:6px;
@@ -594,12 +594,11 @@ top: 57px;
  .Linkedin_Icon,.insta,.facebook{
         width: 20px;
     }
-
-    .Subscribe_button {
+.Subscribe_button {
         margin: 10px 0px;
-        width: 87px;
-        height: 33px;
-        font-size: 7px;
+        width: 78px;
+        height: 29px;
+        font-size: 6px;
     }
 .footerlogo_img {
     margin: 6px 0px;
@@ -617,6 +616,130 @@ top: 57px;
     font-size: 10px;
 }
 }
+
+ @media (min-width: 421px) and (max-width:440px){
+ .footer_main1 {
+    display: flex;
+    justify-content: center;
+    gap:22px;
+}
+    .information_input {
+    width: 98px;
+    border: 1px solid #fff;
+    padding: 9px 10px;
+    color: #fff !important;
+    background-color: #4e4c3f;
+    font-size:10px;
+    height: 32px;
+    margin: 10px 0px;
+}
+    .footer_img_logo {
+        width: 80px;
+        height:79px;
+    }
+    .Touch_text_1, .Policies_text_1, .Subscribe_text {
+    font-size:6px;
+    padding: 5px 0px;
+}
+    .Subscribe_text_2 {
+    font-size:6px;
+    padding: 12px 0px;
+}
+    .Policies_text {
+    font-size:6px;
+    padding:5px 0px;
+}
+    .Touch_text {
+    font-size:6px;
+    padding: 6px 0px;
+}
+ .Linkedin_Icon,.insta,.facebook{
+        width: 20px;
+    }
+.Subscribe_button {
+        margin: 10px 0px;
+        width: 78px;
+        height: 29px;
+        font-size: 6px;
+    }
+.footerlogo_img {
+    margin: 6px 0px;
+    gap: 3px;
+}
+
+    .footer {
+        height:255px;
+        background-color: #393939;
+        color: #fff;
+        padding: 20px 7px;
+    }
+    .COPYRIGHT_text {
+    margin: 18px 0px;
+    font-size: 10px;
+}
+ }
+
+  @media (min-width:321px) and (max-width:380px){
+  .footer_main1 {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+    .information_input {
+    width: 98px;
+    border: 1px solid #fff;
+    padding: 9px 10px;
+    color: #fff !important;
+    background-color: #4e4c3f;
+    font-size:10px;
+    height: 32px;
+    margin: 10px 0px;
+}
+    .footer_img_logo {
+        width: 80px;
+        height:79px;
+    }
+    .Touch_text_1, .Policies_text_1, .Subscribe_text {
+    font-size:6px;
+    padding: 5px 0px;
+}
+    .Subscribe_text_2 {
+    font-size:6px;
+    padding: 12px 0px;
+}
+    .Policies_text {
+    font-size:6px;
+    padding:5px 0px;
+}
+    .Touch_text {
+    font-size:6px;
+    padding: 6px 0px;
+}
+ .Linkedin_Icon,.insta,.facebook{
+        width: 20px;
+    }
+.Subscribe_button {
+        margin: 10px 0px;
+        width: 78px;
+        height: 29px;
+        font-size: 6px;
+    }
+.footerlogo_img {
+    margin: 6px 0px;
+    gap: 3px;
+}
+
+    .footer {
+        height: 300px;
+        background-color: #393939;
+        color: #fff;
+        padding: 20px 7px;
+    }
+    .COPYRIGHT_text {
+    margin: 18px 0px;
+    font-size: 10px;
+}
+  }
  `
 }
 
