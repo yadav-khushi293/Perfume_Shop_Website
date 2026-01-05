@@ -123,6 +123,174 @@ height:37px;
     padding: 20px 0px;
     padding-right: 180px;
 }
+
+@media (max-width: 320px){
+.parenst {
+    display:flex;
+    padding: 0px 8px;
+    height:60px;
+  
+}
+    .headre {
+    font-size:8px;
+    padding: 12px 0px;
+    height: 31px;
+}
+.neesh_logo {
+    padding: 20px 0px;
+    padding-right:0px;
+    width: 80px;
+}
+.header_1 {
+    font-size: 17px;
+    gap:0px;
+}
+    .memu_img {
+    width: 24px;
+    height: 24px;
+}
+    .header_3 {
+    display: flex;
+    gap: 9px;
+}
+.menu{
+        font-size: 12px;
+}
+  .Serching {
+    width: 69px;
+    font-size: 9px;
+    padding: 0px 8px;
+    height: 25px;
+}
+
+.user_login {
+    width: 21px;
+    height: 22px;
+    margin-top: 6px;
+}
+    .Add_card {
+    width:29px;
+    height: 40px;
+}
+    .header_child_1 {
+    gap: 10px;
+    padding: 0px 4px;
+}
+}
+ @media (max-width: 420px){
+
+ .parenst {
+    display:flex;
+    padding: 0px 8px;
+    height:60px;
+  
+}
+    .headre {
+    font-size:8px;
+    padding: 12px 0px;
+    height: 31px;
+}
+.neesh_logo {
+    padding: 20px 0px;
+    padding-right:0px;
+    width: 80px;
+}
+.header_1 {
+    font-size: 17px;
+    gap:0px;
+}
+    .memu_img {
+    width: 24px;
+    height: 24px;
+}
+    .header_3 {
+    display: flex;
+    gap: 9px;
+}
+.menu{
+        font-size: 12px;
+}
+  .Serching {
+    width: 69px;
+    font-size: 9px;
+    padding: 0px 8px;
+    height: 25px;
+}
+
+.user_login {
+    width: 21px;
+    height: 22px;
+    margin-top: 6px;
+}
+    .Add_card {
+    width:29px;
+    height: 40px;
+}
+    .header_child_1 {
+    gap: 10px;
+    padding: 0px 4px;
+}
+ }
+
+ @media (min-width: 421px) and (max-width:440px){
+ .parenst {
+    display:flex;
+    padding: 0px 8px;
+    height:60px;
+  
+}
+    .headre {
+    font-size:8px;
+    padding: 12px 0px;
+    height: 31px;
+}
+.neesh_logo {
+    padding: 20px 0px;
+    padding-right:0px;
+    width: 80px;
+}
+.header_1 {
+    font-size: 17px;
+    gap:0px;
+}
+    .memu_img {
+    width: 24px;
+    height: 24px;
+}
+    .header_3 {
+    display: flex;
+    gap: 9px;
+}
+.menu{
+        font-size: 12px;
+}
+  .Serching {
+    width: 69px;
+    font-size: 9px;
+    padding: 0px 8px;
+    height: 25px;
+}
+
+.user_login {
+    width: 21px;
+    height: 22px;
+    margin-top: 6px;
+}
+    .Add_card {
+    width:29px;
+    height: 40px;
+}
+    .header_child_1 {
+    gap: 10px;
+    padding: 0px 4px;
+}
+}
+ @media (min-width: 481px) and (max-width: 840px){
+ .neesh_logo {
+    padding: 20px 0px;
+    padding-right: 19px;
+}
+ }
 `;
 };
 
@@ -346,6 +514,109 @@ top: 57px;
   right: 209px;
   top: 55px;
 }
-    `
+@media(min-width: 481px) and (max-width: 840px){
+    .footer_main1 {
+    display: flex;
+    justify-content: center;
+    gap:40px !important;
+}
+    .footer_img_logo {
+    width: 170px;
+    height: 170px;
+}
+
+.footer {
+    height: 370px;
+    padding:25px 13px;
+}
+
+.information_input {
+    width: 228px;
+    padding: 13px 10px;
+    font-size: 16px;
+    height: 48px;
+    margin: 10px 0px;
+}
+    .Policies_text {
+    font-size: 15px;
+    padding: 6px 0px;
+}
+.COPYRIGHT_text {
+    margin: 13px 0px;
+}
+  }
+
+  @media (min-width: 841px) and (max-width: 1080px){
+  .footer_main1 {
+    gap: 50px;
+}
+    .footer {
+    height: 370px;
+    padding: 50px 19px;
+}
+  }
+@media (max-width: 320px){
+.footer_main1 {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+    .information_input {
+    width: 98px;
+    border: 1px solid #fff;
+    padding: 11px 10px;
+    color: #fff !important;
+    background-color: #4e4c3f;
+    font-size: 15px;
+    height: 35px;
+    margin: 10px 0px;
+}
+    .footer_img_logo {
+        width: 80px;
+        height: 86px;
+    }
+    .Touch_text_1, .Policies_text_1, .Subscribe_text {
+    font-size:6px;
+    padding: 5px 0px;
+}
+    .Subscribe_text_2 {
+    font-size:6px;
+    padding: 12px 0px;
+}
+    .Policies_text {
+    font-size:6px;
+    padding:5px 0px;
+}
+    .Touch_text {
+    font-size:6px;
+    padding: 6px 0px;
+}
+ .Linkedin_Icon,.insta,.facebook{
+        width: 20px;
+    }
+
+    .Subscribe_button {
+        margin: 10px 0px;
+        width: 87px;
+        height: 33px;
+        font-size: 7px;
+    }
+.footerlogo_img {
+    margin: 6px 0px;
+    gap: 3px;
+}
+
+    .footer {
+        height: 300px;
+        background-color: #393939;
+        color: #fff;
+        padding: 20px 7px;
+    }
+    .COPYRIGHT_text {
+    margin: 18px 0px;
+    font-size: 10px;
+}
+}
+ `
 }
 
