@@ -1,13 +1,11 @@
-
 /* nav_code_end */
-.Luxury_perfumes_img{
-    width: 100%;
-    height: 430px;
+.Luxury_perfumes_img {
+  width: 100%;
+  height: 430px;
 }
 
-
 /* Loding_code_css */
-.loading{
+.loading {
   position: absolute;
   top: 50%;
   left: 48%;
@@ -21,77 +19,76 @@
   transition: all 0.4s ease;
   animation: spin 1s linear infinite;
 }
-@keyframes spin{
-  from{
+@keyframes spin {
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
-.heading{
-    text-align: center;
-     padding-top:30px;
-     font-family:"Minion Pro";
-    text-transform: uppercase;
-    color: #242323;
-    word-spacing:6px;
-    font-size: 39px;
-    font-weight:normal;
-
+.heading {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Minion Pro";
+  text-transform: uppercase;
+  color: #242323;
+  word-spacing: 6px;
+  font-size: 39px;
+  font-weight: normal;
 }
 /* CART_IMG CODE */
 
- .imgContainer {
-      width:400px;
-      height:390px;
-      overflow: hidden;
-      border-radius:5px;
-      border: 1px solid rgb(221, 160, 39);
-      position: relative;
-    }
-    .slider {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    .slider figure {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slider figure img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-    .dots {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 5px;
-    }
-    .dot {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.7);
-      cursor: pointer;
-    }
-    .dot.active {
-      background: rgba(255,255,255,1);
-    }
-    .card {
-      margin-bottom: 2em;
-    }
+.imgContainer {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid rgb(221, 160, 39);
+  position: relative;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider figure {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.slider figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.dot.active {
+  background: rgba(255, 255, 255, 1);
+}
+.card {
+  margin-bottom: 2em;
+}
 
-   #info {
+#info {
   display: grid;
-   position: relative;
+  position: relative;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 10px;
@@ -99,26 +96,25 @@
   width: 90%;
   /* padding-top:20px; */
 }
-.title_head{
+.title_head {
   text-align: center;
   padding: 10px 0px;
   margin: auto;
   width: 95%;
-  font-size:22px;
-  font-family:"Minion Pro";
+  font-size: 22px;
+  font-family: "Minion Pro";
   text-transform: uppercase;
-  color:#262626;
+  color: #262626;
 }
-.price{
+.price {
   text-align: center;
-   color:#0a0a0a;
-   font-weight: bold;
-   font-size:20px;
-   
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .paginationBox {
-  margin-bottom:50px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 20px;
 }
@@ -127,7 +123,7 @@
   padding: 13px 20px;
   margin: 0 10px;
   border: none;
-  background:black;
+  background: black;
   color: white;
   font-size: 18px;
   border-radius: 5px;
@@ -156,28 +152,27 @@
   align-items: center;
   margin-top: 10px;
 }
-.addBtn{
-    width:360px;
-    height: 52px;
-    margin: 15px 0px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #dfaa40;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-align: center;
-     border: 1px solid rgb(218, 150, 15);
-    border-radius:2px;
-    cursor: pointer;
+.addBtn {
+  width: 360px;
+  height: 52px;
+  margin: 15px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #dfaa40;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 1px solid rgb(218, 150, 15);
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .addBtn:hover {
-    background-color:black;
-    border: transparent;
-    transition: all ease-in-out 0.5s;
+  background-color: black;
+  border: transparent;
+  transition: all ease-in-out 0.5s;
 }
-
 
 /* DROWP_DOWN */
 .custom-dropdown {
@@ -185,10 +180,9 @@
   height: 40px;
   position: relative;
   font-family: Arial, sans-serif;
-  display:grid;
-  margin:30px 115px;
- font-size: 17px;
-
+  display: grid;
+  margin: 30px 115px;
+  font-size: 17px;
 }
 
 .dropdown-selected {
@@ -211,7 +205,7 @@
   margin: 5px 0 0;
   background: #fff;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   display: none;
   position: absolute;
   top: 40px;
@@ -228,10 +222,91 @@
   background: #3e2324;
   color: #fff;
 }
-.dropdown-selected{
-  font-size:17px !important;
+.dropdown-selected {
+  font-size: 17px !important;
   letter-spacing: 1px;
 }
 
 /*  */
 
+@media (max-width: 320px) {
+  #info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0px 10px;
+    margin: auto;
+    width: 100%;
+  }
+  .imgContainer {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 160, 39);
+    position: relative;
+  }
+
+.dot {
+    width: 10px;
+    height: 10px;
+}
+.dots {
+    bottom: 16px;
+}
+
+.paginationBox button {
+    padding: 9px 14px;
+    margin: 0 10px;
+    font-size: 12px;
+}
+.paginationBox span {
+    padding: 9px 10px;
+    font-size:11px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+.heading {
+    text-align: center;
+    padding-top: 21px;
+    font-size: 19px;
+}
+  .addBtn {
+    width: 133px;
+    height: 33px;
+    margin: 2px 0px;
+    font-size: 10px;
+  }
+  .title_head {
+    padding: 10px 0px;
+    width: 95%;
+    font-size: 9px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .Luxury_perfumes_img {
+    height: 160px;
+}
+.custom-dropdown {
+    width: 113px;
+    height: 45px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    display: grid;
+    margin: 30px 21px;
+}
+.dropdown-selected {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    height:39px;
+}
+.dropdown-options li {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+}
