@@ -615,6 +615,18 @@ top: 57px;
     margin: 18px 0px;
     font-size: 10px;
 }
+
+
+.to-top {
+  bottom: 1px;
+  right: 32px;
+  width:30px;
+  height:30px;
+   font-size:17px;
+}
+
+
+
 }
 
  @media (min-width: 421px) and (max-width:440px){
@@ -677,6 +689,14 @@ top: 57px;
     margin: 18px 0px;
     font-size: 10px;
 }
+.to-top {
+  bottom: 1px;
+  right:30px;
+  width:35px;
+  height:35px;
+   font-size:18px;
+}
+
  }
 
   @media (min-width:321px) and (max-width:380px){
