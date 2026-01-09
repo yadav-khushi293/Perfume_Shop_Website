@@ -837,10 +837,7 @@ h4 {
     height: 36px;
     border: 2px solid #eac004;
   }
-  .thumb-wrapper .arrow {
-    font-size: 1.1rem;
-    padding: 4px;
-  }
+ 
   .p3 {
     font-size: 15px;
   }
@@ -1698,4 +1695,124 @@ h4 {
     display: grid;
     justify-content:start;
 }
+ .Ouer_stroy_slider {
+    width: 80%;
+    height: 490px;
+  }
+  .ouer_slide_child {
+    width: 100%;
+    height: 490px;
+  }
+}
+@media (min-width: 841px) and (max-width: 1080px){
+   .Song_Serenity {
+    width: 66%;
+    margin: auto;
+    padding-top:7px;
+}
+.essence_1 {
+    margin-bottom: 10px;
+    margin: 40px 40px;
+    font-size: 24px;
+}
+.essence_2 {
+    margin-bottom: 10px;
+      font-size: 24px;
+    margin:0px 40px;
+}
+.prents_main_div {
+        /* display: grid; */
+        justify-content: center;
+        padding: 60px 50px;
+        gap: 30px;
+        margin: auto;
+        width: 100%;
+    }
+  .parents_div_2 {
+    display: none;
+  }
+  .C {
+    margin: 30px 0px;
+  }
+  .card,
+  .card_2,
+  .card_1 {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .child1 {
+    width: 276px;
+    height: 201px;
+    padding: 20px 15px;
+  }
+  
+  .Renuka_Jonnada_2 {
+    word-spacing: 2px;
+    line-height: 13px;
+    font-size: 11px;
+  }
+
+  .Renuka_Jonnada_1 {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+
+  .Renuka_Jonnada {
+    padding: 4px 0px;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 33px;
+  }
+
+  .head {
+    font-size:25px !important;
+  }
+  .graceful_head {
+    font-size: 29px;
+    font-weight: 500;
+    margin: 16px 27px;
+}
+.Asensual_head{
+ font-size: 30px;
+}
+.prents_6_video{
+  width: 400px;
+  margin: 0px 160px;
+}
+.parrnts_div3rd {
+    display: grid;
+    justify-content:start;
+}
+ .Ouer_stroy_slider {
+    width: 80%;
+    height: 550px;
+  }
+  .ouer_slide_child {
+    width: 100%;
+    height: 550px;
+  }
+    .main {
+    position: relative;
+   width: 450px; /* change as needed */
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid #ecd25f;
+    border-radius: 5px;
+    height: 500px;
+    transition: opacity 0.1s ease-in-out;
+  }
+  .slider-image {
+    width: 450px;
+    height: 500px;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .thumb-image {
+    width: 60px;
+    height:60px;
+    border: 2px solid #eac004;
+  }
 }
