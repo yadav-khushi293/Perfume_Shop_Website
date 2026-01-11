@@ -9,12 +9,19 @@ const Linkedin_Icon=new URL('../Utiles/Linkedin_Icon.webp',import.meta.url).href
 const memu_img=new URL("../Utiles/download (1).png",import.meta.url).href
 const serch_img=new URL("../Utiles/download (2).png",import.meta.url).href
 
+const Cartapi = "https://khushi-uedn.onrender.com/Cart";
 
-export const Navbar = () => {
-  return `
-      <nav>
-        <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
-    </nav>
+export const Navbar = async() => {
+    try {
+        let res = await fetch(Cartapi);
+        let data = await res.json()
+        console.log("🚀 ~ Navbar ~ data:", data)
+        // let totalCartItems = data.length;
+
+         return `
+                <nav>
+                     <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
+                </nav>
 
     <div  class="parenst">
          <div class="header_1">
@@ -40,9 +47,52 @@ export const Navbar = () => {
             <img src="${user_login}" class="user_login">
              </a>
             <img src="${Add_card}" class="Add_card">
+            <div class="total-cart-items">
+                <p>${data.length}</p>
+            </div>
         </div>
     </div>
     `;
+
+    } catch (error) {
+        console.log("🚀 ~ Navbar ~ error:", error)
+        
+    }
+//   return `
+//       <nav>
+//         <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
+//     </nav>
+
+//     <div  class="parenst">
+//          <div class="header_1">
+
+//             <div class="header_child_1">
+//                 <img src="${memu_img}" class="memu_img">
+//                 <p class="menu">Menu</p>
+//             </div>
+
+//             <div class="header_child_1">
+//                <input type="text" placeholder='Search' class="Serching" ></input>
+//             </div>
+
+//          </div>
+
+//          <a href="../Index.html">
+//         <div class="header_2">
+//             <img src="${neesh_logo}" class="neesh_logo">
+//         </div>
+//        </a>
+//         <div class="header_3">
+//             <a href="../Login_page.html">
+//             <img src="${user_login}" class="user_login">
+//              </a>
+//             <img src="${Add_card}" class="Add_card">
+//             <div class="total-cart-items">
+//                 <p>${totalCartItems}</p>
+//             </div>
+//         </div>
+//     </div>
+//     `;
 };
 export const Navbar_css = () => {
   return `
@@ -86,6 +136,18 @@ height:37px;
     width: 40px;
     height:40px;
 }
+.total-cart-items{
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
 .serch_img{
     width: 29px;
     height: 29px;
@@ -97,6 +159,7 @@ height:37px;
     gap: 10px;
 }
 .header_3{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

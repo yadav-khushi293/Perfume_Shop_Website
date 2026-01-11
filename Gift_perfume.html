@@ -62,8 +62,13 @@
     import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
 
     // Navbar HTML
-    document.querySelector("header").innerHTML = Navbar();
+    // document.querySelector("header").innerHTML = Navbar();
 
+    const renderNav = async() => {
+      document.querySelector("header").innerHTML = await Navbar();
+    }
+    renderNav()
+    
     // Navbar CSS
     let styleTag = document.createElement("style");
     styleTag.textContent = Navbar_css();

@@ -53,3 +53,24 @@
     gap: 80px;
     font-size: 20px;
 }
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size:39px;
+  word-spacing:3px;
+  margin: 50px 0px;
+}
+.Skype_Picture{
+   border-radius: 50%;
+   width:100px;
+   height:100px;
+}
+
+.cart_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}

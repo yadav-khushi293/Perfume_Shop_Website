@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids_Perfume</title>
-    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids_Perfume</title>
+  <link rel="shortcut icon"
+    href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80"
+    type="image/x-icon">
 
-    <link rel="stylesheet" href="./Css/Kids_Perfume.css">
-    <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="./Css/Kids_Perfume.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
+
 <body>
-   <header></header>
-    <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+  <header></header>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
 
-<!-- code_nav_end -->
- <!--background_img -->
+  <!-- code_nav_end -->
+  <!--background_img -->
 
-<div class="prents_6_video">
-  <video 
-       class="myVideo"
-       src="https://bachaaparty.com/cdn/shop/videos/c/vp/f2b1084baaa646539230e56a42c6f78b/f2b1084baaa646539230e56a42c6f78b.m3u8?v=0"
-       autoplay 
-       muted 
-       loop 
-  ></video>
-</div>
+  <div class="prents_6_video">
+    <video class="myVideo"
+      src="https://bachaaparty.com/cdn/shop/videos/c/vp/f2b1084baaa646539230e56a42c6f78b/f2b1084baaa646539230e56a42c6f78b.m3u8?v=0"
+      autoplay muted loop></video>
+  </div>
 
   <!--background_img -->
 
   <h1 class="heading">All kids perfumes Collection</h1>
-  
+
   <!-- DROP -->
-<div class="custom-dropdown">
-  <div class="dropdown-selected">Filter</div>
-  <ul class="dropdown-options">
-    <li data-value="asc">Low to High</li>
-    <li data-value="desc">High to Low</li>
-    <li data-value="clear">Clear All</li>
-  </ul>
-</div>
-<!-- DROP_end -->
- 
+  <div class="custom-dropdown">
+    <div class="dropdown-selected">Filter</div>
+    <ul class="dropdown-options">
+      <li data-value="asc">Low to High</li>
+      <li data-value="desc">High to Low</li>
+      <li data-value="clear">Clear All</li>
+    </ul>
+  </div>
+  <!-- DROP_end -->
+
 
   <!-- CART IMG CODE -->
 
-    <div id="info">
-        <div class="loading"></div>
-    </div>
+  <div id="info">
+    <div class="loading"></div>
+  </div>
 
-<div id="pagination" class="paginationBox"></div>
+  <div id="pagination" class="paginationBox"></div>
 
 
-    <!-- FOOTER -->
-    <footer></footer>
-    <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer></footer>
+  <!-- FOOTER -->
 
 </body>
 <script src="./JS/Kids_Perfume.js"></script>
 
- <script type="module">
-    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
+<script type="module">
+  import { Navbar, Navbar_css, Footer, Footer_css } from "./JS/Impot_Export.js";
 
-    // Navbar HTML
-    document.querySelector("header").innerHTML = Navbar();
+  // Navbar HTML
+  const renderNav = async () => {
+    document.querySelector("header").innerHTML = await Navbar();
+  }
+  renderNav()
 
-    // Navbar CSS
-    let styleTag = document.createElement("style");
-    styleTag.textContent = Navbar_css();
-    document.head.append(styleTag);
+  // Navbar CSS
+  let styleTag = document.createElement("style");
+  styleTag.textContent = Navbar_css();
+  document.head.append(styleTag);
 
-     document.querySelector("footer").innerHTML = Footer();
-     
-    let styleTagFooter = document.createElement("style");
-    styleTagFooter.textContent = Footer_css();
-    document.head.append(styleTagFooter);
+  document.querySelector("footer").innerHTML = Footer();
 
-     //Scroll-Arrow-code
-const toTop = document.querySelector(".to-top");
+  let styleTagFooter = document.createElement("style");
+  styleTagFooter.textContent = Footer_css();
+  document.head.append(styleTagFooter);
 
-   document.addEventListener("DOMContentLoaded", () => {
+  //Scroll-Arrow-code
+  const toTop = document.querySelector(".to-top");
+
+  document.addEventListener("DOMContentLoaded", () => {
     const toTop = document.querySelector(".to-top");
 
     window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
+      if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+      } else {
+        toTop.classList.remove("active");
+      }
     });
-});
+  });
 
 </script>
+
 </html>
-
-

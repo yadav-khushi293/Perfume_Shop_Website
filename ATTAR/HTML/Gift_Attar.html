@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift_Attar</title>
-        <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80"
+        type="image/x-icon">
     <link rel="stylesheet" href="../../ATTAR/CSS/Gift_Attar.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 </head>
-<body  onload="Apicall()">
-  <header></header>
-    
-      <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-<!-- code_nav_end -->
- <!--background_img -->
- <div class="prents_6_video">
- <video class="myVideo" src="../../Utiles/5ac955b7fe5e4f08ae4871cc7753e561.HD-1080p-4.8Mbps-37851098.mp4" 
-       autoplay 
-       muted 
-       loop 
-       width="100%"
-       >
-</video >
-</div>
-  <!--background_img -->
 
-  <h1 class="heading">All Gifts Attar Collection</h1>
-<!-- Drop_Dwon -->
-  <div class="custom-dropdown">
-  <div class="dropdown-selected">Filter</div>
-  <ul class="dropdown-options">
-    <li data-value="asc">Low to High</li>
-    <li data-value="desc">High to Low</li>
-    <li data-value="clear">Clear All</li>
-  </ul>
-</div>
-<!-- Drop_Dwon_End -->
- 
-  <!-- CART IMG CODE -->
+<body onload="Apicall()">
+    <header></header>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- code_nav_end -->
+    <!--background_img -->
+    <div class="prents_6_video">
+        <video class="myVideo" src="../../Utiles/5ac955b7fe5e4f08ae4871cc7753e561.HD-1080p-4.8Mbps-37851098.mp4"
+            autoplay muted loop width="100%">
+        </video>
+    </div>
+    <!--background_img -->
+
+    <h1 class="heading">All Gifts Attar Collection</h1>
+    <!-- Drop_Dwon -->
+    <div class="custom-dropdown">
+        <div class="dropdown-selected">Filter</div>
+        <ul class="dropdown-options">
+            <li data-value="asc">Low to High</li>
+            <li data-value="desc">High to Low</li>
+            <li data-value="clear">Clear All</li>
+        </ul>
+    </div>
+    <!-- Drop_Dwon_End -->
+
+    <!-- CART IMG CODE -->
     <div id="info">
         <div class="loading"></div>
     </div>
 
 
-<div id="pagination" class="paginationBox"></div>
+    <div id="pagination" class="paginationBox"></div>
 
 
     <!-- FOOTER -->
@@ -56,42 +56,45 @@
 </body>
 <script src="../../ATTAR/JS/Gift_Attar.js"></script>
 
- <script type="module">
-    import { Navbar, Navbar_css ,Footer, Footer_css } from "../../JS/Impot_Export.js";
+<script type="module">
+    import { Navbar, Navbar_css, Footer, Footer_css } from "../../JS/Impot_Export.js";
 
     // Navbar HTML
-    document.querySelector("header").innerHTML = Navbar();
-
+    const renderNav = async () => {
+        document.querySelector("header").innerHTML = await Navbar();
+    }
+    renderNav()
     // Navbar CSS
     let styleTag = document.createElement("style");
     styleTag.textContent = Navbar_css();
     document.head.append(styleTag);
 
-     document.querySelector("footer").innerHTML = Footer();
-     
+    document.querySelector("footer").innerHTML = Footer();
+
     let styleTagFooter = document.createElement("style");
     styleTagFooter.textContent = Footer_css();
     document.head.append(styleTagFooter);
 
 
     //Scroll-Arrow-code
-const toTop = document.querySelector(".to-top");
-
-   document.addEventListener("DOMContentLoaded", () => {
     const toTop = document.querySelector(".to-top");
 
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
+    document.addEventListener("DOMContentLoaded", () => {
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        });
+
+        setTimeout(() => {
+            setActiveNav();
+        }, 100);
     });
 
-    setTimeout(() => {
-        setActiveNav();
-    }, 100);
-});
-
 </script>
+
 </html>
