@@ -41,7 +41,7 @@ const appendCartItem = (data) => {
         <button class="increment">+</button>
         <div class="delete-btn">
           <i class="bi bi-trash"></i>
-        </div>
+        </div>  
       </div>
 
       <div class="child_2">
@@ -53,11 +53,11 @@ const appendCartItem = (data) => {
 
     // Here we are trying to find total Product amount
     let totalPriceDiv = document.querySelector(".totalItemPrice-div");
+     
 
-    // totalItemPrice += el.price
     totalItemPrice += Number(el.price * (el.qty || 1));
     totalPriceDiv.innerHTML = `
-      <p class="totalItem-price">${totalItemPrice}</p>
+      <p class="totalItem-price">RS.${totalItemPrice}</p>
     `;
 
     // console.log("🚀 ~ appendCartItem ~ totalItemPrice:", totalItemPrice)

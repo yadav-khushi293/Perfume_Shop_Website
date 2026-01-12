@@ -1,24 +1,27 @@
-
-const user_login=new URL('../Utiles/download.jpeg',import.meta.url).href
-const neesh_logo = new URL('../Utiles/neesh_logo.webp',import.meta.url).href
-const Add_card = new URL('../Utiles/shopping-bag.svg',import.meta.url).href
-const footer_img_logo  = new URL('https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000',import.meta.url).href
-const facebook = new URL('../Utiles/fecbook.webp',import.meta.url).href
-const insta = new URL('../Utiles/insta.webp',import.meta.url).href
-const Linkedin_Icon=new URL('../Utiles/Linkedin_Icon.webp',import.meta.url).href
-const memu_img=new URL("../Utiles/download (1).png",import.meta.url).href
-const serch_img=new URL("../Utiles/download (2).png",import.meta.url).href
+const user_login = new URL("../Utiles/download.jpeg", import.meta.url).href;
+const neesh_logo = new URL("../Utiles/neesh_logo.webp", import.meta.url).href;
+const Add_card = new URL("../Utiles/shopping-bag.svg", import.meta.url).href;
+const footer_img_logo = new URL(
+  "https://cdn.shopify.com/s/files/1/2806/3100/files/crest-new-logo.png?v=1743594000",
+  import.meta.url
+).href;
+const facebook = new URL("../Utiles/fecbook.webp", import.meta.url).href;
+const insta = new URL("../Utiles/insta.webp", import.meta.url).href;
+const Linkedin_Icon = new URL("../Utiles/Linkedin_Icon.webp", import.meta.url)
+  .href;
+const memu_img = new URL("../Utiles/download (1).png", import.meta.url).href;
+const serch_img = new URL("../Utiles/download (2).png", import.meta.url).href;
 
 const Cartapi = "https://khushi-uedn.onrender.com/Cart";
 
-export const Navbar = async() => {
-    try {
-        let res = await fetch(Cartapi);
-        let data = await res.json()
-        console.log("🚀 ~ Navbar ~ data:", data)
-        // let totalCartItems = data.length;
+export const Navbar = async () => {
+  try {
+    let res = await fetch(Cartapi);
+    let data = await res.json();
+    console.log("🚀 ~ Navbar ~ data:", data);
+    // let totalCartItems = data.length;
 
-         return `
+    return `
                 <nav>
                      <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
                 </nav>
@@ -53,46 +56,44 @@ export const Navbar = async() => {
         </div>
     </div>
     `;
+  } catch (error) {
+    console.log("🚀 ~ Navbar ~ error:", error);
+  }
+  //   return `
+  //       <nav>
+  //         <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
+  //     </nav>
 
-    } catch (error) {
-        console.log("🚀 ~ Navbar ~ error:", error)
-        
-    }
-//   return `
-//       <nav>
-//         <p class="headre">FESTIVE SEASON SALE | FLAT 15% OFF | NO CODE NEEDED*</p>
-//     </nav>
+  //     <div  class="parenst">
+  //          <div class="header_1">
 
-//     <div  class="parenst">
-//          <div class="header_1">
+  //             <div class="header_child_1">
+  //                 <img src="${memu_img}" class="memu_img">
+  //                 <p class="menu">Menu</p>
+  //             </div>
 
-//             <div class="header_child_1">
-//                 <img src="${memu_img}" class="memu_img">
-//                 <p class="menu">Menu</p>
-//             </div>
+  //             <div class="header_child_1">
+  //                <input type="text" placeholder='Search' class="Serching" ></input>
+  //             </div>
 
-//             <div class="header_child_1">
-//                <input type="text" placeholder='Search' class="Serching" ></input>
-//             </div>
+  //          </div>
 
-//          </div>
-
-//          <a href="../Index.html">
-//         <div class="header_2">
-//             <img src="${neesh_logo}" class="neesh_logo">
-//         </div>
-//        </a>
-//         <div class="header_3">
-//             <a href="../Login_page.html">
-//             <img src="${user_login}" class="user_login">
-//              </a>
-//             <img src="${Add_card}" class="Add_card">
-//             <div class="total-cart-items">
-//                 <p>${totalCartItems}</p>
-//             </div>
-//         </div>
-//     </div>
-//     `;
+  //          <a href="../Index.html">
+  //         <div class="header_2">
+  //             <img src="${neesh_logo}" class="neesh_logo">
+  //         </div>
+  //        </a>
+  //         <div class="header_3">
+  //             <a href="../Login_page.html">
+  //             <img src="${user_login}" class="user_login">
+  //              </a>
+  //             <img src="${Add_card}" class="Add_card">
+  //             <div class="total-cart-items">
+  //                 <p>${totalCartItems}</p>
+  //             </div>
+  //         </div>
+  //     </div>
+  //     `;
 };
 export const Navbar_css = () => {
   return `
@@ -128,9 +129,10 @@ height:37px;
   width: 35px;
   height: 35px;
 }
-.user_login{
-    width:30px;
+.user_login {
+    width: 30px;
     height: 32px;
+    margin-top: 9px;
 }
 .Add_card{
     width: 40px;
@@ -139,13 +141,15 @@ height:37px;
 .total-cart-items{
     position: absolute;
     top: 10px;
+    background-color:#d6a651;
+  color: #ede7e7;
+      border:transparent;
     right: -15px;
     height: 20px;
     width: 20px;
     display: flex;
     justify-content: center;
     align-item: center;
-    border: 1px solid black;
     border-radius: 50%;
 }
 .serch_img{
@@ -175,9 +179,9 @@ height:37px;
 .parenst{
     display: flex;
     justify-content:space-between;
-    padding: 0px 40px;
+    padding: 0px 65px;
     /* margin-bottom:20px; */
-    height: 80px;
+    height: 87px;
     box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -293,6 +297,13 @@ height:37px;
     gap: 10px;
     padding: 0px 4px;
 }
+    .total-cart-items {
+    top: 10px;
+    right: -2px;
+    font-size: 10px;
+    height: 14px;
+    width: 16px;
+}
  }
 
  @media (min-width: 421px) and (max-width:440px){
@@ -300,7 +311,13 @@ height:37px;
     display:flex;
     padding: 0px 8px;
     height:60px;
-  
+}
+  .total-cart-items {
+    top: 10px;
+    right: -2px;
+    font-size: 10px;
+    height: 14px;
+    width: 16px;
 }
     .headre {
     font-size:8px;
@@ -353,12 +370,16 @@ height:37px;
     padding: 20px 0px;
     padding-right: 19px;
 }
+.total-cart-items {
+    top: 19px;
+     font-size: 15px;
+}
  }
 `;
 };
 
-export const Footer=()=>{
-    return`
+export const Footer = () => {
+  return `
     <div class="footer">
 
       <div class="footer_main1">
@@ -398,11 +419,10 @@ export const Footer=()=>{
 
       </div>
         <p class="COPYRIGHT_text">COPYRIGHT © 2025, Neesh Perfumes Private Limited</p>
-    </div>`
-}
-export const Footer_css=()=>{
-
-    return`
+    </div>`;
+};
+export const Footer_css = () => {
+  return `
 
 .footer_img_logo{
     width: 220px;
@@ -823,6 +843,5 @@ top: 57px;
     font-size: 10px;
 }
   }
- `
-}
-
+ `;
+};
