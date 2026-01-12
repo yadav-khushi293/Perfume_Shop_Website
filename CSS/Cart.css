@@ -1,26 +1,31 @@
-.container{
+/* .container{
     margin: 80px 0px;
-}
+} */
 .content-div{
   display:grid;
+  margin: auto;
+  width:75%;
+  height: auto;
   grid-template-columns: repeat(4,1fr);
   justify-items:center;
   align-content: center;
-  gap: 50px;
+  gap:160px;
 }
-.price_container{
-  border: 1px solid black;
-  /* width:200px; */
-  margin-bottom: 25px;
-  display: flex;
-  height:55px;
-  text-align: center;
+.container{
+  margin: 20px 0px;
+}
+.price_container {
+    margin-bottom: 25px;
+    display: flex;
+    margin: 40px 0px;
+    height: 55px;
+    text-align: center;
 }
 
 .increment,.decrement{
-  border: 1px solid black;
   width: 70px;
    padding: 14px 0px;
+   background-color: rgb(241, 236, 236);
    text-align: center;
    font-size:24px;
    font-weight: bold;
@@ -30,7 +35,6 @@
    padding:0px 0px;
    text-align: center;
     font-size:21px;
-     border: 1px solid black;
      width: 70px;
      cursor: pointer;
 }
@@ -42,35 +46,118 @@
 }
 .bag{
     width: 100px;
-    border: 1px solid black;
+    border: 3px solid rgb(187, 184, 184);
     height: 100px;
 }
 
 .child_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;    
+    width:500px;
     gap: 80px;
     font-size: 20px;
+    margin: 20px 0px;
 }
+.child_2{
+  margin:60px 0px;
+  font-size:19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color:rgb(151, 148, 148);
+}
+
+.Milky_Way{
+  padding: 30px 0px;
+  font-size: 17px;
+  text-transform: capitalize;
+  word-spacing:2px;
+}
+/*  */
 h1{
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
+  border: 1px solid rgb(138, 137, 137);
+  border-top: none;
+  border-left: none;  
+  border-right: none;
+  margin: auto;
+  width:75%;
+  height:100px;
   font-size:39px;
   word-spacing:3px;
-  margin: 50px 0px;
+  padding:30px 0px;
 }
 .Skype_Picture{
    border-radius: 50%;
-   width:100px;
-   height:100px;
+   width:70px;
+   height:70px;
 }
 
 .cart_div{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 60px;
+  font-family:Jost (woff2)sans-serif;
+  align-items:center;
+  gap:40px;
+  margin: 36px 0px;
   text-align: center;
+}
+.pricetext{
+  padding:6px 0px;
+  font-size: 16px;
+  letter-spacing:1px;
+  color: #1a1919;
+}
+.texttitle{
+font-size: 16px;
+color: #1a1919;
+/* word-spacing: 2px; */
+}
+
+.boder_black{
+  margin: auto;
+  width: 75%;
+ border:1px solid rgb(154, 151, 151);
+  border-radius:100px;
+}
+.border_yellow{
+   margin: auto;
+  width:100%;
+   border:1px solid #c7a02b;
+   background-color: #c79c19;
+    margin-top:2px;
+    margin-bottom:1px;
+  height:5px;
+  border-radius:100px;
+}
+.Haute_Tabacco{
+  font-size:20px;
+  word-spacing:4px;
+   margin: 30px 200px;
+}
+span{
+  color: #ce2a1f;
+}
+.Product_heading{
+  display: flex;
+  justify-content:space-between;
+  font-size:17px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #545353;
+  border: 1px solid #c4bebe;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 52px;
+  font-weight: bold;
+  margin: auto;
+  padding:10px 0px;
+  width: 75%;
+}
+.product2{
+  margin-left:300px;
+}
+.product3{
+  margin-right:12px;
 }

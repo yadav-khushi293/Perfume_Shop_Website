@@ -6,29 +6,28 @@ const apicall = async () => {
     let res = await fetch(Cartapi);
     let data = await res.json();
     appendCartItem(data);
-    
   } catch (error) {
     console.log(error);
   }
 };
 apicall();
 
-
 let itemPrice;
 let totalItemPrice;
 
 const appendCartItem = (data) => {
-  console.log("🚀 ~ appendCartItem ~ data:", data)
+  console.log("🚀 ~ appendCartItem ~ data:", data);
   const container = document.querySelector(".container");
-  totalItemPrice = 0
+  totalItemPrice = 0;
 
   data.forEach((el) => {
     const maindiv = document.createElement("div");
     maindiv.className = "content-div";
-
+    container.classList = "container";
     itemPrice = el.price;
-    
+
     maindiv.innerHTML = `
+      
       <div class="child_1">
         <img src="${el.img}" class="bag">
         <div class="text">
@@ -45,50 +44,49 @@ const appendCartItem = (data) => {
         </div>
       </div>
 
-      <div class="child_1">
+      <div class="child_2">
         <p class="price">${el.price}</p>
       </div>
     `;
 
+    container.append(maindiv);
 
     // Here we are trying to find total Product amount
     let totalPriceDiv = document.querySelector(".totalItemPrice-div");
 
-    // totalItemPrice += el.price 
-    totalItemPrice += Number(el.price * (el.qty||1))
+    // totalItemPrice += el.price
+    totalItemPrice += Number(el.price * (el.qty || 1));
     totalPriceDiv.innerHTML = `
       <p class="totalItem-price">${totalItemPrice}</p>
-    `
-    
+    `;
+
     // console.log("🚀 ~ appendCartItem ~ totalItemPrice:", totalItemPrice)
-    
-    container.append(maindiv);
-    
+
     const incrementBtn = maindiv.querySelector(".increment");
     const qtyInput = maindiv.querySelector(".qty-input");
     const decrementBtn = maindiv.querySelector(".decrement");
     let price = maindiv.querySelector(".price");
-    
+
     // Initialize quantity from backend
     qtyInput.value = el.qty || 1;
-    console.log("Product qty", el.qty)
+    console.log("Product qty", el.qty);
     price.innerText = Number(el.price) * Number(qtyInput.value);
-    
+
     incrementBtn.addEventListener("click", async () => {
       let qty = Number(qtyInput.value) + 1;
       // console.log("🚀 ~ appendCartItem ~ qty:", qty)
       if (qty > 10) qty = 10; // max limit
       qtyInput.value = qty;
-      
+
       decrementBtn.disabled = false;
       if (qty === 10) incrementBtn.disabled = true;
 
       price.innerText = Number(el.price) * Number(qty);
-      totalItemPrice += el.price
+      totalItemPrice += el.price;
       totalPriceDiv.innerHTML = `
       <p class="totalItem-price">${totalItemPrice}</p>
-    `
-      
+    `;
+
       // PATCH updated quantity to backend
       try {
         await fetch(`${Cartapi}/${el.id}`, {
@@ -111,17 +109,17 @@ const appendCartItem = (data) => {
       decrementBtn.disabled = qty === 0;
 
       price.innerText = Number(el.price) * Number(qty);
-      totalItemPrice -= el.price
+      totalItemPrice -= el.price;
       totalPriceDiv.innerHTML = `
       <p class="totalItem-price">${totalItemPrice}</p>
-    `
+    `;
 
       // PATCH updated quantity to backend
       try {
         await fetch(`${Cartapi}/${el.id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
-           // body: JSON.stringify({ qty: qty, price: Number(el.price) * qty }),
+          // body: JSON.stringify({ qty: qty, price: Number(el.price) * qty }),
           body: JSON.stringify({ qty: qty }),
         });
       } catch (error) {
