@@ -1968,3 +1968,32 @@ a {
     margin: 18px 0px;
 }
 }
+
+
+@media (min-width: 841px) and (max-width: 1080px){
+  .parents_div_3 {
+    display:flex;
+    overflow: scroll;
+    margin: auto;
+    width: 90%;
+    scrollbar-width:none;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 30px;
+}
+.for_her_img, .for_him_img {
+    width: 459px;
+    object-fit: cover;
+}
+.neesh_img {
+  width: 100%;
+  margin: 10px 0px;
+}
+.parents_main_9 {
+    display: grid;
+    padding: 70px 0px;
+}
+.parentschilde_text_4 {
+    margin: 10px 148px;
+}
+}
