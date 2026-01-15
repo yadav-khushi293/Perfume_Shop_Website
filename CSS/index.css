@@ -1917,3 +1917,54 @@ a {
 }
 }
 
+@media (min-width: 441px) and (max-width: 840px){
+  .parents_div_3 {
+    display: flex;
+    margin: auto;
+    width:90%;
+    overflow:scroll;
+    scrollbar-width: none;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 30px;
+}
+.for_her_img, .for_him_img {
+    width:370px;
+    object-fit: cover;
+}
+.neesh_img{
+  width: 100% !important;
+}
+.parents_main_9 {
+    display: grid;
+    justify-content: space-around;
+    padding: 70px 0px;
+}
+.parentschilde_text_4 {
+    margin: 10px 181px;
+}
+.questions_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px !important;
+    margin: 60px 0px;
+    height: 290px;
+}
+.questions_tex {
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 115px;
+    font-weight: bold;
+    /* letter-spacing: 1px; */
+    color: #fff;
+}
+.for_him_text,.for_her_text {
+    font-size: 20px;
+}
+.BLENDED_text {
+    font-size: 27px;
+    margin: 18px 0px;
+}
+}
