@@ -192,59 +192,6 @@ height:37px;
 }
 
 
- @media (min-width:321px) and (max-width:380px){
-.parenst {
-    display:flex;
-    padding: 0px 8px;
-    height:60px;
-  
-}
-    .headre {
-    font-size:8px;
-    padding: 12px 0px;
-    height: 31px;
-}
-.neesh_logo {
-    padding: 20px 0px;
-    padding-right:0px;
-    width: 80px;
-}
-.header_1 {
-    font-size: 17px;
-    gap:0px;
-}
-    .memu_img {
-    width: 24px;
-    height: 24px;
-}
-    .header_3 {
-    display: flex;
-    gap: 9px;
-}
-.menu{
-        font-size: 12px;
-}
-  .Serching {
-    width: 69px;
-    font-size: 9px;
-    padding: 0px 8px;
-    height: 25px;
-}
-
-.user_login {
-    width: 21px;
-    height: 22px;
-    margin-top: 6px;
-}
-    .Add_card {
-    width:29px;
-    height: 40px;
-}
-    .header_child_1 {
-    gap: 10px;
-    padding: 0px 4px;
-}
-}
 @media (max-width: 320px){
 .parenst {
     display:flex;
@@ -301,62 +248,62 @@ height:37px;
  @media (max-width: 420px){
 
  .parenst {
-    display:flex;
-    padding: 0px 8px;
-    height:60px;
+    display:flex !important;
+    padding: 0px 8px !important;
+    height:60px !important;
   
 }
     .headre {
-    font-size:8px;
-    padding: 12px 0px;
-    height: 31px;
+    font-size:8px !important;
+    padding: 12px 0px !important;
+    height: 31px !important;
 }
 .neesh_logo {
-    padding: 20px 0px;
-    padding-right:0px;
-    width: 80px;
+    padding: 20px 0px !important;
+    padding-right:0px !important;
+    width: 80px !important;
 }
 .header_1 {
-    font-size: 17px;
-    gap:0px;
+    font-size: 17px !important;
+    gap:0px !important;
 }
     .memu_img {
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
 }
     .header_3 {
-    display: flex;
-    gap: 9px;
+    display: flex !important;
+    gap: 9px !important;
 }
 .menu{
-        font-size: 12px;
+        font-size: 12px !important;
 }
   .Serching {
-    width: 69px;
-    font-size: 9px;
-    padding: 0px 8px;
-    height: 25px;
+    width: 69px !important;
+    font-size: 9px !important;
+    padding: 0px 8px !important;
+    height: 25px !important;
 }
 
 .user_login {
-    width: 21px;
-    height: 22px;
-    margin-top: 6px;
+    width: 21px !important;
+    height: 22px !important;
+    margin-top: 6px !important;
 }
     .Add_card {
-    width:29px;
-    height: 40px;
+    width:29px !important;
+    height: 40px !important;
 }
     .header_child_1 {
-    gap: 10px;
-    padding: 0px 4px;
+    gap: 10px !important;
+    padding: 0px 4px !important;
 }
     .total-cart-items {
-    top: 10px;
-    right: -2px;
-    font-size: 10px;
-    height: 14px;
-    width: 16px;
+    top: 10px !important;
+    right: -2px !important;
+    font-size: 10px !important;
+    height: 14px !important;
+    width: 16px !important;
 }
  }
 
