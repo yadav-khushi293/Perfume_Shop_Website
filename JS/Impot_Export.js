@@ -248,62 +248,62 @@ height:37px;
  @media (max-width: 420px){
 
  .parenst {
-    display:flex !important;
-    padding: 0px 8px !important;
-    height:60px !important;
+    display:flex;
+    padding: 0px 8px;
+    height:60px;
   
 }
     .headre {
-    font-size:8px !important;
-    padding: 12px 0px !important;
-    height: 31px !important;
+    font-size:8px;
+    padding: 12px 0px;
+    height: 31px;
 }
 .neesh_logo {
-    padding: 20px 0px !important;
-    padding-right:0px !important;
-    width: 80px !important;
+    padding: 20px 0px;
+    padding-right:0px;
+    width: 80px;
 }
 .header_1 {
-    font-size: 17px !important;
-    gap:0px !important;
+    font-size: 17px;
+    gap:0px;
 }
     .memu_img {
-    width: 24px !important;
-    height: 24px !important;
+    width: 24px;
+    height: 24px;
 }
     .header_3 {
-    display: flex !important;
-    gap: 9px !important;
+    display: flex;
+    gap: 9px;
 }
 .menu{
-        font-size: 12px !important;
+        font-size: 12px;
 }
   .Serching {
-    width: 69px !important;
-    font-size: 9px !important;
-    padding: 0px 8px !important;
-    height: 25px !important;
+    width: 69px;
+    font-size: 9px;
+    padding: 0px 8px;
+    height: 25px;
 }
 
 .user_login {
-    width: 21px !important;
-    height: 22px !important;
-    margin-top: 6px !important;
+    width: 21px;
+    height: 22px;
+    margin-top: 6px;
 }
     .Add_card {
-    width:29px !important;
-    height: 40px !important;
+    width:29px;
+    height: 40px;
 }
     .header_child_1 {
-    gap: 10px !important;
-    padding: 0px 4px !important;
+    gap: 10px;
+    padding: 0px 4px;
 }
     .total-cart-items {
-    top: 10px !important;
-    right: -2px !important;
-    font-size: 10px !important;
-    height: 14px !important;
-    width: 16px !important;
+    top: 10px;
+    right: -2px;
+    font-size: 10px;
+    height: 14px;
+    width: 16px;
 }
  }
 
@@ -638,8 +638,79 @@ top: 57px;
     height: 370px;
     padding: 50px 19px;
 }
-  }
-@media (max-width: 320px){
+}
+@media(max-width: 320px){
+.footer_main1 {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+    .information_input {
+    width: 98px;
+    border: 1px solid #fff;
+    padding: 9px 10px;
+    color: #fff !important;
+    background-color: #4e4c3f;
+    font-size:10px;
+    height: 32px;
+    margin: 10px 0px;
+}
+    .footer_img_logo {
+        width: 80px;
+        height:79px;
+    }
+    .Touch_text_1, .Policies_text_1, .Subscribe_text {
+    font-size:6px;
+    padding: 5px 0px;
+}
+    .Subscribe_text_2 {
+    font-size:6px;
+    padding: 12px 0px;
+}
+    .Policies_text {
+    font-size:6px;
+    padding:5px 0px;
+}
+    .Touch_text {
+    font-size:6px;
+    padding: 6px 0px;
+}
+ .Linkedin_Icon,.insta,.facebook{
+        width: 20px;
+    }
+.Subscribe_button {
+        margin: 10px 0px;
+        width: 78px;
+        height: 29px;
+        font-size: 6px;
+    }
+.footerlogo_img {
+    margin: 6px 0px;
+    gap: 3px;
+}
+
+    .footer {
+        height: 300px;
+        background-color: #393939;
+        color: #fff;
+        padding: 20px 7px;
+    }
+    .COPYRIGHT_text {
+    margin: 18px 0px;
+    font-size: 10px;
+}
+
+
+.to-top {
+  bottom: 1px;
+  right: 32px;
+  width:30px;
+  height:30px;
+   font-size:17px;
+}
+}
+
+@media(max-width:420px){
 .footer_main1 {
     display: flex;
     justify-content: center;
@@ -709,10 +780,7 @@ top: 57px;
    font-size:17px;
 }
 
-
-
 }
-
  @media (min-width: 421px) and (max-width:440px){
  .footer_main1 {
     display: flex;
