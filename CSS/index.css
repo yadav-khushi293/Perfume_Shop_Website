@@ -984,7 +984,7 @@ a {
 
 /* MEDIA QUERY */
 
-@media (max-width: 320px) {
+@media (max-width:320px) {
   .parents_div_3 {
     display: flex;
     overflow: scroll;
@@ -996,52 +996,51 @@ a {
     padding: 40px 0px;
     gap: 30px;
   }
-  .BLENDED_text {
-    font-size: 14px;
-    margin-bottom: 25px;
-  }
-  .parents_div_4 {
+ .BLENDED_text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .parents_div_4 {
     margin: 16px 0px;
-  }
+}
 
-  .cardDiv {
+.cardDiv {
     width: 185px;
     height: 430px;
-  }
-  .titleoffer > .title {
+}
+.titleoffer > .title {
     font-size: 16px;
     padding-bottom: 3px;
-  }
-  #info {
+}
+#info {
     padding: 30px 0px;
     height: 480px;
-  }
-  .questions_img {
+}
+.questions_img {
     width: 88px;
     height: 88px;
-  }
-  .questions_tex {
+}
+.questions_tex {
     font-size: 12px;
-  }
-  .Applicabl_span {
-    padding: 0px 0px !important;
+}
+.Applicabl_span {
+    padding:0px 0px !important;
     color: #fdefe4;
     font-size: 10px;
-  }
-  .titleoffer > .price {
+}
+.titleoffer > .price {
     font-size: 14px;
-    margin: 0px 0px;
+    margin:0px 0px;
     color: #636161;
-  }
-  .titleoffer > .offer {
+}
+.titleoffer > .offer {
     font-size: 16px;
     padding: 3px 0px;
-  }
-  .for_her_img,
-  .for_him_img {
-    width: 270px;
-    object-fit: cover;
-  }
+}
+  .for_her_img, .for_him_img {
+        width: 270px;
+        object-fit: cover;
+    }
   .parentschilde_img {
     width: 352px;
     border: 1px solid black;
@@ -1056,8 +1055,8 @@ a {
     letter-spacing: 1px;
     font-weight: bold;
     color: #7c7979;
-  }
-  .DISCOVER {
+}
+.DISCOVER {
     position: absolute;
     top: 20px;
     padding: 0px 20px;
@@ -1066,548 +1065,235 @@ a {
     color: #676565;
     letter-spacing: 1px !important;
     font-weight: 500;
-  }
-  .for_her_text {
+}
+.for_her_text {
     padding: 0px 20px;
     top: 449px;
     font-size: 15px;
-  }
+}
   .parentschilde_img {
     width: 302px !important;
     height: 300px;
   }
-  .parentschilde_text_4 {
-    margin: 3px 41px;
-    width: 224px;
-    font-size: 10px;
-    height: 49px;
-    padding: 20px 0px;
-  }
+ .parentschilde_text_4 {
+        margin: 3px 41px;
+        width: 224px;
+        font-size: 10px;
+        height: 49px;
+        padding: 20px 0px;
+    }
 
-  .questions_div {
-    display: grid;
-    justify-items: start;
-    align-content: start;
-    gap: 1px;
-    padding: 10px 8px;
-    margin: 15px 0px;
-    height: 297px;
-  }
+     .questions_div {
+        display: grid;
+        justify-items: start;
+        align-content: start;
+        gap: 1px;
+        padding: 10px 8px;
+        margin: 15px 0px;
+        height: 297px;
+    }
 
-  .product_list {
+    .product_list {
     gap: 40px;
     margin: 40px 0px;
-  }
-  .luxury_collectio_text {
+}
+.luxury_collectio_text {
     font-size: 17px;
     padding: 8px 0;
-  }
-  .Collection_span {
+}
+.Collection_span {
     font-size: 17px;
-  }
+}
   .thumbnail .item img {
-    width: 60%;
-    height: 60%;
+    width:60%;
+    height:60%;
   }
-  .thumbnail {
-    bottom: 125px;
-    top: 220px;
-    left: 68%;
-    gap: 0px;
-  }
-  .nextPrevArrows button {
+.thumbnail {
+        bottom: 125px;
+        top: 220px;
+        left: 68%;
+        gap: 0px;
+    }
+.nextPrevArrows button {
     width: 34px;
     height: 36px;
     font-size: 16px;
-  }
-  .nextPrevArrows {
-    top: 60%;
-  }
-  .parents_main_2 {
-    margin: 0px 0px;
-  }
-  .parents_main_7 {
-    display: grid;
-    justify-content: center;
-    margin: 30px 0px;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-  }
-  .neesh_img {
-    width: 100%;
-  }
-  .parents_main_9 {
-    display: grid;
-    justify-content: space-around;
-    padding: 18px 0px;
-  }
-  .parentschilde_img {
-    width: 460px;
-    height: 300px;
-    border: transparent;
-  }
-  .parentschilde_2 {
-    padding: 20px 0px;
-  }
-  .parentschilde_text {
-    font-size: 15px;
-  }
-  .Our_text {
-    font-size: 19px;
-  }
-  .Our_text_1 {
-    font-size: 12px;
-    padding: 4px 0px;
-  }
-  .our_story_heading {
-    font-size: 25px;
-  }
-  .parentschilde_text_1 {
-    font-size: 15px;
-    padding: 7px 0px;
-  }
-  .our_story_paragraph {
-    width: 80%;
-    font-size: 12px;
-    padding: 16px 0px;
-    line-height: 21px;
-  }
-  .Ouer_stroy_slider {
-    width: 90%;
-    height: 370px;
-    margin: 0px auto !important;
-  }
-  .ouer_slide_child {
-    width: 100%;
-    height: 370px;
-  }
-  .our_story {
-    margin: 25px 0px;
-    margin-top: 90px;
-  }
-  .our_story_bottumtext {
-    font-size: 18px;
-    margin: 16px 0px;
-  }
-  .info_1 {
-    gap: 6px;
-    font-size: 10px;
-  }
-  .text_div {
-    font-size: 14px;
-    font-weight: bold;
-    color: #3d3d3d;
-  }
-  .child_1 {
-    height: 79px;
-    gap: 15px;
-    padding: 15px;
-    border-radius: 100px;
-  }
-  .img_1 {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-  }
-  .parents_main_slider_4,
-  .parents_main_slider_5 {
-    margin: 0px auto;
-  }
-  .parentschilde_text_2 {
-    font-size: 13px;
-    font-size: 500;
-  }
-  .parentschilde_text_3 {
-    font-size: 16px;
-    padding: 7px 0px;
-  }
-  .slider .list .item .content .title,
-  .slider .list .item .content .type {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .slider .list .item img {
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-  }
-
-  .slider .list .item {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    inset: 0 0 0 0;
-  }
-  .description {
-    letter-spacing: 1.1px !important;
-    font-size: 12px;
-    width: 270px;
-    margin: 7px 4px;
-    line-height: 1.1em;
-  }
-  .products_div {
-    justify-content: start;
-    align-items: start;
-    gap: 14px;
-    margin: 16px 16px;
-    font-size: 13px;
-  }
-  .Bestsellers {
-    font-size: 20px;
-  }
-
-  .card {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  .slider_1 figure img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .hertext_4 {
-    width: 154px;
-    height: 40px;
-    font-size: 13px;
-    padding: 11px 0px;
-  }
-  .shope {
-    width: 45px;
-    padding: 5px;
-    height: 40px;
-  }
-  .her_text {
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding: 8px 0px;
-  }
-  .her_text_1 {
-    font-size: 14px;
-  }
-  .her_price {
-    padding: 6px 0px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 420px) {
-  .parents_div_3 {
-    display: flex;
-    overflow: scroll;
-    width: 90%;
-    margin: auto;
-    justify-content: start;
-    align-items: start;
-    scrollbar-width: none;
-    padding: 40px 0px;
-    gap: 30px;
-  }
-  .BLENDED_text {
-    font-size: 14px;
-    margin-bottom: 25px;
-  }
-  .parents_div_4 {
-    margin: 16px 0px;
-  }
-
-  .cardDiv {
-    width: 185px;
-    height: 430px;
-  }
-  .titleoffer > .title {
-    font-size: 16px;
-    padding-bottom: 3px;
-  }
-  #info {
-    padding: 30px 0px;
-    height: 480px;
-  }
-  .questions_img {
-    width: 88px;
-    height: 88px;
-  }
-  .questions_tex {
-    font-size: 12px;
-  }
-  .Applicabl_span {
-    padding: 0px 0px !important;
-    color: #fdefe4;
-    font-size: 10px;
-  }
-  .titleoffer > .price {
-    font-size: 14px;
-    margin: 0px 0px;
-    color: #636161;
-  }
-  .titleoffer > .offer {
-    font-size: 16px;
-    padding: 3px 0px;
-  }
-  .for_her_img,
-  .for_him_img {
-    width: 270px;
-    object-fit: cover;
-  }
-  .parentschilde_img {
-    width: 352px;
-    border: 1px solid black;
-    height: 500px;
-  }
-  .for_him_text {
-    position: absolute;
-    text-transform: uppercase;
-    padding: 0px 20px;
-    top: 51px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: #7c7979;
-  }
-  .DISCOVER {
-    position: absolute;
-    top: 20px;
-    padding: 0px 20px;
-    text-decoration: underline;
-    font-size: 14px;
-    color: #676565;
-    letter-spacing: 1px !important;
-    font-weight: 500;
-  }
-  .for_her_text {
-    padding: 0px 20px;
-    top: 449px;
-    font-size: 15px;
-  }
-  .parentschilde_img {
-    width: 302px !important;
-    height: 300px;
-  }
-  .parentschilde_text_4 {
-    margin: 3px 41px;
-    width: 224px;
-    font-size: 10px;
-    height: 49px;
-    padding: 20px 0px;
-  }
-
-  .questions_div {
-    display: grid;
-    justify-items: start;
-    align-content: start;
-    gap: 1px;
-    padding: 10px 8px;
-    margin: 15px 0px;
-    height: 297px;
-  }
-
-  .product_list {
-    gap: 40px;
-    margin: 40px 0px;
-  }
-  .luxury_collectio_text {
-    font-size: 17px;
-    padding: 8px 0;
-  }
-  .Collection_span {
-    font-size: 17px;
-  }
-
-  .parents_main_2 {
-    margin: 0px 0px;
-  }
-  .parents_main_7 {
-    display: grid;
-    justify-content: center;
-    margin: 30px 0px;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-  }
-  .neesh_img {
-    width: 100%;
-  }
-  .parents_main_9 {
-    display: grid;
-    justify-content: space-around;
-    padding: 18px 0px;
-  }
-  .parentschilde_img {
-    width: 460px;
-    height: 300px;
-    border: transparent;
-  }
-  .parentschilde_2 {
-    padding: 20px 0px;
-  }
-  .parentschilde_text {
-    font-size: 15px;
-  }
-  .Our_text {
-    font-size: 19px;
-  }
-  .Our_text_1 {
-    font-size: 12px;
-    padding: 4px 0px;
-  }
-  .our_story_heading {
-    font-size: 25px;
-  }
-  .parentschilde_text_1 {
-    font-size: 15px;
-    padding: 7px 0px;
-  }
-  .our_story_paragraph {
-    width: 80%;
-    font-size: 12px;
-    padding: 16px 0px;
-    line-height: 21px;
-  }
-  .Ouer_stroy_slider {
-    width: 90%;
-    height: 370px;
-    margin: 0px auto !important;
-  }
-  .ouer_slide_child {
-    width: 100%;
-    height: 370px;
-  }
-  .our_story {
-    margin: 25px 0px;
-    margin-top: 90px;
-  }
-  .our_story_bottumtext {
-    font-size: 18px;
-    margin: 16px 0px;
-  }
-  .info_1 {
-    gap: 6px;
-    font-size: 10px;
-  }
-  .text_div {
-    font-size: 14px;
-    font-weight: bold;
-    color: #3d3d3d;
-  }
-  .child_1 {
-    height: 79px;
-    gap: 15px;
-    padding: 15px;
-    border-radius: 100px;
-  }
-  .img_1 {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-  }
-  .parents_main_slider_4,
-  .parents_main_slider_5 {
-    margin: 0px auto;
-  }
-  .parentschilde_text_2 {
-    font-size: 13px;
-    font-size: 500;
-  }
-  .parentschilde_text_3 {
-    font-size: 16px;
-    padding: 7px 0px;
-  }
-
-  .description {
-    letter-spacing: 1.1px !important;
-    font-size: 12px;
-    width: 270px;
-    margin: 7px 4px;
-    line-height: 1.1em;
-  }
-  .products_div {
-    justify-content: start;
-    align-items: start;
-    gap: 14px;
-    margin: 16px 16px;
-    font-size: 13px;
-  }
-  .Bestsellers {
-    font-size: 20px;
-  }
-
-  .card {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  .slider_1 figure img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .hertext_4 {
-    width: 154px;
-    height: 40px;
-    font-size: 13px;
-    padding: 11px 0px;
-  }
-  .shope {
-    width: 45px;
-    padding: 5px;
-    height: 40px;
-  }
-  .her_text {
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding: 8px 0px;
-  }
-  .her_text_1 {
-    font-size: 14px;
-  }
-  .her_price {
-    padding: 6px 0px;
-    font-size: 14px;
-  }
-  
-.slider .list .item .content .title,
-.slider .list .item .content .type {
-  font-size: 2em;
-  font-weight: bold;
-  line-height: 1.1em;
-}
-.slider .list .item .content {
-    position: absolute;
-    top: 10%;
-    width: 1140px;
-    max-width: 100%;
-    left: 56%;
-    transform: translateX(-50%);
-    padding-right: 30%;
-    box-sizing: border-box;
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
-}
-
-.description {
-  letter-spacing:0px !important;
-  font-size:21px;
-  word-wrap: 3px;
-  line-height: 1.1em;
 }
 .nextPrevArrows {
+    top:60%;
+}
+.parents_main_2 {
+    margin: 0px 0px;
+}
+  .parents_main_7 {
+    display: grid;
+    justify-content: center;
+    margin: 30px 0px;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  .neesh_img {
+    width: 100%;
+  }
+ .parents_main_9 {
+        display: grid;
+        justify-content: space-around;
+        padding: 18px 0px;
+    }
+  .parentschilde_img {
+        width: 460px;
+        height: 300px;
+        border: transparent;
+    }
+    .parentschilde_2 {
+    padding:20px 0px;
+}
+.parentschilde_text {
+    font-size: 15px;
+}
+.Our_text {
+    font-size: 19px;
+}
+.Our_text_1 {
+    font-size: 12px;
+    padding: 4px 0px;
+}
+.our_story_heading {
+    font-size: 25px;
+}
+.parentschilde_text_1 {
+    font-size: 15px;
+    padding: 7px 0px;
+}
+.our_story_paragraph {
+    width: 80%;
+    font-size: 12px;
+    padding: 16px 0px;
+    line-height: 21px;
+}
+.Ouer_stroy_slider {
+  width:90%;
+  height: 370px;
+  margin:0px auto !important;
+}
+.ouer_slide_child {
+  width:100%;
+  height: 370px;
+}
+.our_story {
+    margin: 25px 0px;
+    margin-top: 90px;
+}
+.our_story_bottumtext {
+    font-size: 18px;
+    margin: 16px 0px;
+}
+.info_1 {
+    gap: 6px;
+    font-size: 10px;
+}
+.text_div {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.child_1 {
+    height: 79px;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 100px;
+}
+.img_1 {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+.parents_main_slider_4, .parents_main_slider_5 {
+    margin: 0px auto;
+}
+.parentschilde_text_2 {
+    font-size: 13px;
+    font-size: 500;
+}
+.parentschilde_text_3 {
+    font-size: 16px;
+    padding: 7px 0px;
+}
+  .slider .list .item .content .title,
+  .slider .list .item .content .type {
+    font-size:13px;
+    font-weight: bold;
+  }
+  .slider .list .item img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.slider .list .item {
+    width: 100%;
+    height: 90%;
     position: absolute;
-    top: 80%;
-    right: 60%;
-    z-index: 100;
-    width: 300px;
-    max-width: 30%;
-    display: flex;
-    gap: 10px;
+    inset: 0 0 0 0;
+}
+  .description {
+    letter-spacing: 1.1px !important;
+    font-size: 12px;
+    width: 270px;
+    margin: 7px 4px;
+    line-height: 1.1em;
+  }
+  .products_div {
+    justify-content: start;
+    align-items: start;
+    gap: 14px;
+    margin: 16px 16px;
+    font-size: 13px;
+  }
+  .Bestsellers {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slider_1 figure img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.hertext_4 {
+        width: 154px;
+        height: 40px;
+        font-size: 13px;
+        padding: 11px 0px;
+    }
+.shope {
+    width: 45px;
+    padding: 5px;
+    height: 40px;
+}
+.her_text {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+}
+.her_text_1 {
+    font-size: 14px;
+}
+.her_price {
+    padding: 6px 0px;
+    font-size: 14px;
 }
 }
 
-@media (min-width: 421px) and (max-width: 440px) {
+
+@media (max-width:420px) {
   .parents_div_3 {
     display: flex;
     overflow: scroll;
@@ -1616,55 +1302,54 @@ a {
     justify-content: start;
     align-items: start;
     scrollbar-width: none;
-    padding: 9px 0px;
+    padding:0px 0px;
     gap: 30px;
   }
-  .BLENDED_text {
-    font-size: 14px;
-    margin-bottom: 25px;
-  }
-  .parents_div_4 {
+ .BLENDED_text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .parents_div_4 {
     margin: 16px 0px;
-  }
+}
 
-  .cardDiv {
+.cardDiv {
     width: 185px;
     height: 430px;
-  }
-  .titleoffer > .title {
+}
+.titleoffer > .title {
     font-size: 16px;
     padding-bottom: 3px;
-  }
-  #info {
-    padding: 30px 0px;
+}
+#info {
+    padding:30px 0px;
     height: 480px;
-  }
-  .questions_img {
+}
+.questions_img {
     width: 88px;
     height: 88px;
-  }
-  .questions_tex {
+}
+.questions_tex {
     font-size: 12px;
-  }
-  .Applicabl_span {
-    padding: 0px 0px !important;
+}
+.Applicabl_span {
+    padding:0px 0px !important;
     color: #fdefe4;
     font-size: 10px;
-  }
-  .titleoffer > .price {
+}
+.titleoffer > .price {
     font-size: 14px;
-    margin: 0px 0px;
+    margin:0px 0px;
     color: #636161;
-  }
-  .titleoffer > .offer {
+}
+.titleoffer > .offer {
     font-size: 16px;
     padding: 3px 0px;
-  }
-  .for_her_img,
-  .for_him_img {
-    width: 335px;
-    object-fit: cover;
-  }
+}
+ .for_her_img, .for_him_img {
+        width: 310px;
+        object-fit: cover;
+    }
   .parentschilde_img {
     width: 352px;
     border: 1px solid black;
@@ -1679,8 +1364,8 @@ a {
     letter-spacing: 1px;
     font-weight: bold;
     color: #7c7979;
-  }
-  .DISCOVER {
+}
+.DISCOVER {
     position: absolute;
     top: 20px;
     padding: 0px 20px;
@@ -1689,66 +1374,66 @@ a {
     color: #676565;
     letter-spacing: 1px !important;
     font-weight: 500;
-  }
-  .for_her_text {
-    padding: 0px 20px;
-    top: 550px;
-    font-size: 15px;
-  }
+}
+.for_her_text {
+        padding: 0px 20px;
+        top: 513px;
+        font-size: 15px;
+    }
   .parentschilde_img {
     width: 302px !important;
     height: 300px;
   }
-  .parentschilde_text_4 {
-    margin: 3px 41px;
-    width: 224px;
-    font-size: 10px;
-    height: 49px;
-    padding: 20px 0px;
-  }
+ .parentschilde_text_4 {
+        margin: 3px 41px;
+        width: 224px;
+        font-size: 10px;
+        height: 49px;
+        padding: 20px 0px;
+    }
 
-  .questions_div {
-    display: grid;
-    justify-items: start;
-    align-content: start;
-    gap: 1px;
-    padding: 10px 8px;
-    margin: 15px 0px;
-    height: 297px;
-  }
+     .questions_div {
+        display: grid;
+        justify-items: start;
+        align-content: start;
+        gap: 1px;
+        padding: 10px 8px;
+        margin: 15px 0px;
+        height: 297px;
+    }
 
-  .product_list {
-    gap: 40px;
-    margin: 40px 0px;
-  }
-  .luxury_collectio_text {
+    .product_list {
+        gap: 57px;
+        margin: 40px 0px;
+    }
+.luxury_collectio_text {
     font-size: 17px;
     padding: 8px 0;
-  }
-  .Collection_span {
+}
+.Collection_span {
     font-size: 17px;
-  }
+}
   .thumbnail .item img {
-    width: 60%;
-    height: 60%;
+    width:60%;
+    height:60%;
   }
-  .thumbnail {
-    bottom: 125px;
-    top: 220px;
-    left: 68%;
-    gap: 0px;
-  }
-  .nextPrevArrows button {
+.thumbnail {
+        bottom: 125px;
+        top: 220px;
+        left: 68%;
+        gap: 0px;
+    }
+.nextPrevArrows button {
     width: 34px;
     height: 36px;
     font-size: 16px;
-  }
-  .nextPrevArrows {
-    top: 60%;
-  }
-  .parents_main_2 {
+}
+.nextPrevArrows {
+    top:60%;
+}
+.parents_main_2 {
     margin: 0px 0px;
-  }
+}
   .parents_main_7 {
     display: grid;
     justify-content: center;
@@ -1760,108 +1445,107 @@ a {
   .neesh_img {
     width: 100%;
   }
-  .parents_main_9 {
-    display: grid;
-    justify-content: space-around;
-    padding: 18px 0px;
-  }
+ .parents_main_9 {
+        display: grid;
+        justify-content: space-around;
+        padding: 18px 0px;
+    }
   .parentschilde_img {
-    width: 460px;
-    height: 300px;
-    border: transparent;
-  }
-  .parentschilde_2 {
-    padding: 20px 0px;
-  }
-  .parentschilde_text {
+        width: 460px;
+        height: 300px;
+        border: transparent;
+    }
+    .parentschilde_2 {
+    padding:20px 0px;
+}
+.parentschilde_text {
     font-size: 15px;
-  }
-  .Our_text {
+}
+.Our_text {
     font-size: 19px;
-  }
-  .Our_text_1 {
+}
+.Our_text_1 {
     font-size: 12px;
     padding: 4px 0px;
-  }
-  .our_story_heading {
+}
+.our_story_heading {
     font-size: 25px;
-  }
-  .parentschilde_text_1 {
+}
+.parentschilde_text_1 {
     font-size: 15px;
     padding: 7px 0px;
-  }
-  .our_story_paragraph {
+}
+.our_story_paragraph {
     width: 80%;
     font-size: 12px;
     padding: 16px 0px;
     line-height: 21px;
-  }
-  .Ouer_stroy_slider {
-    width: 90%;
-    height: 370px;
-    margin: 0px auto !important;
-  }
-  .ouer_slide_child {
-    width: 100%;
-    height: 370px;
-  }
-  .our_story {
+}
+.Ouer_stroy_slider {
+  width:90%;
+  height: 370px;
+  margin:0px auto !important;
+}
+.ouer_slide_child {
+  width:100%;
+  height: 370px;
+}
+.our_story {
     margin: 25px 0px;
     margin-top: 90px;
-  }
-  .our_story_bottumtext {
+}
+.our_story_bottumtext {
     font-size: 18px;
     margin: 16px 0px;
-  }
-  .info_1 {
+}
+.info_1 {
     gap: 6px;
     font-size: 10px;
-  }
-  .text_div {
+}
+.text_div {
     font-size: 14px;
     font-weight: bold;
     color: #3d3d3d;
-  }
-  .child_1 {
+}
+.child_1 {
     height: 79px;
     gap: 15px;
     padding: 15px;
     border-radius: 100px;
-  }
-  .img_1 {
+}
+.img_1 {
     width: 54px;
     height: 54px;
     border-radius: 50%;
-  }
-  .parents_main_slider_4,
-  .parents_main_slider_5 {
+}
+.parents_main_slider_4, .parents_main_slider_5 {
     margin: 0px auto;
-  }
-  .parentschilde_text_2 {
+}
+.parentschilde_text_2 {
     font-size: 13px;
     font-size: 500;
-  }
-  .parentschilde_text_3 {
+}
+.parentschilde_text_3 {
     font-size: 16px;
     padding: 7px 0px;
-  }
+}
   .slider .list .item .content .title,
   .slider .list .item .content .type {
-    font-size: 13px;
+    font-size:13px;
     font-weight: bold;
   }
   .slider .list .item img {
     width: 100%;
     height: 90%;
     object-fit: cover;
-  }
+}
 
-  .slider .list .item {
+.slider .list .item {
     width: 100%;
     height: 90%;
     position: absolute;
     inset: 0 0 0 0;
-  }
+}
   .description {
     letter-spacing: 1.1px !important;
     font-size: 12px;
@@ -1870,11 +1554,11 @@ a {
     line-height: 1.1em;
   }
   .products_div {
-    justify-content: start;
-    align-items: start;
-    gap: 24px;
-    margin: 13px 25px;
-    font-size: 16px;
+    justify-content:center;
+    align-items:center;
+    gap: 14px;
+    margin: 16px 16px;
+    font-size: 13px;
   }
   .Bestsellers {
     font-size: 20px;
@@ -1886,65 +1570,374 @@ a {
     object-fit: cover;
     overflow: hidden;
     border-radius: 5px;
-  }
-  .slider_1 figure img {
+}
+.slider_1 figure img {
     width: 250px;
     height: 300px;
     object-fit: cover;
-  }
-  .hertext_4 {
-    width: 154px;
-    height: 40px;
-    font-size: 13px;
-    padding: 11px 0px;
-  }
-  .shope {
+}
+.hertext_4 {
+        width: 154px;
+        height: 40px;
+        font-size: 13px;
+        padding: 11px 0px;
+    }
+.shope {
     width: 45px;
     padding: 5px;
     height: 40px;
-  }
-  .her_text {
+}
+.her_text {
     font-size: 12px;
     letter-spacing: 1px;
     padding: 8px 0px;
-  }
-  .her_text_1 {
+}
+.her_text_1 {
     font-size: 14px;
-  }
-  .her_price {
+}
+.her_price {
     padding: 6px 0px;
     font-size: 14px;
-  }
+}
 }
 
-@media (min-width: 441px) and (max-width: 840px) {
+
+
+@media (min-width: 421px) and (max-width: 440px){
+ .parents_div_3 {
+        display: flex;
+        overflow: scroll;
+        width: 90%;
+        margin: auto;
+        justify-content: start;
+        align-items: start;
+        scrollbar-width: none;
+        padding: 9px 0px;
+        gap: 30px;
+    }
+ .BLENDED_text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .parents_div_4 {
+    margin: 16px 0px;
+}
+
+.cardDiv {
+    width: 185px;
+    height: 430px;
+}
+.titleoffer > .title {
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+#info {
+    padding: 30px 0px;
+    height: 480px;
+}
+.questions_img {
+    width: 88px;
+    height: 88px;
+}
+.questions_tex {
+    font-size: 12px;
+}
+.Applicabl_span {
+    padding:0px 0px !important;
+    color: #fdefe4;
+    font-size: 10px;
+}
+.titleoffer > .price {
+    font-size: 14px;
+    margin:0px 0px;
+    color: #636161;
+}
+.titleoffer > .offer {
+    font-size: 16px;
+    padding: 3px 0px;
+}
+      .for_her_img, .for_him_img {
+        width: 335px;
+        object-fit: cover;
+    }
+  .parentschilde_img {
+    width: 352px;
+    border: 1px solid black;
+    height: 500px;
+  }
+  .for_him_text {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    top: 51px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #7c7979;
+}
+.DISCOVER {
+    position: absolute;
+    top: 20px;
+    padding: 0px 20px;
+    text-decoration: underline;
+    font-size: 14px;
+    color: #676565;
+    letter-spacing: 1px !important;
+    font-weight: 500;
+}
+.for_her_text {
+        padding: 0px 20px;
+        top: 550px;
+        font-size: 15px;
+    }
+  .parentschilde_img {
+    width: 302px !important;
+    height: 300px;
+  }
+ .parentschilde_text_4 {
+        margin: 3px 41px;
+        width: 224px;
+        font-size: 10px;
+        height: 49px;
+        padding: 20px 0px;
+    }
+
+     .questions_div {
+        display: grid;
+        justify-items: start;
+        align-content: start;
+        gap: 1px;
+        padding: 10px 8px;
+        margin: 15px 0px;
+        height: 297px;
+    }
+
+    .product_list {
+    gap: 40px;
+    margin: 40px 0px;
+}
+.luxury_collectio_text {
+    font-size: 17px;
+    padding: 8px 0;
+}
+.Collection_span {
+    font-size: 17px;
+}
+  .thumbnail .item img {
+    width:60%;
+    height:60%;
+  }
+.thumbnail {
+        bottom: 125px;
+        top: 220px;
+        left: 68%;
+        gap: 0px;
+    }
+.nextPrevArrows button {
+    width: 34px;
+    height: 36px;
+    font-size: 16px;
+}
+.nextPrevArrows {
+    top:60%;
+}
+.parents_main_2 {
+    margin: 0px 0px;
+}
+  .parents_main_7 {
+    display: grid;
+    justify-content: center;
+    margin: 30px 0px;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  .neesh_img {
+    width: 100%;
+  }
+ .parents_main_9 {
+        display: grid;
+        justify-content: space-around;
+        padding: 18px 0px;
+    }
+  .parentschilde_img {
+        width: 460px;
+        height: 300px;
+        border: transparent;
+    }
+    .parentschilde_2 {
+    padding:20px 0px;
+}
+.parentschilde_text {
+    font-size: 15px;
+}
+.Our_text {
+    font-size: 19px;
+}
+.Our_text_1 {
+    font-size: 12px;
+    padding: 4px 0px;
+}
+.our_story_heading {
+    font-size: 25px;
+}
+.parentschilde_text_1 {
+    font-size: 15px;
+    padding: 7px 0px;
+}
+.our_story_paragraph {
+    width: 80%;
+    font-size: 12px;
+    padding: 16px 0px;
+    line-height: 21px;
+}
+.Ouer_stroy_slider {
+  width:90%;
+  height: 370px;
+  margin:0px auto !important;
+}
+.ouer_slide_child {
+  width:100%;
+  height: 370px;
+}
+.our_story {
+    margin: 25px 0px;
+    margin-top: 90px;
+}
+.our_story_bottumtext {
+    font-size: 18px;
+    margin: 16px 0px;
+}
+.info_1 {
+    gap: 6px;
+    font-size: 10px;
+}
+.text_div {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.child_1 {
+    height: 79px;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 100px;
+}
+.img_1 {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+.parents_main_slider_4, .parents_main_slider_5 {
+    margin: 0px auto;
+}
+.parentschilde_text_2 {
+    font-size: 13px;
+    font-size: 500;
+}
+.parentschilde_text_3 {
+    font-size: 16px;
+    padding: 7px 0px;
+}
+  .slider .list .item .content .title,
+  .slider .list .item .content .type {
+    font-size:13px;
+    font-weight: bold;
+  }
+  .slider .list .item img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.slider .list .item {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+  .description {
+    letter-spacing: 1.1px !important;
+    font-size: 12px;
+    width: 270px;
+    margin: 7px 4px;
+    line-height: 1.1em;
+  }
+.products_div {
+        justify-content: start;
+        align-items: start;
+        gap: 24px;
+        margin: 13px 25px;
+        font-size: 16px;
+    }
+  .Bestsellers {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slider_1 figure img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.hertext_4 {
+        width: 154px;
+        height: 40px;
+        font-size: 13px;
+        padding: 11px 0px;
+    }
+.shope {
+    width: 45px;
+    padding: 5px;
+    height: 40px;
+}
+.her_text {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+}
+.her_text_1 {
+    font-size: 14px;
+}
+.her_price {
+    padding: 6px 0px;
+    font-size: 14px;
+}
+}
+
+@media (min-width: 441px) and (max-width: 840px){
   .parents_div_3 {
     display: flex;
     margin: auto;
-    width: 90%;
-    overflow: scroll;
+    width:90%;
+    overflow:scroll;
     scrollbar-width: none;
     justify-content: center;
     padding: 40px 0px;
     gap: 30px;
-  }
-  .for_her_img,
-  .for_him_img {
-    width: 370px;
+}
+.for_her_img, .for_him_img {
+    width:370px;
     object-fit: cover;
-  }
-  .neesh_img {
-    width: 100% !important;
-  }
-  .parents_main_9 {
+}
+.neesh_img{
+  width: 100% !important;
+}
+.parents_main_9 {
     display: grid;
     justify-content: space-around;
     padding: 70px 0px;
-  }
-  .parentschilde_text_4 {
+}
+.parentschilde_text_4 {
     margin: 10px 181px;
-  }
-  .questions_div {
+}
+.questions_div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1952,50 +1945,49 @@ a {
     padding: 50px 0px !important;
     margin: 60px 0px;
     height: 290px;
-  }
-  .questions_tex {
+}
+.questions_tex {
     text-transform: uppercase;
     font-size: 17px;
     width: 115px;
     font-weight: bold;
     /* letter-spacing: 1px; */
     color: #fff;
-  }
-  .for_him_text,
-  .for_her_text {
+}
+.for_him_text,.for_her_text {
     font-size: 20px;
-  }
-  .BLENDED_text {
+}
+.BLENDED_text {
     font-size: 27px;
     margin: 18px 0px;
-  }
+}
 }
 
-@media (min-width: 841px) and (max-width: 1080px) {
+
+@media (min-width: 841px) and (max-width: 1080px){
   .parents_div_3 {
-    display: flex;
+    display:flex;
     overflow: scroll;
     margin: auto;
     width: 90%;
-    scrollbar-width: none;
+    scrollbar-width:none;
     justify-content: center;
     padding: 40px 0px;
     gap: 30px;
-  }
-  .for_her_img,
-  .for_him_img {
+}
+.for_her_img, .for_him_img {
     width: 459px;
     object-fit: cover;
-  }
-  .neesh_img {
-    width: 100%;
-    margin: 10px 0px;
-  }
-  .parents_main_9 {
+}
+.neesh_img {
+  width: 100%;
+  margin: 10px 0px;
+}
+.parents_main_9 {
     display: grid;
     padding: 70px 0px;
-  }
-  .parentschilde_text_4 {
+}
+.parentschilde_text_4 {
     margin: 10px 148px;
-  }
+}
 }
