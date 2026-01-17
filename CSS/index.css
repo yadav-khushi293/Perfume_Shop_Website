@@ -1306,6 +1306,14 @@ a {
     padding: 40px 0px;
     gap: 30px;
   }
+
+  .slider {
+    height: 58vh;
+    margin-top: -5px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
  .BLENDED_text {
         font-size: 14px;
         margin-bottom: 25px;
