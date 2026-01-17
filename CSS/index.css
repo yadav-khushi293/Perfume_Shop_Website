@@ -1296,8 +1296,8 @@ a {
 
 @media (max-width: 420px) {
   .parents_div_3 {
-    display: flex;
-    overflow: scroll;
+    display: flex !important;
+    overflow: scroll !important;
     width: 90%;
     margin: auto;
     justify-content: start;
@@ -1306,14 +1306,6 @@ a {
     padding: 40px 0px;
     gap: 30px;
   }
-
-  .slider {
-    height: 58vh;
-    margin-top: -5px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
  .BLENDED_text {
         font-size: 14px;
         margin-bottom: 25px;
@@ -1423,14 +1415,14 @@ a {
     font-size: 17px;
 }
   .thumbnail .item img {
-    width:60%;
-    height:60%;
+    width:60% !important;
+    height:60% !important;
   }
 .thumbnail {
-        bottom: 125px;
-        top: 220px;
-        left: 68%;
-        gap: 0px;
+        bottom: 125px !important;
+        top: 220px !important;
+        left: 68% !important;
+        gap: 0px !important;
     }
 .nextPrevArrows button {
     width: 34px;
@@ -1438,10 +1430,10 @@ a {
     font-size: 16px;
 }
 .nextPrevArrows {
-    top:60%;
+    top:60% !important;
 }
 .parents_main_2 {
-    margin: 0px 0px;
+    margin: 0px 0px !important;
 }
   .parents_main_7 {
     display: grid;
@@ -1508,44 +1500,44 @@ a {
     margin: 16px 0px;
 }
 .info_1 {
-    gap: 6px;
-    font-size: 10px;
+    gap: 6px !important;
+    font-size: 10px !important;
 }
 .text_div {
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: bold;
     color: #3d3d3d;
 }
 .child_1 {
-    height: 79px;
-    gap: 15px;
-    padding: 15px;
-    border-radius: 100px;
+    height: 79px !important;
+    gap: 15px !important;
+    padding: 15px !important;
+    border-radius: 100px !important;
 }
 .img_1 {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 50% !important;
 }
 .parents_main_slider_4, .parents_main_slider_5 {
-    margin: 0px auto;
+    margin: 0px auto !important;
 }
 .parentschilde_text_2 {
-    font-size: 13px;
-    font-size: 500;
+    font-size: 13px !important;
+    font-size: 500 !important;
 }
 .parentschilde_text_3 {
-    font-size: 16px;
-    padding: 7px 0px;
+    font-size: 16px !important;
+    padding: 7px 0px !important;
 }
   .slider .list .item .content .title,
   .slider .list .item .content .type {
-    font-size:13px;
-    font-weight: bold;
+    font-size:13px !important;
+    font-weight: bold !important;
   }
   .slider .list .item img {
-    width: 100%;
-    height: 90%;
+    width: 100% !important;
+    height: 90% !important;
     object-fit: cover;
 }
 
@@ -1556,27 +1548,27 @@ a {
     position: relative;
 } */
 .slider .list .item {
-    width: 100%;
-    height: 90%;
+    width: 100% !important;
+    height: 90% !important;
     position: absolute;
-    inset: 0 0 0 0;
+    inset: 0 0 0 0 !important;
 }
   .description {
     letter-spacing: 1.1px !important;
-    font-size: 12px;
-    width: 270px;
-    margin: 7px 4px;
-    line-height: 1.1em;
+    font-size: 12px !important;
+    width: 270px !important;
+    margin: 7px 4px !important;
+    line-height: 1.1em !important; 
   }
   .products_div {
-    justify-content: start;
-    align-items: start;
-    gap: 14px;
-    margin: 16px 16px;
-    font-size: 13px;
+    justify-content: start !important;
+    align-items: start !important;
+    gap: 14px !important;
+    margin: 16px 16px !important;
+    font-size: 13px !important;
   }
   .Bestsellers {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .card {
@@ -1587,8 +1579,8 @@ a {
     border-radius: 5px;
 }
 .slider_1 figure img {
-    width: 250px;
-    height: 300px;
+    width: 250px !important;
+    height: 300px !important;
     object-fit: cover;
 }
 .hertext_4 {
