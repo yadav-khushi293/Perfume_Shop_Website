@@ -1420,11 +1420,11 @@ a {
     height: 60%;
   }
   .thumbnail {
-    bottom: 125px;
-    top: 220px;
-    left: 68%;
-    gap: 0px;
-  }
+        bottom: 125px;
+        top: 117px;
+        left: 68%;
+        gap: 0px;
+    }
   .nextPrevArrows button {
     width: 34px;
     height: 36px;
