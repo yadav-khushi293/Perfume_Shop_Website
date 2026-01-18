@@ -204,7 +204,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    gap:10px;
+    gap: 10px;
     width: 100%;
     padding: 20px 0;
   }
@@ -216,7 +216,7 @@
     color: #616666;
     word-spacing: 5px;
     line-height: 27px;
-}
+  }
   .prents_main_div_1 {
     margin: 39px 0;
   }
@@ -224,7 +224,7 @@
     text-align: center;
     font-size: 27px;
   }
-  .Ouerstroy_text>i{
+  .Ouerstroy_text > i {
     font-size: 12px;
     padding: 0px 10px;
     text-align: center;
@@ -244,15 +244,17 @@
     height: 315px;
     margin: 0px 60px;
   }
-     .F_Chand_head, .Heritage_head, .famed_head {
-        font-size: 23px;
-        font-family: "Minion Pro";
-        width: 336px;
-        padding: 13px 0;
-        text-align: center;
-        margin: auto;
-        line-height: 32px;
-    }
+  .F_Chand_head,
+  .Heritage_head,
+  .famed_head {
+    font-size: 23px;
+    font-family: "Minion Pro";
+    width: 336px;
+    padding: 13px 0;
+    text-align: center;
+    margin: auto;
+    line-height: 32px;
+  }
 
   .F_Chand_text,
   .F_Chand_text_1 {
@@ -286,9 +288,9 @@
   .prents_6_video > video {
     width: 300px;
   }
-    .prents_6_video {
-    border:transparent !important;
-}
+  .prents_6_video {
+    border: transparent !important;
+  }
 }
 
 @media (max-width: 420px) {
@@ -299,7 +301,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    gap:10px;
+    gap: 10px;
     width: 100%;
     padding: 20px 0;
   }
@@ -315,8 +317,8 @@
     font-size: 25px !important;
   }
   .prents_6_video {
-    border:transparent !important;
-}
+    border: transparent !important;
+  }
   .Ouerstroy_text {
     text-align: center;
     padding: 19px 23px;
@@ -326,11 +328,12 @@
     color: #4e4f50;
     letter-spacing: 0.5px;
   }
-     .F_Chand_img, .Heritage_img {
-        width: 280px !important;
-        height: 300px !important;
-        margin: 0px 55px !important;
-    }
+  .F_Chand_img,
+  .Heritage_img {
+    width: 280px !important;
+    height: 300px !important;
+    margin: 0px 55px;
+  }
 
   .F_Chand_head,
   .Heritage_head,
@@ -400,7 +403,7 @@
     height: 405px;
     margin: 0px 62px;
   }
-  
+
   .Prents_childdiv_6 {
     display: flex;
     overflow: scroll;
