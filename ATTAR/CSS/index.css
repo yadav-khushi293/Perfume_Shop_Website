@@ -911,8 +911,6 @@ button:hover::before {
   }
 }
 
-
-
 @media (max-width: 420px) {
   .parents_div12 {
     display: grid;
@@ -951,19 +949,19 @@ button:hover::before {
     margin: 3px 0px;
   }
   .Explore_heading {
-        font-size: 13px;
+        font-size: 7px;
         margin: 0px 24px;
     }
-     .Explore_text {
-        font-size: 9px;
-        padding: 9px 28px;
+  .Explore_text {
+        font-size: 8px;
+        padding: 3px 28px;
     }
-  .btn5 {
-    width: 140px;
-    height: 48px;
-    font-size: 12px;
-    margin: 10px 0px;
-  }
+     .btn5 {
+        width: 120px;
+        height: 31px;
+        font-size: 10px;
+        margin: 4px 0px;
+    }
   /* .Explore_div {
     padding: 63px 0;
   } */
@@ -971,14 +969,12 @@ button:hover::before {
   .Explore_div {
     position: relative;
     width: 100%;
-    height:28vh;
-    margin: 40px 0;
-    background: url(../../Utiles/Untitled_design-44.webp) center / cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding:50px 0;
-    font-family: "Poppins", sans-serif;
-}
+    height: 28vh;
+    margin: 30px 0;
+    background: url(../../Utiles/Untitled_design-44.webp) center / cover
+      no-repeat;
+    padding: 40px 0;
+  }
   .parents_slider {
     justify-content: start;
     align-items: start;
@@ -1002,10 +998,10 @@ button:hover::before {
     height: 241px;
   }
   .bg_pefumeimg {
-        width: 320px;
-        height: 232px;
-    }
-    
+    width: 320px;
+    height: 232px;
+  }
+
   .Ouer_stroy_slider {
     height: 300px;
   }
@@ -1014,7 +1010,7 @@ button:hover::before {
     margin: 40px 0px;
     display: grid;
   }
-  
+
   .product_bg .product_bg_1 {
     width: 95%;
     height: 95%;
@@ -1042,29 +1038,29 @@ button:hover::before {
     padding: 15px 20px;
     font-size: 11px;
   }
-.Introducing_head {
-        font-size: 13px;
-        word-spacing: 1px;
-        letter-spacing: 1px;
-    }
-       .Introducing_text {
-        padding: 5px 0px;
-        word-spacing: 3px;
-        font-size: 10px;
-        line-height: 13px;
-    }
-.Introducing_img {
-        margin: 56px 0px !important;
-        width: 100%;
-        height:30vh !important;
-        padding:26px 0px !important;
-    }
-     .btn4 {
-        width: 96px;
-        height: 30px;
-        font-size: 10px;
-        margin: 0px 0px;
-    }
+  .Introducing_head {
+    font-size: 13px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .Introducing_text {
+    padding: 5px 0px;
+    word-spacing: 3px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .Introducing_img {
+    margin: 56px 0px !important;
+    width: 100%;
+    height: 30vh !important;
+    padding: 26px 0px !important;
+  }
+  .btn4 {
+    width: 96px;
+    height: 30px;
+    font-size: 10px;
+    margin: 0px 0px;
+  }
   .New_Launch_head {
     font-size: 20px;
   }
@@ -1073,9 +1069,8 @@ button:hover::before {
   }
 }
 
-
-@media (min-width: 421px) and (max-width: 440px){
-    .parents_div12 {
+@media (min-width: 421px) and (max-width: 440px) {
+  .parents_div12 {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -1150,11 +1145,11 @@ button:hover::before {
     width: 241px;
     height: 241px;
   }
- .bg_pefumeimg {
-        width: 367px;
-        height: 241px;
-    }
-    
+  .bg_pefumeimg {
+    width: 367px;
+    height: 241px;
+  }
+
   .Ouer_stroy_slider {
     height: 300px;
   }
@@ -1163,7 +1158,7 @@ button:hover::before {
     margin: 40px 0px;
     display: grid;
   }
-  
+
   .product_bg .product_bg_1 {
     width: 95%;
     height: 95%;
@@ -1222,24 +1217,24 @@ button:hover::before {
   }
 }
 
-@media (min-width: 441px) and (max-width: 840px){
+@media (min-width: 441px) and (max-width: 840px) {
   .parents_div12 {
     display: grid;
     margin: 50px 0px;
     gap: 25px;
-}
-.parenst_9 {
+  }
+  .parenst_9 {
     display: flex;
     margin: auto;
     width: 95%;
     overflow: scroll;
-    justify-content:start;
+    justify-content: start;
     scrollbar-width: none;
     gap: 30px;
-}
-.parents_slider {
+  }
+  .parents_slider {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: start;
     margin: auto;
     overflow: scroll;
@@ -1247,57 +1242,58 @@ button:hover::before {
     width: 90%;
     padding: 40px 0px;
     gap: 20px;
-}
-.Featured_text_1 {
+  }
+  .Featured_text_1 {
     font-size: 23px;
     margin: 33px 46px;
-}
-.Explore_heading {
+  }
+  .Explore_heading {
     font-size: 20px;
-}
-.Explore_text {
+  }
+  .Explore_text {
     font-size: 15px;
     padding: 20px 40px;
-}
-.Introducing_img {
+  }
+  .Introducing_img {
     padding: 59px 0px;
-}
-.button {
+  }
+  .button {
     padding: 15px 26px;
     font-size: 14px;
-}
-.product_list {
+  }
+  .product_list {
     gap: 60px;
-}
-.luxury_collectio_text {
+  }
+  .luxury_collectio_text {
     font-size: 20px;
     padding: 9px 0;
-}
-.Collection_span {
+  }
+  .Collection_span {
     font-size: 20px;
-}
-.btn5,.btn4 {
+  }
+  .btn5,
+  .btn4 {
     width: 160px;
     height: 49px;
     font-size: 14px;
     margin: 10px 0px;
     position: relative;
-}
-.Explore_div {
+  }
+  .Explore_div {
     padding: 100px 0;
-}
-    
+  }
+
   .Ouer_stroy_slider {
     height: 350px;
   }
   .Introducing_head {
     font-size: 20px;
-}
-.Introducing_text {
+  }
+  .Introducing_text {
     padding: 10px 0px;
     font-size: 16px;
     line-height: 27px;
-}
+  }
   .to-top {
     bottom: 10px;
     right: 32px !important;
@@ -1305,27 +1301,26 @@ button:hover::before {
     font-size: 16px !important;
     height: 39px !important;
   }
-
 }
 
-@media (min-width: 841px) and (max-width: 1080px){
-   .parents_div12 {
+@media (min-width: 841px) and (max-width: 1080px) {
+  .parents_div12 {
     display: grid;
     margin: 50px 0px;
     gap: 25px;
-}
-.parenst_9 {
+  }
+  .parenst_9 {
     display: flex;
     margin: auto;
     width: 95%;
     overflow: scroll;
-    justify-content:start;
+    justify-content: start;
     scrollbar-width: none;
     gap: 30px;
-}
-.parents_slider {
+  }
+  .parents_slider {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: start;
     margin: auto;
     overflow: scroll;
@@ -1333,57 +1328,58 @@ button:hover::before {
     width: 90%;
     padding: 40px 0px;
     gap: 20px;
-}
-.Featured_text_1 {
+  }
+  .Featured_text_1 {
     font-size: 23px;
     margin: 33px 46px;
-}
-.Explore_heading {
+  }
+  .Explore_heading {
     font-size: 23px;
-}
-.Explore_text {
-        font-size: 21px;
-        padding: 27px 40px;
-    }
-.Introducing_img {
+  }
+  .Explore_text {
+    font-size: 21px;
+    padding: 27px 40px;
+  }
+  .Introducing_img {
     padding: 59px 0px;
-}
-.button {
+  }
+  .button {
     padding: 15px 26px;
     font-size: 14px;
-}
-.product_list {
+  }
+  .product_list {
     gap: 60px;
-}
-.luxury_collectio_text {
+  }
+  .luxury_collectio_text {
     font-size: 20px;
     padding: 9px 0;
-}
-.Collection_span {
+  }
+  .Collection_span {
     font-size: 20px;
-}
-.btn5,.btn4 {
+  }
+  .btn5,
+  .btn4 {
     width: 160px;
     height: 49px;
     font-size: 14px;
     margin: 10px 0px;
     position: relative;
-}
-.Explore_div {
+  }
+  .Explore_div {
     padding: 100px 0;
-}
-    
+  }
+
   .Ouer_stroy_slider {
     height: 450px;
   }
   .Introducing_head {
     font-size: 20px;
-}
-.Introducing_text {
+  }
+  .Introducing_text {
     padding: 10px 0px;
     font-size: 16px;
     line-height: 27px;
-}
+  }
   .to-top {
     bottom: 10px;
     right: 32px !important;
