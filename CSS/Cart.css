@@ -216,23 +216,13 @@ span {
     word-spacing: 4px;
     margin: 17px 45px;
   }
-  /* .child_1 {
-    display: grid;
-    width: 500px;
-    gap: 0px;
-    font-size: 20px;
-    margin: 0px 0px;
-  } */
+ 
   .content-div {
     display:flex;
     overflow: scroll;
     margin: auto;
     scrollbar-width: none;
     width: 80%;
-    /* height: auto;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    align-content: center; */
     gap: 0px;
   }
 
@@ -265,7 +255,7 @@ span {
     color: #ede7e7;
     border: none;
     letter-spacing: 1px;
-    margin: 22px 0px;
+    margin: 22px 0px !important;
   }
   .totalItemPrice-div {
     margin-left: 154px;
@@ -293,7 +283,7 @@ h1 {
     justify-items: center;
     align-content: center;
     gap: 20px;
-    margin: 32px 0px;
+    margin: 32px 54px;
   }
   .product2 {
     margin-left: 0px;
@@ -330,12 +320,12 @@ h1 {
     width: 200px;
     font-size: 16px;
 }
-  .btn_totalprice {
-    width: 230px;
-    height: 50px;
-    font-size: 15px;
-    margin: 22px 0px;
-  }
+     .btn_totalprice {
+        width: 220px;
+        height: 47px;
+        font-size: 13px;
+        margin: 25px 31px;
+    }
   .totalItemPrice-div {
     margin-left: 154px;
     font-size: 17px;
@@ -368,7 +358,7 @@ h1 {
     justify-items: center;
     align-content: center;
     gap: 20px;
-    margin: 32px 0px;
+    margin: 32px 50px;
   }
   .product2 {
     margin-left: 0px;
