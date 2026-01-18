@@ -1098,6 +1098,11 @@ display: none;
   .parents_div_2 {
     display: none;
   }
+  .price_container {
+    margin: 19px 49px;
+    display: flex;
+    height: 50px;
+}
   .B {
     display: flex;
     justify-content: start;
