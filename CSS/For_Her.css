@@ -717,7 +717,7 @@ cursor: pointer;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    padding: 0px 0px;
+    padding: 0px 15px !important;
     margin: auto;
     width: 100%;
   }
@@ -749,13 +749,17 @@ cursor: pointer;
     font-size: 12px;
   }
  #pagination button {
-    padding: 8px 20px;
-    padding: 10px 21px;
-    border-radius: 5px;
-    background-color: black;
-    color: #fff;
+    padding: 8px 0px;
+    width:60px;
+    height: 30px;
     font-size: 10px;
-    cursor: pointer;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
 }
   .heading {
     text-align: center;
@@ -763,23 +767,14 @@ cursor: pointer;
     font-size: 19px;
   }
 
-  .addBtn {
-           width: 100px;
-        height: 40px;
-    margin: 15px 0px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #d39d31;
-    color: #fff;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-align: center;
-    border: 1px solid rgb(218, 150, 15);
-    border-radius: 2px;
-    cursor: pointer;
-}
+.addBtn {
+        width: 95px;
+        height: 30px;
+        margin: 11px 14px;
+        font-size: 10px;
+    }
   .discription {
-    width:100px;
+    width:100px !important;
     text-align: center;
     font-size: 10px;
     padding: 10px 0px;
@@ -860,5 +855,467 @@ h1 {
 .Femme_text_1 {
     line-height: 24px;
     font-size: 14px;
+}
+#pageNumber{
+font-size: 14px;
+padding: 8px 0px;
+}
+}
+
+
+@media(max-width:420px){
+    #info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0px 20px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .card {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+    margin: 10px;
+}
+  .imgContainer {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 160, 39);
+    position: relative;
+  }
+.img_bg {
+        width: 120px;
+        height: 110px;
+        border: 1px solid #f2b448;
+    }
+ 
+  .paginationBox button {
+    padding: 9px 14px;
+    margin: 0 10px;
+    font-size: 12px;
+  }
+ #pagination button {
+    padding: 8px 0px;
+    width:60px;
+    height: 30px;
+    font-size: 10px;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+  .heading {
+    text-align: center;
+    padding-top: 21px;
+    font-size: 19px;
+  }
+
+.addBtn {
+        width: 95px;
+        height: 30px;
+        margin: 11px 14px;
+        font-size: 10px;
+    }
+  .discription {
+    width:131px;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0px;
+    line-height:15px;
+    margin: auto;
+}
+ .title {
+    font-size: 11px;
+    font-weight: 500;
+    padding-top:9px;
+}
+.price {
+    font-size: 10px;
+}
+     .custom-dropdown {
+        width: 113px;
+        height: 45px;
+        display: grid;
+        margin:0px 35px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+  .dropdown-selected {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    height: 39px;
+  }
+  .dropdown-options li {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .Luxe_Collection {
+    display: grid;
+    justify-items:center;
+    align-content:center;
+    margin:40px 0px;
+    gap:0px;
+}
+.cardhover,.cardhover_1 ,.cardhover_2{
+    width: 250px;
+    margin: 0px 10px;
+    height: 157px;
+}
+.cardhover_1{
+   width: 250px;
+    margin:12px 10px;
+    height: 157px;
+}
+.Luxe_Collection_text {
+        font-size: 15px;
+        line-height: 23px;
+        width: 242px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .Luxe_Collection_head {
+        padding: 15px 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+.btn_4 {
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    letter-spacing: 2px;
+    margin: 20px 74px;
+  
+}
+h1 {
+    font-size: 23px;
+    margin: 20px 0px;
+}
+.Femme_text {
+    line-height: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.Femme_text_1 {
+    line-height: 24px;
+    font-size: 14px;
+}
+#pageNumber{
+font-size: 14px;
+padding: 8px 0px;
+}
+}
+
+@media (min-width: 421px) and (max-width: 440px){
+    #info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0px 20px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .card {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+    margin: 10px;
+}
+  .imgContainer {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 160, 39);
+    position: relative;
+  }
+.img_bg {
+        width:140px;
+        height: 140px;
+        border: 1px solid #f2b448;
+    }
+ 
+  .paginationBox button {
+    padding: 9px 14px;
+    margin: 0 10px;
+    font-size: 12px;
+  }
+ #pagination button {
+    padding: 8px 0px;
+    width:60px;
+    height: 30px;
+    font-size: 10px;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+  .heading {
+    text-align: center;
+    padding-top: 21px;
+    font-size: 19px;
+  }
+
+    .addBtn {
+        width: 117px;
+        height: 30px;
+        margin: 11px 12px;
+        font-size: 10px;
+    }
+  .discription {
+    width:100px;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0px;
+    line-height:15px;
+    margin: auto;
+}
+ .title {
+    font-size: 11px;
+    font-weight: 500;
+    padding-top:9px;
+}
+.price {
+    font-size: 10px;
+}
+  .custom-dropdown {
+    width: 113px;
+    height: 45px;
+    display: grid;
+    margin:0px 42px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .dropdown-selected {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    height: 39px;
+  }
+  .dropdown-options li {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .Luxe_Collection {
+    display: grid;
+    justify-items:center;
+    align-content:center;
+    margin:40px 0px;
+    gap:0px;
+}
+.cardhover,.cardhover_1 ,.cardhover_2{
+    width:300px;
+    margin: 0px 10px;
+    height:200px;
+}
+.cardhover_1{
+   width:300px;
+    margin:12px 10px;
+    height:200px;
+}
+.Luxe_Collection_text {
+        font-size: 15px;
+        line-height: 23px;
+        width: 242px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .Luxe_Collection_head {
+        padding: 15px 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+.btn_4 {
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    letter-spacing: 2px;
+    margin: 20px 74px;
+  
+}
+h1 {
+    font-size: 23px;
+    margin: 20px 0px;
+}
+.Femme_text {
+    line-height: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.Femme_text_1 {
+    line-height: 24px;
+    font-size: 14px;
+}
+#pageNumber{
+font-size: 14px;
+padding: 8px 0px;
+}
+
+}
+
+@media (min-width: 441px) and (max-width: 840px) {
+    #info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 0px 20px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .card {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+    margin: 10px;
+}
+  .imgContainer {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 160, 39);
+    position: relative;
+  }
+.img_bg {
+        width:200px;
+        height:190px;
+        border: 1px solid #f2b448;
+    }
+ 
+  .paginationBox button {
+    padding: 9px 14px;
+    margin: 0 10px;
+    font-size: 12px;
+  }
+ #pagination button {
+    padding: 8px 0px;
+    width:60px;
+    height: 30px;
+    font-size: 10px;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+  .heading {
+    text-align: center;
+    padding-top: 21px;
+    font-size: 19px;
+  }
+
+  .addBtn {
+        width: 195px;
+        height: 35px;
+        margin: 11px 3px;
+        font-size: 11px;
+    }
+  .discription {
+    width:120px;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0px;
+    line-height:15px;
+    margin: auto;
+}
+ .title {
+    font-size: 11px;
+    font-weight: 500;
+    padding-top:9px;
+}
+.price {
+    font-size: 10px;
+}
+  .custom-dropdown {
+    width: 113px;
+    height: 45px;
+    display: grid;
+    margin:0px 41px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .dropdown-selected {
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    height: 39px;
+  }
+  .dropdown-options li {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .Luxe_Collection {
+    display: grid;
+    justify-items:center;
+    align-content:center;
+    margin:40px 0px;
+    gap:0px;
+}
+.cardhover,.cardhover_1 ,.cardhover_2{
+    width:600px;
+    margin: 0px 10px;
+    height:350px;
+}
+.cardhover_1{
+   width:600px;
+    margin:12px 10px;
+    height:350px;
+}
+    .Luxe_Collection_text {
+        font-size: 20px;
+        line-height: 33px;
+        width: 594px;
+        text-align: center;
+        margin: 13px 10px;
+    }
+    .Luxe_Collection_head {
+        padding:0px 10px;
+        padding-top: 25px;
+        font-size: 29px;
+        text-align: center;
+    }
+.btn_4 {
+        font-size: 13px;
+        width: 149px;
+        height: 49px;
+        letter-spacing: 2px;
+        margin: 20px 235px;
+    }
+h1 {
+    font-size: 23px;
+    margin: 20px 0px;
+}
+.Femme_text {
+    line-height: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.Femme_text_1 {
+    line-height: 24px;
+    font-size: 14px;
+}
+#pageNumber{
+font-size: 14px;
+padding: 8px 0px;
 }
 }
