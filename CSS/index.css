@@ -1010,11 +1010,57 @@ a {
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+
 .slider .list .item img {
-    /* width: 100%; */
     height: 60vh;
     object-fit: cover;
 }
+.thumbnail .item img {
+    width:100%;
+    height:50%;
+    border: 1px solid #f2b448;
+    object-fit: cover;
+    border-radius:10px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+.thumbnail .item {
+    width: 70px;
+    height:190px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail {
+    position: absolute;
+    bottom:190px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+
+.slider .list .item .content .title,
+.slider .list .item .content .type {
+  font-size:15px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.description {
+  letter-spacing: 1.5px !important;
+  font-size:10px;
+  word-wrap: 3px;
+  line-height: 1.7em;
+}
+
+
+
+
+
+
+
+
   .BLENDED_text {
     font-size: 14px;
     margin-bottom: 25px;
