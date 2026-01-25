@@ -1002,13 +1002,18 @@ a {
   top: 10%;
   width: 1140px;
   max-width: 80%;
-  height: 60vh;
+  height: 80vh !important;
   left: 42%;
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
   color: #fff;
   text-shadow: 0 5px 10px #0004;
+}
+.slider .list .item img {
+    /* width: 100%; */
+    height: 80vh;
+    object-fit: cover;
 }
   .BLENDED_text {
     font-size: 14px;
