@@ -1991,3 +1991,62 @@ a {
     font-size: 14px;
   }
 }
+
+ @media (min-width:321px) and (max-width:380px){
+  
+
+  .slider .list .item .content {
+    max-width: 80%;
+    left: 42%;
+  }
+.slider {
+    height:70vh !important;
+    width: 100%;
+  }
+  .slider .list .item img {
+    height:70vh !important;
+    object-fit: cover !important;
+  }
+  .thumbnail .item img {
+    width: 100%;
+    height:inherit !important;
+    border-radius: 10px !important;
+  }
+  .thumbnail .item {
+    width: 70px !important;
+    height:95px !important;
+  }
+  .thumbnail {
+    bottom:40px !important;
+    left: 50% !important;
+    width: auto;
+    gap: 20px !important;
+  }
+  .nextPrevArrows {
+    top: 71% !important;
+    right: 61% !important;
+    width: 152px !important;
+    max-width: 30%;
+    gap: 10px;
+  }
+  .nextPrevArrows button {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+  }
+
+  .slider .list .item .content .title,
+  .slider .list .item .content .type {
+    font-size: 15px !important;
+    line-height: 1.4em !important;
+  }
+
+  .description {
+    letter-spacing: 1.5px !important;
+    font-size: 10px !important;
+    word-wrap: 3px !important;
+    line-height: 1.7em !important;
+  }
+
+
+ }
