@@ -998,17 +998,11 @@ a {
   }
 
   .slider .list .item .content {
-    position: absolute;
-    top: 10%;
-    width: 1140px;
     max-width: 80%;
     left: 42%;
-    transform: translateX(-50%);
-    padding-right: 30%;
   }
 .slider {
     height:60vh;
-    margin-top: -5px;
     width: 100%;
   }
   .slider .list .item img {
@@ -1023,28 +1017,20 @@ a {
   .thumbnail .item {
     width: 60px;
     height:95px;
-    flex-shrink: 0;
-    position: relative;
   }
   .thumbnail {
-    position: absolute;
     bottom:34px;
     left: 50%;
-    width: auto;
     z-index: 100;
-    display: flex;
     gap: 20px;
   }
  .nextPrevArrows {
-        position: absolute;
         top:78%;
         right: 61%;
         z-index: 100;
         width: 152px;
         max-width: 30%;
-        display: flex;
         gap: 10px;
-        align-items: center;
     }
   .nextPrevArrows button {
     width: 30px;
@@ -1056,7 +1042,6 @@ a {
   .slider .list .item .content .title,
   .slider .list .item .content .type {
     font-size: 15px;
-    font-weight: bold;
     line-height: 1.4em;
   }
 
@@ -1349,17 +1334,11 @@ a {
   }
 
   .slider .list .item .content {
-    position: absolute;
-    top: 10%;
-    width: 1140px;
     max-width: 80%;
     left: 42%;
-    transform: translateX(-50%);
-    padding-right: 30%;
   }
 .slider {
     height:70vh;
-    margin-top: -5px;
     width: 100%;
   }
   .slider .list .item img {
@@ -1374,28 +1353,20 @@ a {
   .thumbnail .item {
     width: 70px;
     height:95px;
-    flex-shrink: 0;
-    position: relative;
   }
   .thumbnail {
-    position: absolute;
     bottom:40px;
     left: 50%;
     width: auto;
-    z-index: 100;
-    display: flex;
     gap: 20px;
   }
   .nextPrevArrows {
-    position: absolute;
     top: 71%;
     right: 61%;
     z-index: 100;
     width: 152px;
     max-width: 30%;
-    display: flex;
     gap: 10px;
-    align-items: center;
   }
   .nextPrevArrows button {
     width: 30px;
@@ -1407,7 +1378,6 @@ a {
   .slider .list .item .content .title,
   .slider .list .item .content .type {
     font-size: 15px;
-    font-weight: bold;
     line-height: 1.4em;
   }
 
@@ -1700,17 +1670,11 @@ a {
   }
 
   .slider .list .item .content {
-    position: absolute;
-    top: 10%;
-    width: 1140px;
     max-width: 80%;
     left: 42%;
-    transform: translateX(-50%);
-    padding-right: 30%;
   }
 .slider {
     height:70vh;
-    margin-top: -5px;
     width: 100%;
   }
   .slider .list .item img {
@@ -1725,20 +1689,14 @@ a {
   .thumbnail .item {
     width: 70px;
     height:95px;
-    flex-shrink: 0;
-    position: relative;
   }
   .thumbnail {
-    position: absolute;
     bottom:40px;
     left: 50%;
     width: auto;
-    z-index: 100;
-    display: flex;
     gap: 20px;
   }
   .nextPrevArrows {
-    position: absolute;
     top: 71%;
     right: 61%;
     z-index: 100;
@@ -1758,7 +1716,6 @@ a {
   .slider .list .item .content .title,
   .slider .list .item .content .type {
     font-size: 15px;
-    font-weight: bold;
     line-height: 1.4em;
   }
 
