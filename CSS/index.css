@@ -1028,7 +1028,7 @@ a {
   }
   .thumbnail {
     position: absolute;
-    bottom:47px;
+    bottom:34px;
     left: 50%;
     width: auto;
     z-index: 100;
@@ -1037,7 +1037,7 @@ a {
   }
  .nextPrevArrows {
         position: absolute;
-        top:74%;
+        top:78%;
         right: 61%;
         z-index: 100;
         width: 152px;
