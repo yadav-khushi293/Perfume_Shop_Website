@@ -69,41 +69,41 @@
 <script src="./JS/Sign_page.js"></script>
 
 
- <script type="module">
-    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
+<script type="module">
+  import { Navbar, Navbar_css, Footer, Footer_css } from "./JS/Impot_Export.js";
 
-    // Navbar HTML
-   const renderNav = async() => {
-      document.querySelector("header").innerHTML = await Navbar();
-    }
-    renderNav()
+  // Navbar HTML
+  const renderNav = async () => {
+    document.querySelector("header").innerHTML = await Navbar();
+  }
+  renderNav()
 
-    // Navbar CSS
-    let styleTag = document.createElement("style");
-    styleTag.textContent = Navbar_css();
-    document.head.append(styleTag);
+  // Navbar CSS
+  let styleTag = document.createElement("style");
+  styleTag.textContent = Navbar_css();
+  document.head.append(styleTag);
 
-     document.querySelector("footer").innerHTML = Footer();
-     
-    let styleTagFooter = document.createElement("style");
-    styleTagFooter.textContent = Footer_css();
-    document.head.append(styleTagFooter);
+  document.querySelector("footer").innerHTML = Footer();
 
- //Scroll-Arrow-code
-const toTop = document.querySelector(".to-top");
+  let styleTagFooter = document.createElement("style");
+  styleTagFooter.textContent = Footer_css();
+  document.head.append(styleTagFooter);
 
-   document.addEventListener("DOMContentLoaded", () => {
+  //Scroll-Arrow-code
+  const toTop = document.querySelector(".to-top");
+
+  document.addEventListener("DOMContentLoaded", () => {
     const toTop = document.querySelector(".to-top");
 
     window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
+      if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+      } else {
+        toTop.classList.remove("active");
+      }
     });
+  });
 
-
-});
 </script>
+
 </html>

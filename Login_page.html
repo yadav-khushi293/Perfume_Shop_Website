@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login_page</title>
-      <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/Login_page.css">
-    <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login_page</title>
+  <link rel="shortcut icon"
+    href="https://img.freepik.com/premium-vector/luxury-vector-perfume-company-logo-design_652372-51.jpg?semt=ais_hybrid&w=740&q=80"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/Login_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
+
 <body>
-   <header></header>
+  <header></header>
 
-    <a href="#" class="to-top">
-       <i class="fas fa-chevron-up"></i>
-    </a>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-<!-- code_nav_end -->
+  <!-- code_nav_end -->
 
-     <main class="main-content">
-<div class="login-page">
-    
-  <form action="#" onsubmit="validateUserForm(event)">
+  <main class="main-content">
+    <div class="login-page">
 
-     <div class="Website_main_logo">
+      <form action="#" onsubmit="validateUserForm(event)">
+
+        <div class="Website_main_logo">
           <img src="./Utiles/neesh_logo.webp">
-     </div>
+        </div>
 
-    <h2 class="heding">Login_In</h2>
+        <h2 class="heding">Login_In</h2>
 
 
-    <div class="input-box">
-      <input type="email" id="user_email" placeholder=" " />
-      <label>Email</label>
-      <span id="user_email_msg"></span>
+        <div class="input-box">
+          <input type="email" id="user_email" placeholder=" " />
+          <label>Email</label>
+          <span id="user_email_msg"></span>
+        </div>
+
+        <div class="input-box">
+          <input type="password" id="user_pass" placeholder=" " />
+          <label>Password</label>
+          <span id="user_pass_msg"></span>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="message_forsignin">Don't have an account? <a href="./Sign_page.html"><span>Sign Up</span></a></p>
+
+      </form>
     </div>
-
-    <div class="input-box">
-      <input type="password" id="user_pass" placeholder=" " />
-      <label>Password</label>
-      <span id="user_pass_msg"></span>
-    </div>
-
-    <button type="submit">Login</button>
-
-     <p class="message_forsignin">Don't have an account? <a href="./Sign_page.html"><span>Sign Up</span></a></p>
-    
-  </form>
-</div>
 
   </main>
 
-    <!-- FOOTER -->
-   <footer></footer>
-    <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer></footer>
+  <!-- FOOTER -->
 
 </body>
 <script src="./JS/Login_page.js"></script>
 
- <script type="module">
-    import { Navbar, Navbar_css ,Footer, Footer_css } from "./JS/Impot_Export.js";
+<script type="module">
+  import { Navbar, Navbar_css, Footer, Footer_css } from "./JS/Impot_Export.js";
 
-    // Navbar HTML
-   const renderNav = async() => {
-      document.querySelector("header").innerHTML = await Navbar();
-    }
-    renderNav()
-    // Navbar CSS
-    let styleTag = document.createElement("style");
-    styleTag.textContent = Navbar_css();
-    document.head.append(styleTag);
+  // Navbar HTML
+  const renderNav = async () => {
+    document.querySelector("header").innerHTML = await Navbar();
+  }
+  renderNav()
 
-     document.querySelector("footer").innerHTML = Footer();
-     
-    let styleTagFooter = document.createElement("style");
-    styleTagFooter.textContent = Footer_css();
-    document.head.append(styleTagFooter);
+  // Navbar CSS
+  let styleTag = document.createElement("style");
+  styleTag.textContent = Navbar_css();
+  document.head.append(styleTag);
 
- //Scroll-Arrow-code
-const toTop = document.querySelector(".to-top");
+  document.querySelector("footer").innerHTML = Footer();
 
-   document.addEventListener("DOMContentLoaded", () => {
+  let styleTagFooter = document.createElement("style");
+  styleTagFooter.textContent = Footer_css();
+  document.head.append(styleTagFooter);
+
+  //Scroll-Arrow-code
+  const toTop = document.querySelector(".to-top");
+
+  document.addEventListener("DOMContentLoaded", () => {
     const toTop = document.querySelector(".to-top");
 
     window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
+      if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+      } else {
+        toTop.classList.remove("active");
+      }
     });
+  });
 
-});
 </script>
+
+
 </html>
