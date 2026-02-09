@@ -33,14 +33,6 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 
 <hr>
 
-<h2>🎨 Luxury Color Theme 🎨</h2>
-
-• 🖤 Jet Black – Luxury base  
-• 🤍 Pearl White – Clean layout  
-• ✨ Gold Accent – Premium feel  
-• 🌿 Olive Green – Natural fragrance touch  
-
-<hr>
 
 <h2>🧴🖼️ Website Preview Images 🧴</h2>
 
@@ -57,18 +49,18 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <table>
   <tr>
     <td>
-      <img src="https://github.com/yadav-khushi293/movei_api/blob/main/Screenshot%202025-11-23%20004201.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20144857.png?raw=true" width="500" height="400">
     </td>
     <td>
-      <img src="https://github.com/yadav-khushi293/movei_api/blob/main/Screenshot%202025-11-23%20004309.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145044.png?raw=true" width="500" height="400">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/yadav-khushi293/movei_api/blob/main/Screenshot%202025-11-23%20004412.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145044.png?raw=true" width="500" height="400">
     </td>
     <td>
-      <img src="https://github.com/yadav-khushi293/movei_api/blob/main/Screenshot%202025-11-23%20004810.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145322.png?raw=true" width="500" height="400">
     </td>
   </tr>
 </table>
@@ -107,6 +99,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
