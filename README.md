@@ -1,4 +1,4 @@
-<h3 align="center">🧴✨ PERFUME SHOP – Premium Perfume Website ✨🧴</h3>
+<h2 align="center">🧴✨ PERFUME SHOP – Premium Perfume Website ✨🧴</h2>
 <br>
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"  width="170" height="35"  font-size=5px></a>
@@ -107,6 +107,7 @@ Frontend Developer
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
