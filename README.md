@@ -45,7 +45,10 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <h2>🧴🖼️ Website Preview Images 🧴</h2>
 
 <h3>✨ Home Page ✨</h3>
-<img src="https://github.com/yadav-khushi293/movei_api/blob/main/Screenshot%202025-11-23%20004129.png?raw=true"/>
+<img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-03%20154229.png?raw=true"><br>
+<h3>✨ Attar (Home Page) ✨</h3>
+<img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145135.png?raw=true"/><br><br>
+<img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145158.png?raw=true"/>
 
 <hr>
 
@@ -104,6 +107,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
