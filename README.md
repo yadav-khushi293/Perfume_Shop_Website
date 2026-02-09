@@ -74,18 +74,17 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 
 <h2>🧴 Tech Stack 🧴</h2>
 
-🌼 HTML5  
+🌟 HTML5  
 <br><br>
-🌼 CSS3 (Flexbox / Grid / Animations / Responsive Design)  
+🌟 CSS3 (Flexbox / Grid / Animations / Responsive Design)  
 <br><br>
-🌼 JavaScript (Dynamic UI & Interactions)
+🌟 JavaScript (Dynamic UI & Interactions)
 
 <hr>
 
 <h2>🌐 Live Demo 🌐</h2>
 
-🔗 <b>Live Website:</b>  
-👉perfumeshope.netlify.app/  
+🔗 <b>Live Website:</b> [perfumeshope.netlify.app/](https://perfumeshope.netlify.app/)
 
 <hr>
 
@@ -93,20 +92,19 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 
 🧴 <b> PERFUME SHOP</b>  
 <br>
-✨ <i>Feel the fragrance of elegance</i>
+✨ <i>Feel the fragrance of elegance</i> ✨
 
 <hr>
 
 <h2>🌺👨‍💻 Created By 🌺</h2>
 
 <b>Name:</b><br>
-✨ YADAV KHUSHI  
+✨ YADAV KHUSHI (Frontend Developer)
 <br>
-Frontend Developer  
-
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
