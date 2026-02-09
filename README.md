@@ -44,7 +44,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 
 <hr>
 
-<h3>🌸 Product Listing Page 🌸</h3>
+<h3>✨ Product Listing Page ✨</h3>
 
 <table>
   <tr>
@@ -68,7 +68,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 
-<h3>🌸 Sign and Login  Page 🌸</h3>
+<h3>✨ Sign and Login  Page ✨</h3>
 
 <table>
   <tr>
@@ -123,6 +123,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
