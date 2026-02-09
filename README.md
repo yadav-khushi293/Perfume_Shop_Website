@@ -1,22 +1,22 @@
-<h1 align="center">🧴✨ LUXE SCENT – Premium Perfume Website ✨🧴</h1>
-
+<h1 align="center">🧴✨ PERFUME SHOP – Premium Perfume Website ✨🧴</h1>
+<br>
 <p align="center">
-<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"></a>
-<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white"></a>
-<a href="#"><img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black"></a>
-<a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge"></a>
+<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"  width="170" height="35"  font-size=5px></a>
+<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" width="170" height="35"  font-size=5px></a>
+<a href="#"><img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black" width="160" height="50"></a>
+<a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge" width="190"></a>
 </p>
-
+<br>
 <p align="center">
-🌸 Experience elegance, fragrance & luxury — a modern perfume website crafted for premium scent lovers 🌸
+🌟✨ Experience elegance, fragrance & luxury — a modern perfume website crafted for premium scent lovers ✨🌟
 </p>
 
 <hr>
 
 <h2>🌺 About Project 🌺</h2>
 
-🧴 <b>LUXE SCENT</b> is a stylish and modern perfume website designed to showcase premium fragrances.  
-It features a luxury-inspired UI, smooth animations, and a fully responsive layout for mobile, tablet, and desktop devices.
+🧴 <b>
+A modern and responsive perfume website designed to showcase premium fragrances beautifully. It is fast, visually appealing, and optimized for a smooth experience on all devices.
 
 <hr>
 
@@ -91,7 +91,7 @@ It features a luxury-inspired UI, smooth animations, and a fully responsive layo
 
 <h2>📌 Project Name & Tagline 📌</h2>
 
-🧴 <b>LUXE SCENT</b>  
+🧴 <b> PERFUME SHOP</b>  
 <br>
 ✨ <i>Feel the fragrance of elegance</i>
 
@@ -107,3 +107,4 @@ Frontend Developer
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
