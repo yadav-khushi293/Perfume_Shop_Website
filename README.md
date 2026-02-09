@@ -81,7 +81,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
   </tr>
   <tr>
     <td>
-      <img src="" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20151540.png?raw=true" width="500" height="400">
     </td>
     <td>
       <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20151948.png?raw=true" width="500" height="400">
@@ -94,9 +94,9 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <h2>🧴 Tech Stack 🧴</h2>
 
 🌟 HTML5  
-<br><br>
+<br>
 🌟 CSS3 (Flexbox / Grid / Animations / Responsive Design)  
-<br><br>
+<br>
 🌟 JavaScript (Dynamic UI & Interactions)
 
 <hr>
@@ -123,6 +123,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
