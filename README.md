@@ -1,8 +1,8 @@
 <h2 align="center">🧴✨ PERFUME SHOP – Premium Perfume Website ✨🧴</h2>
 <br>
 <p align="center">
-<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"  width="170" height="35"  font-size=5px></a>
-<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" width="170" height="35"  font-size=5px></a>
+<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"  width="150" height="35"  font-size=5px></a>
+<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" width="150" height="35"  font-size=5px></a>
 <a href="#"><img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black" width="160" height="50"></a>
 <a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge" width="190"></a>
 </p>
@@ -123,6 +123,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
