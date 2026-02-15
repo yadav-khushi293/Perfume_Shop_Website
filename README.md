@@ -94,9 +94,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <h2>🧴 Tech Stack 🧴</h2>
 
 🌟 HTML5  
-<br>
 🌟 CSS3 (Flexbox / Grid / Animations / Responsive Design)  
-<br>
 🌟 JavaScript (Dynamic UI & Interactions)
 
 <hr>
@@ -123,6 +121,7 @@ A modern and responsive perfume website designed to showcase premium fragrances 
 <hr>
 
 <h3 align="center">🧴✨ Thank You for Visiting ✨🧴</h3>
+
 
 
 
