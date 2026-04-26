@@ -43,10 +43,10 @@ It focuses on luxury UI, smooth interactions, and fast performance to deliver a 
 <h2>🧴🖼️ Website Preview Images 🧴</h2>
 
 <h3>✨ Home Page ✨</h3>
-<img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-03%20154229.png?raw=true"><br>
+<img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20153307.png?raw=true"><br>
 
 <h3>✨ Attar Section (Home Page) ✨</h3>
-<img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145135.png?raw=true"/><br><br>
+<img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20153413.png?raw=true"/><br><br>
 <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145158.png?raw=true"/>
 
 <hr>
