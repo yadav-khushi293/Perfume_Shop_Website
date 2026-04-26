@@ -2,10 +2,10 @@
 <br>
 
 <p align="center">
-<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5" width="150" height="35"></a>
-<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" width="150" height="35"></a>
-<a href="#"><img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black" width="160" height="35"></a>
-<a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge" width="190" height="35"></a>
+<a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"></a>
+<a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white"></a>
+<a href="#"><img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black"></a>
+<a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge"></a>
 </p>
 
 <br>
