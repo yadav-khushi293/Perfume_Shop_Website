@@ -56,18 +56,18 @@ It focuses on luxury UI, smooth interactions, and fast performance to deliver a 
 <table>
   <tr>
     <td>
-      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20144857.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20154316.png?raw=true" width="500" height="400">
     </td>
     <td>
-      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145044.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20154424.png?raw=true" width="500" height="400">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145044.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20154459.png?raw=true" width="500" height="400">
     </td>
     <td>
-      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Screenshot%202026-02-09%20145322.png?raw=true" width="500" height="400">
+      <img src="https://github.com/yadav-khushi293/khushi/blob/main/Boostraps/Screenshot%202026-04-26%20154746.png?raw=true" width="500" height="400">
     </td>
   </tr>
 </table>
