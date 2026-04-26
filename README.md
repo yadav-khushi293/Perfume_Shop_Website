@@ -1,5 +1,5 @@
 <h2 align="center">🧴✨ PERFUME SHOP – Premium Perfume Website ✨🧴</h2>
-<br>
+
 
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5"></a>
@@ -8,7 +8,6 @@
 <a href="#"><img src="https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge"></a>
 </p>
 
-<br>
 
 <p align="center">
 🌟✨ Experience elegance, fragrance & luxury — a modern perfume website crafted for premium scent lovers ✨🌟  
